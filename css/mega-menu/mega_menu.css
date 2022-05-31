@@ -141,7 +141,7 @@
         height: 50%;
   }
   .mega-menu .menu-logo > li > a img {
-    max-width:120%;
+    max-width:100%;
     height:50%;
     position: absolute;
     margin: auto 0;

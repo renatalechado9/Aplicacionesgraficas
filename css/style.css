@@ -193,7 +193,7 @@ ul.page-breadcrumb li a:hover{color: #ffd200;}
 /*---------------------------------------------------------------------
   Footer
 ---------------------------------------------------------------------*/
-.footer{background:url(../images/pattern/pattern2.jpg) no-repeat 0 0; color:#c5c5c5;}
+.footer{background:url(../images/pattern2.jpg) no-repeat 0 0; color:#c5c5c5;}
 .footer .title{position: relative; color:#fff; margin-bottom:40px;}
 /*footer-flickr */
 ul.footer-instagram-images li { display: inline-block; }

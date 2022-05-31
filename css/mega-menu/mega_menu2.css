@@ -4,9 +4,9 @@
 .mega-menu2 {
     margin: 0 auto;
     padding: 0;
-    display: block;
+    display: block-flow;
     float: left;
-    position: absolute;
+    position: fixed;
     background-color: #001489;
     z-index: 999;
   /*  max-width: 1280px;

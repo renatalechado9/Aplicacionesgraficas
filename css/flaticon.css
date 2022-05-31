@@ -1,0 +1,208 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 29/11/2016 11:30
+  	*/
+
+      @font-face {
+        font-family: "Flaticon";
+        src: url("../fonts/Flaticon.eot");
+        src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+             url("../fonts/Flaticon.woff") format("woff"),
+             url("../fonts/Flaticon.ttf") format("truetype"),
+             url("../fonts/Flaticon.svg#Flaticon") format("svg");
+        font-weight: normal;
+        font-style: normal;
+      }
+      
+      @media screen and (-webkit-min-device-pixel-ratio:0) {
+        @font-face {
+          font-family: "Flaticon";
+          src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+        }
+      }
+      
+      [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+      [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+          font-family: Flaticon;
+          font-size:26px;
+          font-style: normal;
+      }
+      
+      .flaticon-apartment:before { content: "\f100"; }
+      .flaticon-arrows:before { content: "\f101"; }
+      .flaticon-arrows-1:before { content: "\f102"; }
+      .flaticon-arrows-2:before { content: "\f103"; }
+      .flaticon-arrows-3:before { content: "\f104"; }
+      .flaticon-arrows-4:before { content: "\f105"; }
+      .flaticon-art:before { content: "\f106"; }
+      .flaticon-building:before { content: "\f107"; }
+      .flaticon-building-1:before { content: "\f108"; }
+      .flaticon-buildings:before { content: "\f109"; }
+      .flaticon-buildings-1:before { content: "\f10a"; }
+      .flaticon-buildings-2:before { content: "\f10b"; }
+      .flaticon-buildings-3:before { content: "\f10c"; }
+      .flaticon-businessman-in-apresentation-with-a-graphic-on-a-board:before { content: "\f10d"; }
+      .flaticon-caution:before { content: "\f10e"; }
+      .flaticon-check:before { content: "\f10f"; }
+      .flaticon-construction:before { content: "\f110"; }
+      .flaticon-construction-1:before { content: "\f111"; }
+      .flaticon-construction-10:before { content: "\f112"; }
+      .flaticon-construction-11:before { content: "\f113"; }
+      .flaticon-construction-12:before { content: "\f114"; }
+      .flaticon-construction-13:before { content: "\f115"; }
+      .flaticon-construction-14:before { content: "\f116"; }
+      .flaticon-construction-15:before { content: "\f117"; }
+      .flaticon-construction-16:before { content: "\f118"; }
+      .flaticon-construction-17:before { content: "\f119"; }
+      .flaticon-construction-18:before { content: "\f11a"; }
+      .flaticon-construction-19:before { content: "\f11b"; }
+      .flaticon-construction-2:before { content: "\f11c"; }
+      .flaticon-construction-20:before { content: "\f11d"; }
+      .flaticon-construction-21:before { content: "\f11e"; }
+      .flaticon-construction-22:before { content: "\f11f"; }
+      .flaticon-construction-23:before { content: "\f120"; }
+      .flaticon-construction-24:before { content: "\f121"; }
+      .flaticon-construction-25:before { content: "\f122"; }
+      .flaticon-construction-26:before { content: "\f123"; }
+      .flaticon-construction-27:before { content: "\f124"; }
+      .flaticon-construction-28:before { content: "\f125"; }
+      .flaticon-construction-29:before { content: "\f126"; }
+      .flaticon-construction-3:before { content: "\f127"; }
+      .flaticon-construction-30:before { content: "\f128"; }
+      .flaticon-construction-31:before { content: "\f129"; }
+      .flaticon-construction-32:before { content: "\f12a"; }
+      .flaticon-construction-33:before { content: "\f12b"; }
+      .flaticon-construction-34:before { content: "\f12c"; }
+      .flaticon-construction-35:before { content: "\f12d"; }
+      .flaticon-construction-4:before { content: "\f12e"; }
+      .flaticon-construction-5:before { content: "\f12f"; }
+      .flaticon-construction-6:before { content: "\f130"; }
+      .flaticon-construction-7:before { content: "\f131"; }
+      .flaticon-construction-8:before { content: "\f132"; }
+      .flaticon-construction-9:before { content: "\f133"; }
+      .flaticon-construction-helmet:before { content: "\f134"; }
+      .flaticon-crane:before { content: "\f135"; }
+      .flaticon-cut:before { content: "\f136"; }
+      .flaticon-cut-1:before { content: "\f137"; }
+      .flaticon-cut-2:before { content: "\f138"; }
+      .flaticon-document:before { content: "\f139"; }
+      .flaticon-draw:before { content: "\f13a"; }
+      .flaticon-draw-1:before { content: "\f13b"; }
+      .flaticon-drawing:before { content: "\f13c"; }
+      .flaticon-drawing-1:before { content: "\f13d"; }
+      .flaticon-email:before { content: "\f13e"; }
+      .flaticon-email-1:before { content: "\f13f"; }
+      .flaticon-fax:before { content: "\f140"; }
+      .flaticon-fax-1:before { content: "\f141"; }
+      .flaticon-folder:before { content: "\f142"; }
+      .flaticon-gear:before { content: "\f143"; }
+      .flaticon-global:before { content: "\f144"; }
+      .flaticon-gps:before { content: "\f145"; }
+      .flaticon-hammer:before { content: "\f146"; }
+      .flaticon-hand:before { content: "\f147"; }
+      .flaticon-improvement:before { content: "\f148"; }
+      .flaticon-interface:before { content: "\f149"; }
+      .flaticon-interface-1:before { content: "\f14a"; }
+      .flaticon-interface-2:before { content: "\f14b"; }
+      .flaticon-interface-3:before { content: "\f14c"; }
+      .flaticon-interface-4:before { content: "\f14d"; }
+      .flaticon-interface-5:before { content: "\f14e"; }
+      .flaticon-interface-6:before { content: "\f14f"; }
+      .flaticon-landscape:before { content: "\f150"; }
+      .flaticon-letter:before { content: "\f151"; }
+      .flaticon-like:before { content: "\f152"; }
+      .flaticon-location:before { content: "\f153"; }
+      .flaticon-management:before { content: "\f154"; }
+      .flaticon-material:before { content: "\f155"; }
+      .flaticon-money:before { content: "\f156"; }
+      .flaticon-note:before { content: "\f157"; }
+      .flaticon-note-1:before { content: "\f158"; }
+      .flaticon-notebook:before { content: "\f159"; }
+      .flaticon-office:before { content: "\f15a"; }
+      .flaticon-paint:before { content: "\f15b"; }
+      .flaticon-people:before { content: "\f15c"; }
+      .flaticon-people-1:before { content: "\f15d"; }
+      .flaticon-people-10:before { content: "\f15e"; }
+      .flaticon-people-11:before { content: "\f15f"; }
+      .flaticon-people-12:before { content: "\f160"; }
+      .flaticon-people-13:before { content: "\f161"; }
+      .flaticon-people-2:before { content: "\f162"; }
+      .flaticon-people-3:before { content: "\f163"; }
+      .flaticon-people-4:before { content: "\f164"; }
+      .flaticon-people-5:before { content: "\f165"; }
+      .flaticon-people-6:before { content: "\f166"; }
+      .flaticon-people-7:before { content: "\f167"; }
+      .flaticon-people-8:before { content: "\f168"; }
+      .flaticon-people-9:before { content: "\f169"; }
+      .flaticon-placeholder:before { content: "\f16a"; }
+      .flaticon-presentation:before { content: "\f16b"; }
+      .flaticon-projection-screen-with-bar-chart:before { content: "\f16c"; }
+      .flaticon-real-estate:before { content: "\f16d"; }
+      .flaticon-road:before { content: "\f16e"; }
+      .flaticon-road-1:before { content: "\f16f"; }
+      .flaticon-ruler:before { content: "\f170"; }
+      .flaticon-screen:before { content: "\f171"; }
+      .flaticon-security:before { content: "\f172"; }
+      .flaticon-settings:before { content: "\f173"; }
+      .flaticon-settings-1:before { content: "\f174"; }
+      .flaticon-shield:before { content: "\f175"; }
+      .flaticon-shovel:before { content: "\f176"; }
+      .flaticon-shovel-1:before { content: "\f177"; }
+      .flaticon-shovel-2:before { content: "\f178"; }
+      .flaticon-shovel-3:before { content: "\f179"; }
+      .flaticon-shovel-4:before { content: "\f17a"; }
+      .flaticon-sign:before { content: "\f17b"; }
+      .flaticon-signs:before { content: "\f17c"; }
+      .flaticon-signs-1:before { content: "\f17d"; }
+      .flaticon-signs-2:before { content: "\f17e"; }
+      .flaticon-technology:before { content: "\f17f"; }
+      .flaticon-technology-1:before { content: "\f180"; }
+      .flaticon-technology-2:before { content: "\f181"; }
+      .flaticon-technology-3:before { content: "\f182"; }
+      .flaticon-technology-4:before { content: "\f183"; }
+      .flaticon-tool:before { content: "\f184"; }
+      .flaticon-tool-1:before { content: "\f185"; }
+      .flaticon-tool-10:before { content: "\f186"; }
+      .flaticon-tool-11:before { content: "\f187"; }
+      .flaticon-tool-12:before { content: "\f188"; }
+      .flaticon-tool-13:before { content: "\f189"; }
+      .flaticon-tool-14:before { content: "\f18a"; }
+      .flaticon-tool-15:before { content: "\f18b"; }
+      .flaticon-tool-16:before { content: "\f18c"; }
+      .flaticon-tool-17:before { content: "\f18d"; }
+      .flaticon-tool-18:before { content: "\f18e"; }
+      .flaticon-tool-19:before { content: "\f18f"; }
+      .flaticon-tool-2:before { content: "\f190"; }
+      .flaticon-tool-20:before { content: "\f191"; }
+      .flaticon-tool-3:before { content: "\f192"; }
+      .flaticon-tool-4:before { content: "\f193"; }
+      .flaticon-tool-5:before { content: "\f194"; }
+      .flaticon-tool-6:before { content: "\f195"; }
+      .flaticon-tool-7:before { content: "\f196"; }
+      .flaticon-tool-8:before { content: "\f197"; }
+      .flaticon-tool-9:before { content: "\f198"; }
+      .flaticon-transport:before { content: "\f199"; }
+      .flaticon-transport-1:before { content: "\f19a"; }
+      .flaticon-transport-10:before { content: "\f19b"; }
+      .flaticon-transport-11:before { content: "\f19c"; }
+      .flaticon-transport-12:before { content: "\f19d"; }
+      .flaticon-transport-13:before { content: "\f19e"; }
+      .flaticon-transport-14:before { content: "\f19f"; }
+      .flaticon-transport-15:before { content: "\f1a0"; }
+      .flaticon-transport-2:before { content: "\f1a1"; }
+      .flaticon-transport-3:before { content: "\f1a2"; }
+      .flaticon-transport-4:before { content: "\f1a3"; }
+      .flaticon-transport-5:before { content: "\f1a4"; }
+      .flaticon-transport-6:before { content: "\f1a5"; }
+      .flaticon-transport-7:before { content: "\f1a6"; }
+      .flaticon-transport-8:before { content: "\f1a7"; }
+      .flaticon-transport-9:before { content: "\f1a8"; }
+      .flaticon-trophy:before { content: "\f1a9"; }
+      .flaticon-up-arrow:before { content: "\f1aa"; }
+      .flaticon-wall:before { content: "\f1ab"; }
+      .flaticon-wall-1:before { content: "\f1ac"; }
+      .flaticon-wall-2:before { content: "\f1ad"; }
+      .flaticon-wall-3:before { content: "\f1ae"; }
+      .flaticon-wall-4:before { content: "\f1af"; }
+      .flaticon-worker:before { content: "\f1b0"; }
+      .flaticon-wrench:before { content: "\f1b1"; }

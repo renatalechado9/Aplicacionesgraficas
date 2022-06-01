@@ -12,8 +12,8 @@
   /*  max-width: 1280px;
     width: 100%;*/
     font-size: 36px;
-    min-height: 60px;
-    width: 114rem;
+    min-height: 40px;
+    width: 120rem;
     clear: both;
     box-sizing: border-box;
   }
@@ -221,7 +221,6 @@
     .mega-menu2 .menu-links > li > a {
       width: auto;
       line-height: normal;
-      padding-top: 10px;
       padding-bottom: 10px;
       position: static;
       padding-right: 10px;
@@ -582,7 +581,7 @@
   .mega-menu2 .menu-links > li.active .drop-down-multilevel a:hover { color: #ffd200; }
   .mega-menu2 .drop-down-multilevel a {
     margin: 0;
-    padding: 8px 20px;
+    padding: 8px 5px;
     font-size: 0.9000em;
     text-transform: capitalize;
     display: inline-block;  
@@ -590,7 +589,7 @@
     color: #ffffff;
     -webkit-transition: color 200ms ease;
             transition: color 200ms ease;
-    min-height:46px;
+    min-height:40px;
   }
   @media screen and (max-width: 992px) {
     .mega-menu2 .drop-down-multilevel a {

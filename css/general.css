@@ -831,7 +831,7 @@ ul.list li .fa{margin-right:5px;}
 /* Ul List Mark */
 ul.list-mark{padding:0; margin:0;}
 ul.list-mark li{list-style-type:none; padding-left:25px; position:relative;}
-ul.list-mark li:after{content:"\f00c";}
+ul.list-mark li:after{content:"images\check.svg";}
 
 /* Ul List Arrow */
 ul.list-arrow{padding:0; margin:0;}

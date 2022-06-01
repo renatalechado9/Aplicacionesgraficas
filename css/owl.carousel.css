@@ -61,6 +61,7 @@
   }
   .owl-carousel .owl-stage {
     position: relative;
+    touch-action: pan-Y;
     -ms-touch-action: pan-Y;
   }
   .owl-carousel .owl-stage:after {
@@ -74,6 +75,7 @@
   .owl-carousel .owl-stage-outer {
     position: relative;
     overflow: hidden;
+    transform: translate3d(0px, 0px, 0px);
     /* fix for flashing background */
     -webkit-transform: translate3d(0px, 0px, 0px);
   }
@@ -105,6 +107,7 @@
     position: relative;
     min-height: 1px;
     float: left;
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
@@ -116,6 +119,7 @@
   .owl-carousel .owl-item img {
     display: block;
     width: 100%;
+    transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
   }
   .owl-carousel.owl-text-select-on .owl-item {
@@ -177,6 +181,7 @@
     background: url("owl.video.play.png") no-repeat;
     cursor: pointer;
     z-index: 1;
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -webkit-transition: scale 100ms ease;
     -moz-transition: scale 100ms ease;

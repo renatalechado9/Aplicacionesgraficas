@@ -35,10 +35,10 @@ NOTE: .
 #header.defualt{background: transparent; z-index: 999; padding: 0px; margin: 0px; position: absolute; width: 100%; }
 
 /*topbar*/
-.topbar { border-bottom: 1px solid rgba(255, 255, 255, 0.2); padding: 1px 0px;font-size: 17px; }
+.topbar { border-bottom: 1px solid rgba(255, 255, 255, 0.2); padding: 1px 0px;font-size: 18px; }
 .topbar li, .topbar li a{color: #ffffff;font-size: 17px;}
 .topbar-left li i{padding-right: 5px; color:#ffd200;font-size: 17px;}
-.topbar-right .list-inline li:last-child, .topbar-right li:last-child i { font-size: 17px; }
+.topbar-right .list-inline li:last-child, .topbar-right li:last-child i { font-size: 16px; }
 .topbar .topbar-right li a:hover { color: #ffd200; }
 .topbar-right li i{padding-right:5px; color:#ffd200; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out;}
 .topbar-right li i:hover{color:#ffffff !important;}

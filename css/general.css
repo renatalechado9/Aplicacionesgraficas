@@ -52,11 +52,19 @@ NOTE:
 *************************/
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
 
+i.gmail{content: url('https://api.iconify.design/logos/google-gmail.svg?width=49&height=49');
+width: 1.5rem;height: 1.5rem; margin-top: 0.2rem;}
+i.foto{content: url('https://api.iconify.design/flat-color-icons/clock.svg?width=49&height=49');
+width: 1.5rem;height: 1.5rem; margin-top: 0.2rem;}
+i.call{content: url('https://api.iconify.design/noto-v1/telephone-receiver.svg?width=49&height=49');
+width: 1.5rem;height: 1.5rem; margin-top: 0.2rem;}
+i.whatsapp{content: url('https://api.iconify.design/logos/whatsapp.svg?width=49&height=49');
+width: 1.5rem;height: 1.5rem; margin-top: 0.2rem;}
+div.row.links {color: white; font-size: 19px; }
 
-
- body {font-family: 'Droid+Sans', sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 24px; color:#757575;}
- a, .btn  { -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s;
-	transition: all 0.3s ease-out 0s; color: #353535; }
+body {font-family: 'Droid+Sans', sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 24px; color:#757575;}
+a, .btn  { -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s;
+transition: all 0.3s ease-out 0s; color: #353535; }
 a:focus { text-decoration: none !important; }
 a:focus, a:hover { color: #ffd200; text-decoration: none !important; }
 a, button, input { outline: medium none !important; color: #ffd200; }
@@ -831,7 +839,7 @@ ul.list li .fa{margin-right:5px;}
 /* Ul List Mark */
 ul.list-mark{padding:0; margin:0;}
 ul.list-mark li{list-style-type:none; padding-left:25px; position:relative;}
-ul.list-mark li:after{content:"images\check.svg";}
+ul.list-mark li:after{content: url('https://api.iconify.design/bi/check.svg?color=%23ffd200');margin-top:0.6rem}
 
 /* Ul List Arrow */
 ul.list-arrow{padding:0; margin:0;}

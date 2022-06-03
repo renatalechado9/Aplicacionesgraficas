@@ -9,8 +9,11 @@
     <title>Maderería El Roble</title>
     <!-- Icono para la pestaña -->
     <link rel="shorcut icon" href="images/favicon.ico">
-    <!-- bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- bootstrap >
+        
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="css/bootstrap5,2.min.css" rel="stylesheet" type="text/css">
     <!--  Oswald font -->
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700&amp;subset=latin-ext" rel="stylesheet">
     <!--  Droid+Sans font -->
@@ -34,6 +37,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="css/search.css" rel="stylesheet" type="text/css">
+    
     <style>
         .btn-whatsapp {
                display:block;
@@ -58,58 +62,57 @@
     </div>
     <header id="header" class="clean">
         <div class="topbar dark">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-7 col-md-3 col-sm-3">
-                <div class="topbar-left text-left">
-                   <ul class="list-inline">
-                     <li> <img src="images/gmail (1).png"> contacto@madereriaelroble.com</li> <li><img src="images/reloj.png" alt="">Lun-Vie8:30-6:30-Sáb8:30-2:00</li>
-                   </ul>
-                </div>
-              </div>
-              <div class="col-lg-5 col-md-5 col-sm-5">
-                <div class="topbar-right text-right">
-                   <ul class="list-inline">
-                     <li> <img src="images/llamada.png" alt=""> Tel. 2213-2122 &nbsp;&nbsp;<img src="images/whatsapp.png" alt=""><i style="font-size:18px"></i>  Cel. 7393-3921  </li> 
-                   </ul>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="topbar-left text-left">
+                    <div class="row links">
+                        <div class="col-4">
+                            <i class="gmail"></i> contacto@madererialahuerta.com
+                        </div>
+                        <div class="col-4" style="position: relative; right:4.5rem">
+                            <i class="foto"></i> Lun-Vie 8:30-6:30-Sáb 8:30-2:00
+                        </div>
+                        <div class="col-2"style="position: relative; left:4.5rem">
+                            <i><i class="call"> </i> Tel.2387-3433</i>
+                        </div>
+                        <div class="col-2"style="position: relative; left:2rem">
+                            <i style="font-size:18px" class="bi bi-whatsapp"></i> Cel.8456-3212
+                        </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+          
           </div>
-        </div>
         <!--================================= mega menu -->
         <div class="menu">  
             <!-- menu start -->
             <nav id="menu" class="mega-menu">
                 <!-- menu list items container -->
-                <section class="menu-list-items">
-                    <div class="container" style=" position:relative; right:280px"> 
-                        <div class="row" style="width: 1000px;"> 
-                            <div class="col-lg-14 col-md-13"> 
+                <section class="menu-list-items" >
+                    <div class="container" style=" position:relative; right:180px"> 
+                        <div class="row" style="width: 1500px;"> 
+                            <div class="col-lg-16 col-md-13"> 
                                 <ul class="menu-logo">
                                     <li><a href="inicio.html"><img id="logo_dark_img" src="images/logo_dark.png"></a></li>
                                 </ul>
-                                <ul class="menu-links" style="position:relative;left: 195px;">
+                                <ul class="menu-links" style="position:relative;right: 105px;">
                                     <li>
-                                        <div class="box" style="margin-top: 2rem;">
+                                        <div class="box" style="margin-top: 2.5rem;">
                                             <div class="container-1">
                                                 <span class="icon"><img id="lupa" src="images/lupa (1).png"></i></span>
                                                 <input type="search" id="search" placeholder="Search..." />
                                             </div>
                                         </div>
                                     </li> 
-                                    <li class="hoverTrigger"style="left: 21rem;position:relative">
+                                    <li class="hoverTrigger"style="left: 18rem;position:relative; ">
                                         <a href="Micuenta.html"><img id="US" src="images/usuario_2.png"></a>
-                                        <ul class="drop-down-multilevel left-menu effect-fade" style="transition: all 400ms ease 0s;position:absolute">
-                                                <li><a href="Micuenta.html">Mi cuenta</a></li>
-                                                <li><a href="listadeseos.html">Lista de deseos</a></li>
-                                                <li><a href="historialordenes.html">Historial de Ordenes</a></li>
-                                                <li><a href="Iniciarsesion.html">Cambiar cuenta</a></li>
-                                                <li><a href="Inicio2.html">Cerrar Sesion</a></li>
+                                        <ul class="drop-down-multilevel left-menu effect-fade" style="transition: all 400ms ease 0s;position:absolute;display:block; visibility:visible;">
+                                                <li><a href="Iniciarsesion.html">Iniciar Sesion</a></li>
+                                                <li><a href="Registrarse.html">Registrarse</a></li>
                                         </ul>
-                                    </li>
-                                    <li style="left: 20rem;position:relative; top:0.3rem">
-                                        <a href="Micarrito.html"><img id="Ca" src="images/carrito_de_compras_2.png"></a>
                                     </li>
                                 </ul>
                             </div>
@@ -121,16 +124,19 @@
         </div>
         <div class="menu2">  
             <!-- menu start -->
-            <nav id="menu2" class="mega-menu2" style="align-items: center;align-content: center;">
+            <nav id="menu2" class="mega-menu2" style="align-items: center;align-content: center;position:static;">
                 <!-- menu list items container -->
                 <section class="menu-list-items">
                     <div class="container"> 
                         <div class="row"> 
-                            <div class="col-lg-14 col-md-9"> 
+                            <div class="col-lg-20 col-md-14"> 
                                 <!-- menu logo -->
-                                <ul class="menu-links" style="overflow: visible;margin-left:6rem; display: flex; max-height: 400px;max-width:max-content;position:relative;right:13rem">
+                                <ul class="menu-links" style="overflow: visible;margin-left:5rem; display: flex;width:1400px;position:relative;left:3rem">
                                     <li class="hoverTrigger">
-                                        <a href="maderas.html"><img id="menu" src="images/linea.png" alt="" style="margin-top:0.6rem ">Categorias<i class=""></i><div class="mobileTriggerButton"></div></a>
+                                        <a href="maderas.html"><img id="menu" src="images/linea.png" alt="" style="margin-top:0.6rem ">Categorias<i class=""></i>
+                                            <div class="mobileTriggerButton">
+                                            </div>
+                                        </a>
                                         <ul class="drop-down-multilevel left-menu effect-fade" style="transition: all 400ms ease 0s;">
                                             <li><a href="maderas.html">Maderas</a></li>
                                             <li><a href="tableros.html">Tableros</a></li>
@@ -143,9 +149,9 @@
                                             <li><a href="construccion.html">Construccion</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="ofertas.html"><img id="precio" src="images/precio.png" style="margin-top:0.5rem" alt="">Oferta</a></li>
+                                    <li><a href="ofertas.html"><img id="precio" src="images/precio.png" style="margin-top:0.6rem" alt="">Oferta</a></li>
                                     <li><a href="servicioalcliente.html"><img id="cliente" src="images/cliente.png" alt="" style="margin-top:0.6rem ">Servicio al Cliente</a></li>
-                                    <li><a href="contacto.html"><img id="correo" src="images/correo.png" alt="" style="margin-top:0.5rem ">Contacto</a></li>
+                                    <li><a href="contacto.html"><img id="correo" src="images/correo.png" alt="" style="margin-top:0.45rem ">Contacto</a></li>
                                     <li><a href="nosotros.html"><img id="nosotros" src="images/nosotros.png" alt="" style="margin-top:0.6rem ">Nosotros</a></li>
                                 </ul>
                             </div>
@@ -155,6 +161,88 @@
             </nav>
         </div>
     </header>
+    <main>
+        
+    </main>
 
-    </body>
+<!--footer------------------------------------------------------------------------------------------------------------------------------->
+    <footer class="footer dark-bg page-section-pt">
+        <div class="container">
+            <div class="row"><div class="col-sm-12">
+                <div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 mb-30">
+                <div class="footer-link">
+                    <div class="section-title"><h4 class="title">Acceso directo</h4></div>
+                        <ul class="list-mark">
+                            <li><a href="inicio.html">Inicio</a></li>
+                            <li><a href="maderas.html">Productos</a></li>
+                            <li><a href="ofertas.html">Oferta</a></li>
+                            <li><a href="servicioalcliente.html">Servicio al Cliente</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-30">
+                    <div class="footer-address">
+                        <div class="section-title"><h4 class="title">Managua, Nicaragua</h4></div>
+                            <ul class="list-inline" >
+                                <li><i class="bi bi-pin-map-fill"style="margin-top:0.4rem"></i> <span>KM 7.1 Carr.Sur Vía Panamericana Contiguo a Industrias Delmor</span></li>
+                                <li><i class="bi bi-telephone-fill"style="margin-top:0.4rem"></i> <span>2387-3433</span></li>
+                                <li><i class="bi bi-phone-fill"style="margin-top:0.4rem"></i> <span>8456-3212</span></li>
+                                <li><i class="bi bi-envelope-fill"style="margin-top:0.4rem"></i> contacto@madereriaelroble.com</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-30">
+                    <div class="footer-address">
+                        <div class="section-title"><h4 class="title">León, Nicaragua</h4></div>
+                            <ul class="list-inline">
+                                <li><i class="bi bi-pin-map-fill"style="margin-top:0.4rem"></i> <span>De La Iglesia La Recolección 1C Hacia El Norte</span></li>
+                                <li><i class="bi bi-telephone-fill"style="margin-top:0.4rem"></i> <span> 2311-9090</span></li>
+                                <li> <i class="bi bi-envelope-fill"style="margin-top:0.4rem"></i> <span> madereriaelroble@hotmail.com</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-30">
+                    <div class="footer-social  text-white">
+                        <div class="section-title"><h4 class="title mb-20">Visítanos</h4></div>
+                            <div class="social-icons color-hover">
+                            <ul>
+                            <li class="social-facebook"><a href="#"><i class="bi bi-facebook" style="position: relative;top:10px"></i></a></li>
+                            <li class="social-twitter"><a href="#"><i class="bi bi-twitter"style="position: relative;top:10px"></i></a></li>
+                            <li class="social-linkedin"><a href="#"><i class="bi bi-linkedin"style="position: relative;top:10px"></i></a></li>
+                            <li class="social-pinterest"><a href="#"><i class="bi bi-pinterest"style="position: relative;top:10px"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    <div class="footer-widget mt-20">
+        <div class="container"><div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <p class="text-white"> Todos los derechos reservados <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span> <a href="inicio.html"> Maderería El Roble </a></p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <ul class="text-right">
+                    <li><a href="Aviso_de_Privacidad.pdf" target="_blank">Aviso de Privacidad</a></li>
+                    <li><a href="contacto.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</footer>
+</body>
+
 </html>

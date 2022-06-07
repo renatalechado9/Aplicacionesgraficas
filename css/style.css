@@ -227,8 +227,8 @@ ul.footer-instagram-images li { display: inline-block; }
 .footer-widget ul li { display: inline-block; margin:0;}
 .footer-widget ul li a { display: block; color: #c5c5c5; padding-left: 5px; font-size: 14px; }
 .footer-widget ul li a:hover { color: #ffd200; }
-.footer-link ul li{display: block; line-height:30px;}
-.footer-link ul li a{ color:#ffffff; font-size:18px;}
+.footer-link ul li{display: block; line-height:30px; text-decoration: none;}
+.footer-link ul li a{ color:#ffffff; font-size:18px; text-decoration: none;}
 .footer-link ul li a:hover { color: #ffd200; }
 
 
@@ -605,7 +605,7 @@ Comming soon Page
 .section-title p{padding:0;}
 .inner-intro{height:200px;}
 .intro-title{padding-bottom:0;}
-.intro-title .section-title .title{font-size:26px; line-height:30px;}
+.intro-title .section-title .title{font-size:28px; line-height:30px;}
 
 
 /*-------------------------------------------------
@@ -634,7 +634,7 @@ Comming soon Page
 .top-info .address-block:nth-child(-n+1){margin-top:0;}
 .footer{background-size:cover;}
 .footer .top-info.top-hlaf{margin-top:-40px; top:-40px;}
-.footer-usefull{display:inline-block; width:100%;}
+.usefull{display:inline-block; width:100%;}
 .footer-widget p{text-align:center;}
 .footer-widget ul{text-align:center;}
 .social-icons{display:inline-block;}

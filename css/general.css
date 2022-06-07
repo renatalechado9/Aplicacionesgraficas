@@ -368,7 +368,8 @@ Page section margin padding
 ----------------------------------------------------------------------*/
 .section-title h1, .section-title h2, .section-title h3, .section-title h4, .section-title h5, .section-title h6{position:relative; padding-bottom:15px}
 
-.section-title h1.title:before, .section-title h2.title:before, .section-title h3.title:before, .section-title h4.title:before, .section-title h5.title:before, .section-title h6.title:before{content:""; position:absolute; left:0; bottom:0; width:50px; height:2px; background:#ffd200;}
+.section-title h1.title:after, .section-title h2.title:after, .section-title h3.title:after, .section-title h4.title:after, .section-title h5.title:after, .section-title h6.title:after{content:""; position:absolute; left:-30; bottom:0; width:250px; height:3px; background:#ffd200;}
+.section-title h1.title:before, .section-title h2.title:before, .section-title h3.title:before, .section-title h4.title:before, .section-title h5.title:before, .section-title h6.title:before{content:""; position:absolute; left:-30; bottom:0; width:250px; height:3px; background:#ffd200;}
 
 .section-title .title:before{transition:all 0.2s ease-in-out; -webkit-transition:all 0.2s ease-in-out; -moz-transition:all 0.2s ease-in-out;}
 section:hover .section-title .title:before{width:80px;}
@@ -396,6 +397,37 @@ section.text-center:hover .section-title .title:before{margin-left:-40px;}
 .text-right .section-title h4:before, .text-right.section-title h4:before, 
 .text-right .section-title h5:before, .text-right.section-title h5:before, 
 .text-right .section-title h6:before, .text-right.section-title h6:before{left:auto; right:0;}
+.section-title2 h1, .section-title2 h2, .section-title2 h3, .section-title2 h4, .section-title2 h5, .section-title2 h6{position:relative; padding-bottom:15px}
+
+.section-title2 h1.title:after, .section-title2 h2.title:after, .section-title2 h3.title:after, .section-title2 h4.title:after, .section-title2 h5.title:after, .section-title2 h6.title:after{content:""; position:absolute; left:-30; bottom:0; width:420px; height:3px; background:#ffd200;}
+.section-title2 h1.title:before, .section-title2 h2.title:before, .section-title2 h3.title:before, .section-title2 h4.title:before, .section-title2 h5.title:before, .section-title2 h6.title:before{content:""; position:absolute; left:-30; bottom:0; width:420px; height:3px; background:#ffd200;}
+
+.section-title2 .title:before{transition:all 0.2s ease-in-out; -webkit-transition:all 0.2s ease-in-out; -moz-transition:all 0.2s ease-in-out;}
+section:hover .section-title2 .title:before{width:80px;}
+section:hover .text-center .section-title2 .title:before, 
+section:hover .text-center.section-title2 .title:before, 
+section.text-center:hover .section-title2 .title:before{margin-left:-40px;}
+
+.yellow-bg .section-title2 h1:before,
+.yellow-bg .section-title2 h2:before,
+.yellow-bg .section-title2 h3:before,
+.yellow-bg .section-title2 h4:before,
+.yellow-bg .section-title2 h5:before,
+.yellow-bg .section-title2 h6:before{background:#ffffff;}
+
+.text-center .section-title2 h1:before, .text-center.section-title2 h1:before, 
+.text-center .section-title2 h2:before, .text-center.section-title2 h2:before, 
+.text-center .section-title2 h3:before, .text-center.section-title2 h3:before, 
+.text-center .section-title2 h4:before, .text-center.section-title2 h4:before, 
+.text-center .section-title2 h5:before, .text-center.section-title2 h5:before, 
+.text-center .section-title2 h6:before, .text-center.section-title2 h6:before{left:50%; margin-left:-25px;}
+
+.text-right .section-title2 h1:before, .text-right.section-title2 h1:before, 
+.text-right .section-title2 h2:before, .text-right.section-title2 h2:before, 
+.text-right .section-title2 h3:before, .text-right.section-title2 h3:before, 
+.text-right .section-title2 h4:before, .text-right.section-title2 h4:before, 
+.text-right .section-title2 h5:before, .text-right.section-title2 h5:before, 
+.text-right .section-title2 h6:before, .text-right.section-title2 h6:before{left:auto; right:0;}
 
 /*---------------------------------------------------------------------
   Accordion
@@ -1303,7 +1335,7 @@ form .form-group textarea { resize: vertical; }
 }
 
 /* Hover Effect */
-.project-info{position:relative; overflow:hidden;}
+.project-info{position:relative; overflow:hidden; height: 300px;width: 300px;}
 .project-info > img{-o-transform: scale(1.0); -ms-transform: scale(1.0); -moz-transform: scale(1.0); -webkit-transform: scale(1.0); transform: scale(1.0); -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out;}
 .project-info:hover > img{-o-transform: scale(1.09); -ms-transform: scale(1.09); -moz-transform: scale(1.09); -webkit-transform: scale(1.09); transform: scale(1.09);}
 .project-info .button i { margin-right: 0px; font-size: 13px; }

@@ -14,6 +14,8 @@
     <!-- bootstrap >
         
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link href="css/bootstrap5,2.min.css" rel="stylesheet" type="text/css">
     <!--  Oswald font -->
@@ -29,6 +31,8 @@
     <link href="css/iconmod/style.css" rel="stylesheet" type="text/css">
     <!-- Flaticon -->
     <link href="css/flaticon.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <script type="text/javascript" src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
     <!-- owl-carousel -->
     <link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
     <!-- revolution -->
@@ -39,7 +43,9 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="css/search.css" rel="stylesheet" type="text/css">
+    <link href="css/modal.css" rel="stylesheet" type="text/css">
 
+    <script type="text/javascript" src="js/modal.js"></script>
     <style>
         .btn-whatsapp {
             display: block;
@@ -142,7 +148,7 @@
                         <div class="row">
                             <div class="col-lg-20 col-md-14">
                                 <!-- menu logo -->
-                                <ul class="menu-links" style="overflow: visible;margin-left:5rem; display: flex;width:1400px;position:relative;left:3rem">
+                                <ul class="menu-links" style="overflow: visible;margin-left:5rem;width:1400px;position:relative;left:3rem">
                                     <li class="hoverTrigger">
                                         <a href="maderas.html"><img id="menu" src="images/linea.png" alt="" style="margin-top:0.6rem ">Categorias<i class=""></i>
                                             <div class="mobileTriggerButton">
@@ -183,71 +189,156 @@
     <main>
         <section class="inner-intro bg bg-fixed " style="background:white; height:60px">
         </section>
+        <section class="inner-intro bg bg-fixed " style="background-image:url(images/bg/laminados.jpg);">
+        </section>
+        <section class="our-sercive page-section-ptb  pb-50">
+            <div class="container">
+                <div class="row">
+                    <section class="our-sercive  pb-50">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" style="height:500px;">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="images/laminados/1.jpg" class="d-block w-100" alt="Wild Landscape" style="height:500px; width:500px" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/laminados/2.jpg" class="d-block w-100" alt="Wild Landscape" style="height:500px;width:500px" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/laminados/3.jpg" class="d-block w-100" alt="Wild Landscape" style="height:500px;width:500px" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/laminados/4.jpg" class="d-block w-100" alt="Wild Landscape" style="height:500px;width:500px" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/laminados/5.jpg" class="d-block w-100" alt="Wild Landscape" style="height:500px;width:500px" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/laminados/6.jpg" class="d-block w-100" alt="Wild Landscape" style="height:500px;width:500px" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/laminados/7.jpg" class="d-block w-100" alt="Wild Landscape" style="height:500px;width:500px" />
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <img src="images/laminados/8.jpg" class="d-block w-100" alt="Wild Landscape" style="height:500px;width:500px" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/laminados/9.jpg" class="d-block w-100" alt="Wild Landscape" style="height:500px;width:500px" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/laminados/10.jpg" class="d-block w-100" alt="Wild Landscape" style="height:500px;width:500px" />
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="content-block pl-10">
+                                        <div class="section-title5">
+                                            <h2 class="title" style="left:80px;font-size: 45px;">Laminados Decorativos</h2>
+                                        </div>
+                                        <p style="text-align: justify;font-size: 20px;color:black;">El laminado es adecuado para usarse en mobiliario de alta calidad, residencial y bajo diseño, en mobiliario fijo y estantería y también para aplicación arquitectónica en columnas, entablerados, cenefas, cornisas,
+                                            puertas interiores y sistemas de división. ofrece una gran paleta de colores uniformes, imitaciones de madera y diseños bien elegidos, más una amplia variedad de atractivos acabados táctiles. Mezcle y combine
+                                            para lograr las metas de sus proyectos: cree una atmósfera y personalidad. Contamos con laminados para diversos presupuestos y gustos.</p>
+                                        <ul class="list list-unstyled">
+                                            <li style="text-align: justify;font-size: 20px;color:black;"><i class="bi bi-check" style="color:#ffd200; font-size:25px;"></i> <strong> Tamaños: Ancho de Hoja:</strong> 36”, 48” y 60”. <strong>Largo de Hoja: </strong> 96”, 120” y 144”</li><br>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <!--footer------------------------------------------------------------------------------------------------------------------------------->
-    <footer class="footer dark-bg page-section-pt">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
+    <footer class="footer dark-bg page-section-pt ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-sm-12 ">
                     <div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6 mb-30">
-                    <div class="footer-link">
-                        <div class="section-title">
-                            <h4 class="title">Acceso directo</h4>
+            <div class="row ">
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-30 ">
+                    <div class="footer-link ">
+                        <div class="section-title ">
+                            <h4 class="title ">Acceso directo</h4>
                         </div>
-                        <ul class="list-mark">
-                            <li><a href="inicio.html">Inicio</a></li>
-                            <li><a href="maderas.html">Productos</a></li>
-                            <li><a href="ofertas.html">Oferta</a></li>
-                            <li><a href="servicioalcliente.html">Servicio al Cliente</a></li>
-                            <li><a href="contacto.html">Contacto</a></li>
-                            <li><a href="nosotros.html">Nosotros</a></li>
+                        <ul class="list-mark ">
+                            <li><a href="inicio.html ">Inicio</a></li>
+                            <li><a href="maderas.html ">Productos</a></li>
+                            <li><a href="ofertas.html ">Oferta</a></li>
+                            <li><a href="servicioalcliente.html ">Servicio al Cliente</a></li>
+                            <li><a href="contacto.html ">Contacto</a></li>
+                            <li><a href="nosotros.html ">Nosotros</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 mb-30">
-                    <div class="footer-address">
-                        <div class="section-title">
-                            <h4 class="title">Managua, Nicaragua</h4>
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-30 ">
+                    <div class="footer-address ">
+                        <div class="section-title ">
+                            <h4 class="title ">Managua, Nicaragua</h4>
                         </div>
-                        <ul class="list-inline">
-                            <li><i class="bi bi-pin-map-fill" style="margin-top:0.4rem"></i> <span>KM 7.1 Carr.Sur Vía Panamericana Contiguo a Industrias Delmor</span></li>
-                            <li><i class="bi bi-telephone-fill" style="margin-top:0.4rem"></i> <span>2387-3433</span></li>
-                            <li><i class="bi bi-phone-fill" style="margin-top:0.4rem"></i> <span>8456-3212</span></li>
-                            <li><i class="bi bi-envelope-fill" style="margin-top:0.4rem"></i> contacto@madereriaelroble.com</span>
+                        <ul class="list-inline ">
+                            <li><i class="bi bi-pin-map-fill " style="margin-top:0.4rem "></i> <span>KM 7.1 Carr.Sur Vía Panamericana Contiguo a Industrias Delmor</span></li>
+                            <li><i class="bi bi-telephone-fill " style="margin-top:0.4rem "></i> <span>2387-3433</span></li>
+                            <li><i class="bi bi-phone-fill " style="margin-top:0.4rem "></i> <span>8456-3212</span></li>
+                            <li><i class="bi bi-envelope-fill " style="margin-top:0.4rem "></i> contacto@madereriaelroble.com</span>
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-3 col-sm-6 mb-30">
-                    <div class="footer-address">
-                        <div class="section-title">
-                            <h4 class="title">León, Nicaragua</h4>
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-30 ">
+                    <div class="footer-address ">
+                        <div class="section-title ">
+                            <h4 class="title ">León, Nicaragua</h4>
                         </div>
-                        <ul class="list-inline">
-                            <li><i class="bi bi-pin-map-fill" style="margin-top:0.4rem"></i> <span>De La Iglesia La Recolección 1C Hacia El Norte</span></li>
-                            <li><i class="bi bi-telephone-fill" style="margin-top:0.4rem"></i> <span> 2311-9090</span></li>
-                            <li> <i class="bi bi-envelope-fill" style="margin-top:0.4rem"></i> <span> madereriaelroble@hotmail.com</span></li>
+                        <ul class="list-inline ">
+                            <li><i class="bi bi-pin-map-fill " style="margin-top:0.4rem "></i> <span>De La Iglesia La Recolección 1C Hacia El Norte</span></li>
+                            <li><i class="bi bi-telephone-fill " style="margin-top:0.4rem "></i> <span> 2311-9090</span></li>
+                            <li> <i class="bi bi-envelope-fill " style="margin-top:0.4rem "></i> <span> madereriaelroble@hotmail.com</span></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 mb-30">
-                    <div class="footer-social  text-white">
-                        <div class="section-title">
-                            <h4 class="title mb-20">Visítanos</h4>
+                <div class="col-lg-3 col-md-3 col-sm-6 mb-30 ">
+                    <div class="footer-social text-white ">
+                        <div class="section-title ">
+                            <h4 class="title mb-20 ">Visítanos</h4>
                         </div>
-                        <div class="social-icons color-hover">
+                        <div class="social-icons color-hover ">
                             <ul>
-                                <li class="social-facebook"><a href="#"><i class="bi bi-facebook" style="position: relative;top:10px"></i></a></li>
-                                <li class="social-twitter"><a href="#"><i class="bi bi-twitter"style="position: relative;top:10px"></i></a></li>
-                                <li class="social-linkedin"><a href="#"><i class="bi bi-linkedin"style="position: relative;top:10px"></i></a></li>
-                                <li class="social-pinterest"><a href="#"><i class="bi bi-pinterest"style="position: relative;top:10px"></i></a></li>
+                                <li class="social-facebook "><a href="# "><i class="bi bi-facebook " style="position: relative;top:10px "></i></a></li>
+                                <li class="social-twitter "><a href="# "><i class="bi bi-twitter "style="position: relative;top:10px "></i></a></li>
+                                <li class="social-linkedin "><a href="# "><i class="bi bi-linkedin "style="position: relative;top:10px "></i></a></li>
+                                <li class="social-pinterest "><a href="# "><i class="bi bi-pinterest "style="position: relative;top:10px "></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -256,16 +347,16 @@
 
             </div>
         </div>
-        <div class="footer-widget mt-20">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <p class="text-white"> Todos los derechos reservados <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span> <a href="inicio.html"> Maderería El Roble </a></p>
+        <div class="footer-widget mt-20 ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-6 col-md-6 col-sm-6 ">
+                        <p class="text-white "> Todos los derechos reservados <span id="copyright "> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span> <a href="inicio.html "> Maderería El Roble </a></p>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <ul class="text-right">
-                            <li><a href="Aviso_de_Privacidad.pdf" target="_blank">Aviso de Privacidad</a></li>
-                            <li><a href="contacto.html">Contact Us</a></li>
+                    <div class="col-lg-6 col-md-6 col-sm-6 ">
+                        <ul class="text-right ">
+                            <li><a href="Aviso_de_Privacidad.pdf " target="_blank ">Aviso de Privacidad</a></li>
+                            <li><a href="contacto.html ">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -274,6 +365,9 @@
         </div>
 
     </footer>
+    <script type="text/javascript " src="js/owl-carousel/owl.carousel.min.js "></script>
+
+    <script type="text/javascript " src="js/modal.js"></script>
 </body>
 
 </html>

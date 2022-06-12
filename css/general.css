@@ -2489,6 +2489,30 @@ section.text-center:hover .section-title10 .title:before {
     background: #ffd200;
 }
 
+.section-image-hor {
+    min-height: 14rem;
+    background-position: 50%
+}
+
+.section-image,
+.section-image-hor {
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.section-image {
+    min-height: 30rem;
+    background-position-y: center;
+}
+
+.section-image.left {
+    background-position-x: left
+}
+
+.section-image.right {
+    background-position-x: right
+}
+
 .section-title11 .title:before {
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;

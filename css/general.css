@@ -2570,6 +2570,88 @@ section.text-center:hover .section-title11 .title:before {
     right: 0;
 }
 
+.section-title12 h1,
+.section-title12 h2,
+.section-title12 h3,
+.section-title12 h4,
+.section-title12 h5,
+.section-title12 h6 {
+    position: relative;
+    padding-bottom: 15px
+}
+
+.section-title12 h1.title:after,
+.section-title12 h2.title:after,
+.section-title12 h3.title:after,
+.section-title12 h4.title:after,
+.section-title12 h5.title:after,
+.section-title12 h6.title:after {
+    content: "";
+    position: absolute;
+    left: 350;
+    bottom: 0;
+    width: 610px;
+    height: 3px;
+    background: #ffd200;
+}
+
+.section-title12 .title:before {
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+}
+
+section:hover .section-title12 .title:before {
+    width: 80px;
+}
+
+section:hover .text-center .section-title12 .title:before,
+section:hover .text-center.section-title12.title:before,
+section.text-center:hover .section-title12 .title:before {
+    margin-left: -40px;
+}
+
+.yellow-bg .section-title12 h1:before,
+.yellow-bg .section-title12 h2:before,
+.yellow-bg .section-title12 h3:before,
+.yellow-bg .section-title12 h4:before,
+.yellow-bg .section-title12 h5:before,
+.yellow-bg .section-title12 h6:before {
+    background: #ffffff;
+}
+
+.text-center .section-title12 h1:before,
+.text-center.section-title12 h1:before,
+.text-center .section-title12 h2:before,
+.text-center.section-title12 h2:before,
+.text-center .section-title12 h3:before,
+.text-center.section-title12 h3:before,
+.text-center .section-title12 h4:before,
+.text-center.section-title12 h4:before,
+.text-center .section-title12 h5:before,
+.text-center.section-title12 h5:before,
+.text-center .section-title12 h6:before,
+.text-center.section-title12 h6:before {
+    left: 50%;
+    margin-left: -25px;
+}
+
+.text-right .section-title12 h1:before,
+.text-right.section-title12 h1:before,
+.text-right .section-title12 h2:before,
+.text-right.section-title12 h2:before,
+.text-right .section-title12 h3:before,
+.text-right.section-title12 h3:before,
+.text-right .section-title12 h4:before,
+.text-right.section-title12 h4:before,
+.text-right .section-title12 h5:before,
+.text-right.section-title12 h5:before,
+.text-right .section-title12 h6:before,
+.text-right.section-title12 h6:before {
+    left: auto;
+    right: 0;
+}
+
 
 /*---------------------------------------------------------------------
   Accordion

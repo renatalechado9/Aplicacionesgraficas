@@ -1536,9 +1536,11 @@ Page section margin padding
 .owl-carousel .owl-dots {
     display: inline-block;
     position: absolute;
-    bottom: -35px;
+    bottom: -40px;
     text-indent: inherit;
     width: 100%;
+    height: 10px;
+    color: white;
     cursor: pointer;
     text-align: center;
 }

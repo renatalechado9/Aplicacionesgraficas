@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/bootstrap5,2.min.css">
     <!-- Style -->
     <link rel="stylesheet" href="css/iniciarsesionylogin.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="css/daterangepicker.css">
     <link rel="stylesheet" href="css/animsition.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -23,35 +24,45 @@
 
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light py-3">
+        <nav class="navbar navbar-expand-lg navbar-light py-1">
             <div class="container">
                 <!-- Navbar Brand -->
                 <a href="#" class="navbar-brand">
-                    <img src="images/logo_dark.png" alt="logo" width="150">
+                    <img src="images/logo_dark.png" alt="logo" width="200" height="75" style="position: relative;left:-55px">
                 </a>
             </div>
         </nav>
     </header>
     <div class="d-lg-flex half">
-        <div class="bg order-1 order-md-2" style="background-image: url('images/iniciosesion-registro/summer_oak_.jpeg'); position:relative;top: -90px;height:940px"></div>
+        <div class="bg order-1 order-md-2" style="background-image: url('images/iniciosesion-registro/summer_oak_.jpeg'); position:relative;top: -95px;height:940px"></div>
         <div class="contents order-2 order-md-1">
             <div class="container-login100">
                 <div class="wrap-login100 align-items-center justify-content-center">
                     <div class="col-md-7">
-                        <form class="login100-form validate-form" method="post">
+                        <form class="login100-form validate-form" method="post" style="position:relative;left:-85px">
+                            <div class="mb-8">
+                                <ul class="list-inline" style="position: relative;top:-15px;left:190px">
+                                    <li style="color: black;font-size:20px;font-family: 'Poppins';">
+                                        ¿No tienes una cuenta? <a href="Registrarse.html" style="font-family: 'Poppins';text-decoration:none; color:blue;font-size:20px; font-style: bold;">Registrate</a>
+                                    </li>
+                                </ul>
+                            </div>
                             <div class="mb-4">
-                                <h3>Mi Cuenta</h3>
-                                <p class="mb-4">Acceda a su cuenta</p>
+                                <h1 style="font-size:65px;font-family:'Poppins';font-weight: bold;margin-left:95px"> Mi Cuenta</h1>
+                                <p class="mb-4" style="font-family: 'Poppins'; font-size:18px; margin-left: 165px;">Acceda a su cuenta</p>
                                 <div class="social-login">
-                                    <a href="#" class="facebook btn d-flex justify-content-center align-items-center">
-                                        <i class="fa fa-twitter" aria-hidden="true"></i><span class="icon-facebook mr-3"></span> Login with Facebook
-                                    </a>
-                                    <a href="#" class="twitter btn d-flex justify-content-center align-items-center">
-                                        <i class="fa fa-twitter" aria-hidden="true"></i><span class="icon-twitter mr-3"></span> Login with Twitter
-                                    </a>
-                                    <a href="#" class="google btn d-flex justify-content-center align-items-center">
-                                        <i class="fa fa-twitter" aria-hidden="true"></i><span class="icon-google mr-3"></span> Login with Google
-                                    </a>
+                                    <ul style="position: relative;top:-15px;list-style: none;display:inline-block">
+                                        <li>
+                                            <a href="#" class="facebook btn d-flex">
+                                                <i class="facebook"></i></i> Facebook
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="google btn d-flex">
+                                                <i class="google"></i></i> Google
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <span class="d-block text-center my-4 text-muted">&mdash; O Continuar con&mdash;</span>
                             </div>

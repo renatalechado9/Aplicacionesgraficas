@@ -32,10 +32,18 @@ p {
     margin: 0px;
 }
 
-ul,
-li {
-    margin: 0px;
-    list-style-type: none;
+i.facebook {
+    background: url('https://api.iconify.design/akar-icons/facebook-fill.svg?color=darkblue') no-repeat center center / contain;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0.2rem;
+}
+
+i.google {
+    background: url('https://api.iconify.design/flat-color-icons/google.svg') no-repeat center center / contain;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0.2rem;
 }
 
 
@@ -264,7 +272,7 @@ iframe {
     min-height: 100vh;
     display: block;
     background-color: #f7f7f7;
-    padding: 173px 55px 55px 55px;
+    padding: 13px 25px 25px 25px;
 }
 
 .login100-form-title {
@@ -453,7 +461,7 @@ input.input100 {
 [ Button ]*/
 
 .container-login100-form-btn {
-    width: 100%;
+    width: 300%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -472,7 +480,7 @@ input.input100 {
     justify-content: center;
     align-items: center;
     padding: 0 20px;
-    width: 100%;
+    width: 300%;
     height: 50px;
     border-radius: 10px;
     background: #6675df;
@@ -708,6 +716,9 @@ input.input100 {
     text-align: center;
     color: #fff;
     margin-bottom: 10px;
+    height: 54px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .social-login a:hover {
@@ -715,11 +726,18 @@ input.input100 {
 }
 
 .social-login a.facebook {
-    background: #3b5998;
+    background: #ffffff;
+    color: black;
+    height: 50px;
+    width: 150px;
+    align-items: center;
+    border-color: greenyellow;
+    border-radius: 5px;
 }
 
 .social-login a.facebook:hover {
-    background: #344e86;
+    background: lightblue;
+    border-color: none;
 }
 
 .social-login a.twitter {
@@ -731,11 +749,18 @@ input.input100 {
 }
 
 .social-login a.google {
-    background: #ea4335;
+    background: #ffffff;
+    color: black;
+    height: 50px;
+    width: 150px;
+    align-items: center;
+    border-color: greenyellow;
 }
 
 .social-login a.google:hover {
-    background: #e82e1e;
+    background: lightcoral;
+    border-radius: 5px;
+    border-color: none;
 }
 
 .control {

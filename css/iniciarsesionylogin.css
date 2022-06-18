@@ -1,10 +1,10 @@
 .half,
 .half .container>.row {
-    height: 100vh;
+    height: 70vh;
 }
 
 .half .bg {
-    height: 500px;
+    height: 300px;
 }
 
 .half .contents,
@@ -33,10 +33,9 @@ p {
 }
 
 i.facebook {
-    background: url('https://api.iconify.design/akar-icons/facebook-fill.svg?color=darkblue') no-repeat center center / contain;
+    background: url('https://api.iconify.design/akar-icons/facebook-fill.svg?color=white') no-repeat center center / contain;
     width: 1.5rem;
     height: 1.5rem;
-    margin-top: 0.2rem;
 }
 
 i.google {
@@ -44,6 +43,123 @@ i.google {
     width: 1.5rem;
     height: 1.5rem;
     margin-top: 0.2rem;
+}
+
+.btn-face,
+.btn-google {
+    font-family: Montserrat-SemiBold;
+    font-size: 18px;
+    line-height: 1.2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 220px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    position: relative;
+    z-index: 1;
+}
+
+.m-r-30 {
+    margin-right: 30px;
+}
+
+.btn-google::before,
+.btn-face::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    background: #a64bf4;
+    background: -webkit-linear-gradient(45deg, #fffb1c, #4f84f8);
+    background: -o-linear-gradient(45deg, #fffb1c, #4f84f8);
+    background: -moz-linear-gradient(45deg, #fffb1c, #4f84f8);
+    background: linear-gradient(45deg, #fffb1c, #4f84f8);
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.m-l-20 {
+    margin-left: 20px;
+}
+
+.btn-face {
+    color: #fff;
+    background-color: #3b5998;
+}
+
+.btn-face i {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 17px;
+    padding-bottom: 3px;
+}
+
+.btn-google {
+    color: black;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.btn-google img {
+    width: 30px;
+    margin-right: 15px;
+    padding-bottom: 3px;
+}
+
+.btn-face:hover:before,
+.btn-google:hover:before {
+    opacity: 1;
+}
+
+.btn-face:hover,
+.btn-google:hover {
+    color: #fff;
+}
+
+.flex-sb {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-w {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 
@@ -212,7 +328,7 @@ iframe {
 
 .container-login100 {
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -271,7 +387,7 @@ iframe {
     width: 560px;
     min-height: 100vh;
     display: block;
-    background-color: #f7f7f7;
+    background-color: #ffffff;
     padding: 13px 25px 25px 25px;
 }
 
@@ -298,9 +414,9 @@ iframe {
     flex-wrap: wrap;
     align-items: flex-end;
     width: 100%;
-    height: 80px;
+    height: 60px;
     position: relative;
-    border: 1px solid #e6e6e6;
+    border: 2x solid #000000;
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -316,7 +432,7 @@ iframe {
     width: 100%;
     padding-left: 24px;
     left: 0;
-    top: 30px;
+    top: 20px;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
@@ -329,9 +445,33 @@ iframe {
     background: transparent;
     font-family: Montserrat-Regular;
     font-size: 18px;
-    color: #555555;
+    color: #000000;
+    border: 0.5px solid #d3d3d3;
     line-height: 1.2;
     padding: 0 26px;
+}
+
+.flex-sb-m {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.p-t-3 {
+    padding-top: 3px;
+}
+
+.p-b-32 {
+    padding-bottom: 32px;
 }
 
 input.input100 {
@@ -353,7 +493,7 @@ input.input100 {
     top: -1px;
     left: -1px;
     pointer-events: none;
-    border: 1px solid #6675df;
+    border: 2px solid #6675df;
     border-radius: 10px;
     visibility: hidden;
     opacity: 0;
@@ -426,7 +566,7 @@ input.input100 {
 }
 
 .label-checkbox100::before {
-    content: "\f00c";
+    content: "\F272";
     font-family: FontAwesome;
     font-size: 13px;
     color: transparent;
@@ -456,12 +596,16 @@ input.input100 {
     color: #6675df;
 }
 
+.m-b-5 {
+    margin-bottom: 5px;
+}
+
 
 /*------------------------------------------------------------------
 [ Button ]*/
 
 .container-login100-form-btn {
-    width: 300%;
+    width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -484,11 +628,10 @@ input.input100 {
     height: 50px;
     border-radius: 10px;
     background: #6675df;
-    font-family: Montserrat-Bold;
-    font-size: 12px;
+    font-family: Poppins-Regular;
+    font-size: 24px;
     color: #fff;
     line-height: 1.2;
-    text-transform: uppercase;
     letter-spacing: 1px;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
@@ -725,7 +868,7 @@ input.input100 {
     color: #fff;
 }
 
-.social-login a.facebook {
+a.facebook {
     background: #ffffff;
     color: black;
     height: 50px;
@@ -735,7 +878,7 @@ input.input100 {
     border-radius: 5px;
 }
 
-.social-login a.facebook:hover {
+a.facebook:hover {
     background: lightblue;
     border-color: none;
 }

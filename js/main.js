@@ -1,22 +1,18 @@
 (function($) {
     "use strict";
-
-
     /*==================================================================
     [ Focus Contact2 ]*/
-    $('.input100').each(function() {
-        $(this).on('blur', function() {
-            if ($(this).val().trim() != "") {
-                $(this).addClass('has-val');
-            } else {
-                $(this).removeClass('has-val');
-            }
+    $('input100 rounded-pill').each(function() {
+            $(this).on('blur', function() {
+                if ($(this).val().trim() != "") {
+                    $(this).addClass('has-val');
+                } else {
+                    $(this).removeClass('has-val');
+                }
+            })
         })
-    })
-
-
-    /*==================================================================
-    [ Validate ]*/
+        /*==================================================================
+        [ Validate ]*/
     var input = $('.validate-input .input100');
 
     $('.validate-form').on('submit', function() {

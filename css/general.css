@@ -72,7 +72,7 @@ i.cart {
 
 .container-information {
     display: flex;
-    height: 100px;
+    height: 600px;
     justify-content: space-between;
 }
 
@@ -5891,6 +5891,41 @@ form .form-group textarea {
     position: relative;
     z-index: 9;
     margin-bottom: 0;
+}
+
+.project-info2 {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    width: 300px;
+}
+
+.project-info2>img {
+    -o-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.project-info2:hover>img {
+    -o-transform: scale(1.09);
+    -ms-transform: scale(1.09);
+    -moz-transform: scale(1.09);
+    -webkit-transform: scale(1.09);
+    transform: scale(1.09);
+}
+
+.project-info2 .button i {
+    margin-right: 0px;
+    font-size: 13px;
+}
+
+.project-info2 .button.small {
+    padding: 10px 15px;
 }
 
 

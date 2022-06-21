@@ -53,7 +53,120 @@ NOTE:
 		General
 *************************/
 
+
+/*agregado por yan*/
+
+i.cart {
+    content: url('https://api.iconify.design/ant-design/shopping-cart-outlined.svg?width=15&height=15');
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0.2rem;
+}
+
+.negrita {
+    font-weight: 600;
+}
+
+
+/* yan */
+
+.container-information {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+}
+
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 25px;
+}
+
+#form p {
+    text-align: center;
+}
+
+#form label {
+    font-size: 20px;
+}
+
+.opciones {
+    height: 25px;
+    background-color: grey;
+    border-radius: 2px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    color: orange;
+}
+
+.clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+label:hover,
+label:hover~label {
+    color: orange;
+}
+
+input[type="radio"]:checked~label {
+    color: orange;
+}
+
+.detalles {
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/*fin*/
+
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
+i.maping {
+    content: url('https://api.iconify.design/fa6-solid/map-location-dot.svg?color=white&width=56&height=56');
+    color: white;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+i.phone {
+    content: url('https://api.iconify.design/fa6-solid/phone-volume.svg?color=white&width=476&height=476');
+    color: white;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+i.cellphone {
+    content: url('https://api.iconify.design/mdi/cellphone-wireless.svg?color=white&width=476&height=476');
+    color: white;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+i.mail {
+    content: url('https://api.iconify.design/fluent/calendar-mail-20-filled.svg?color=white&width=476&height=476');
+    color: white;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
 i.gmail {
     content: url('https://api.iconify.design/logos/google-gmail.svg?width=49&height=49');
     width: 1.5rem;
@@ -2654,6 +2767,170 @@ section.text-center:hover .section-title12 .title:before {
     right: 0;
 }
 
+.section-title13 h1,
+.section-title13 h2,
+.section-title13 h3,
+.section-title13 h4,
+.section-title13 h5,
+.section-title13 h6 {
+    position: relative;
+    padding-bottom: 15px
+}
+
+.section-title13 h1.title:after,
+.section-title13 h2.title:after,
+.section-title13 h3.title:after,
+.section-title13 h4.title:after,
+.section-title13 h5.title:after,
+.section-title13 h6.title:after {
+    content: "";
+    position: absolute;
+    left: 490;
+    bottom: 0;
+    width: 310px;
+    height: 3px;
+    background: #ffd200;
+}
+
+.section-title13 .title:before {
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+}
+
+section:hover .section-title13 .title:before {
+    width: 80px;
+}
+
+section:hover .text-center .section-title13 .title:before,
+section:hover .text-center.section-title13 .title:before,
+section.text-center:hover .section-title13 .title:before {
+    margin-left: -40px;
+}
+
+.yellow-bg .section-title13 h1:before,
+.yellow-bg .section-title13 h2:before,
+.yellow-bg .section-title13 h3:before,
+.yellow-bg .section-title13 h4:before,
+.yellow-bg .section-title13 h5:before,
+.yellow-bg .section-title13 h6:before {
+    background: #ffffff;
+}
+
+.text-center .section-title13 h1:before,
+.text-center.section-title13 h1:before,
+.text-center .section-title13 h2:before,
+.text-center.section-title13 h2:before,
+.text-center .section-title13 h3:before,
+.text-center.section-title13 h3:before,
+.text-center .section-title13 h4:before,
+.text-center.section-title13 h4:before,
+.text-center .section-title13 h5:before,
+.text-center.section-title13 h5:before,
+.text-center .section-title13 h6:before,
+.text-center.section-title13 h6:before {
+    left: 50%;
+    margin-left: -25px;
+}
+
+.text-right .section-title13 h1:before,
+.text-right.section-title13 h1:before,
+.text-right .section-title13 h2:before,
+.text-right.section-title13 h2:before,
+.text-right .section-title13 h3:before,
+.text-right.section-title13 h3:before,
+.text-right .section-title13 h4:before,
+.text-right.section-title13 h4:before,
+.text-right .section-title13 h5:before,
+.text-right.section-title13 h5:before,
+.text-right .section-title13 h6:before,
+.text-right.section-title13 h6:before {
+    left: auto;
+    right: 0;
+}
+
+.section-title14 h1,
+.section-title14 h2,
+.section-title14 h3,
+.section-title14 h4,
+.section-title14 h5,
+.section-title14 h6 {
+    position: relative;
+    padding-bottom: 15px
+}
+
+.section-title14 h1.title:after,
+.section-title14 h2.title:after,
+.section-title14 h3.title:after,
+.section-title14 h4.title:after,
+.section-title14 h5.title:after,
+.section-title14 h6.title:after {
+    content: "";
+    position: absolute;
+    left: 390;
+    bottom: 0;
+    width: 510px;
+    height: 3px;
+    background: #ffd200;
+}
+
+.section-title14 .title:before {
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+}
+
+section:hover .section-title14 .title:before {
+    width: 80px;
+}
+
+section:hover .text-center .section-title14 .title:before,
+section:hover .text-center.section-title14 .title:before,
+section.text-center:hover .section-title14 .title:before {
+    margin-left: -40px;
+}
+
+.yellow-bg .section-title14 h1:before,
+.yellow-bg .section-title14 h2:before,
+.yellow-bg .section-title14 h3:before,
+.yellow-bg .section-title14 h4:before,
+.yellow-bg .section-title14 h5:before,
+.yellow-bg .section-title14 h6:before {
+    background: #ffffff;
+}
+
+.text-center .section-title14 h1:before,
+.text-center.section-title14 h1:before,
+.text-center .section-title14 h2:before,
+.text-center.section-title14 h2:before,
+.text-center .section-title14 h3:before,
+.text-center.section-title14 h3:before,
+.text-center .section-title14 h4:before,
+.text-center.section-title14 h4:before,
+.text-center .section-title14 h5:before,
+.text-center.section-title14 h5:before,
+.text-center .section-title14 h6:before,
+.text-center.section-title14 h6:before {
+    left: 50%;
+    margin-left: -25px;
+}
+
+.text-right .section-title14 h1:before,
+.text-right.section-title14 h1:before,
+.text-right .section-title14 h2:before,
+.text-right.section-title14 h2:before,
+.text-right .section-title14 h3:before,
+.text-right.section-title14 h3:before,
+.text-right .section-title14 h4:before,
+.text-right.section-title14 h4:before,
+.text-right .section-title14 h5:before,
+.text-right.section-title14 h5:before,
+.text-right .section-title14 h6:before,
+.text-right.section-title14 h6:before {
+    left: auto;
+    right: 0;
+}
+
 
 /*---------------------------------------------------------------------
   Accordion
@@ -4807,8 +5084,8 @@ form .form-group .glyph-icon {
 }
 
 form .form-group .glyph-icon:before {
-    font-weight: 500;
-    font-size: 22px;
+    font-weight: 200;
+    font-size: 18px;
 }
 
 form .form-group .glyph-icon+.form-control,

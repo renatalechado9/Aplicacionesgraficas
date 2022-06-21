@@ -1,0 +1,332 @@
+/*Inicio de estilos */
+
+.product {
+    width: 350px;
+    height: 350px;
+    left: 40px;
+    background-color: #FFF;
+    top: 20px;
+    border-radius: 10px;
+}
+
+.img1 {
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    border-color: #0F0F0F;
+}
+
+h1 {
+    top: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    color: #000;
+    left: 20px;
+}
+
+h2 {
+    top: 190px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    color: #000;
+    right: 0px;
+}
+
+.img2 {
+    position: relative;
+    width: 150px;
+    height: 30px;
+    border-color: #0F0F0F;
+    top: 50px;
+    left: 100px;
+}
+
+h3 {
+    top: 280px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #000;
+    left: 18px;
+}
+
+button {
+    position: relative;
+    background-color: #35c1f8;
+    width: 150px;
+    height: 30px;
+    color: #FFF;
+    right: 0;
+    top: 85px;
+    border-radius: 10px;
+    font-size: 14px;
+    left: 35px;
+    border-color: #FFF;
+    box-shadow: rgba(0, 0, 0, 1.8);
+}
+
+
+/*fIN ESTILOS dashboards asi se hacen yanil*/
+
+
+/*Inicio de estilos */
+
+.container2 {
+    position: absolute;
+    display: grid;
+    box-shadow: rgba(0, 0, 0, 1.8);
+    border-radius: 10px;
+    border-color: #000;
+    background-color: #FACFAC;
+    top: 40px;
+    margin: 0;
+    left: 400px;
+    width: 99%;
+    height: 1200px;
+    padding: 0 20px 0 20px;
+    display: grid;
+}
+
+.container2 .product2 {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    left: 40px;
+    background-color: #FFF;
+    top: 20px;
+    border-radius: 10px;
+}
+
+.product2 .img1 {
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    border-color: #0F0F0F;
+}
+
+.product2 h1 {
+    position: absolute;
+    top: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    color: #000;
+    left: 20px;
+}
+
+.product2 h2 {
+    position: absolute;
+    top: 190px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    color: #000;
+    right: 0px;
+}
+
+.product2 .img2 {
+    position: relative;
+    width: 150px;
+    height: 30px;
+    border-color: #0F0F0F;
+    top: 50px;
+    left: 100px;
+}
+
+.product2 h3 {
+    position: absolute;
+    top: 280px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #000;
+    left: 18px;
+}
+
+.product2 button {
+    position: relative;
+    background-color: #35c1f8;
+    width: 150px;
+    height: 30px;
+    color: #FFF;
+    right: 0;
+    top: 85px;
+    border-radius: 10px;
+    font-size: 14px;
+    left: 35px;
+    border-color: #FFF;
+    box-shadow: rgba(0, 0, 0, 1.8);
+}
+
+
+/*fIN ESTILOS dashboards asi se hacen yanil*/
+
+.container3 {
+    position: absolute;
+    display: grid;
+    box-shadow: rgba(0, 0, 0, 1.8);
+    border-radius: 10px;
+    border-color: #000;
+    background-color: #FACFAC;
+    top: 40px;
+    margin: 0;
+    left: 800px;
+    width: 99%;
+    height: 1200px;
+    padding: 0 20px 0 20px;
+    display: grid;
+}
+
+.container3 .product3 {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    left: 40px;
+    background-color: #FFF;
+    top: 20px;
+    border-radius: 10px;
+}
+
+.product3 .img1 {
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    border-color: #0F0F0F;
+}
+
+.product3 h1 {
+    position: absolute;
+    top: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    color: #000;
+    left: 20px;
+}
+
+.product3 h2 {
+    position: absolute;
+    top: 190px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    color: #000;
+    right: 0px;
+}
+
+.product3 .img2 {
+    position: relative;
+    width: 150px;
+    height: 30px;
+    border-color: #0F0F0F;
+    top: 50px;
+    left: 100px;
+}
+
+.product2 h3 {
+    position: absolute;
+    top: 280px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #000;
+    left: 18px;
+}
+
+.product3 button {
+    position: relative;
+    background-color: #35c1f8;
+    width: 150px;
+    height: 30px;
+    color: #FFF;
+    right: 0;
+    top: 85px;
+    border-radius: 10px;
+    font-size: 14px;
+    left: 35px;
+    border-color: #FFF;
+    box-shadow: rgba(0, 0, 0, 1.8);
+}
+
+
+/*fIN ESTILOS dashboards asi se hacen yanil*/
+
+.container4 {
+    position: absolute;
+    display: grid;
+    box-shadow: rgba(0, 0, 0, 1.8);
+    border-radius: 10px;
+    border-color: #000;
+    background-color: #FACFAC;
+    top: 40px;
+    margin: 0;
+    left: 1200px;
+    width: 99%;
+    height: 1200px;
+    padding: 0 20px 0 20px;
+    display: grid;
+}
+
+.container4 .product4 {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    left: 40px;
+    background-color: #FFF;
+    top: 20px;
+    border-radius: 10px;
+}
+
+.product4 .img1 {
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    border-color: #0F0F0F;
+}
+
+.product4 h1 {
+    position: absolute;
+    top: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    color: #000;
+    left: 20px;
+}
+
+.product4 h2 {
+    position: absolute;
+    top: 190px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    color: #000;
+    right: 0px;
+}
+
+.product3 .img2 {
+    position: relative;
+    width: 150px;
+    height: 30px;
+    border-color: #0F0F0F;
+    top: 50px;
+    left: 100px;
+}
+
+.product2 h3 {
+    position: absolute;
+    top: 280px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #000;
+    left: 18px;
+}
+
+.product3 button {
+    position: relative;
+    background-color: #35c1f8;
+    width: 150px;
+    height: 30px;
+    color: #FFF;
+    right: 0;
+    top: 85px;
+    border-radius: 10px;
+    font-size: 14px;
+    left: 35px;
+    border-color: #FFF;
+    box-shadow: rgba(0, 0, 0, 1.8);
+}
+
+
+/*fIN ESTILOS dashboards asi se hacen yanil*/

@@ -1916,26 +1916,15 @@ hr {
     float: left;
 }
 
-.popup-gallery.columns-3 .project-info:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border: 7px solid #ffffff;
-    z-index: 4;
-}
-
+.popup-gallery.columns-3 .project-info:before,
 .popup-gallery.columns-4 .project-info:before {
-    content: "";
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     border: 7px solid #ffffff;
-    z-index: 4;
+    z-index: 8;
 }
 
 .portfolio-page .project-info {
@@ -1945,6 +1934,27 @@ hr {
 
 .portfolio-page .no-gutter {
     margin: 0 -7px;
+}
+
+@media screen and (max-width:1024px) {
+    .popup-gallery.columns-3 .project-info,
+    .popup-gallery.columns-4 .project-info {
+        width: 33.3333%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .popup-gallery.columns-3 .project-info,
+    .popup-gallery.columns-4 .project-info {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:599px) {
+    .popup-gallery.columns-3 .project-info,
+    .popup-gallery.columns-4 .project-info {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:1024px) {

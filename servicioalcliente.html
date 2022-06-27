@@ -39,7 +39,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="css/search.css" rel="stylesheet" type="text/css">
-    <link href="css/serviciocliente.css" rel="stylesheet" type="text/css">
+    <link href="css/servicio.css" rel="stylesheet" type="text/css">
     <style>
         .btn-whatsapp {
             display: block;
@@ -183,57 +183,28 @@
         <section class="inner-intro bg bg-fixed " style="background:white; height:60px">
         </section>
 
-        <style>
-            .menu-sugerencia {
-                background-color: #ffd200;
-                color: black;
-                font-size: 2rem;
-                vertical-align: middle;
-                cursor: pointer;
-            }
-            
-            .menu-sugerencia.activo {
-                background-color: #001489;
-                color: white;
-                cursor: auto;
-            }
-            
-            .menu-contenido {
-                display: none;
-                animation: fadeEffect 1s;
-            }
-            
-            @keyframes fadeEffect {
-                from {
-                    opacity: 0;
-                }
-                to {
-                    opacity: 1;
-                }
-            }
-        </style>
         <div class="container-fluid">
             <div class="row ">
                 <div id="tab-default-open" class="col menu-sugerencia" onclick="openSugerencia(event,'sugerencia-1')">
-                    ¿Como comprar en Madereria el Roble?
+                    <p style="text-align:center;">¿Como comprar en Madereria el Roble?</p>
                 </div>
                 <div class="col menu-sugerencia" onclick="openSugerencia(event,'sugerencia-2')">
-                    Sugerencias y reclamos
+                    <p style="margin-top: 30px">Sugerencias y reclamos</p>
                 </div>
                 <div class="col menu-sugerencia" onclick="openSugerencia(event,'sugerencia-3')">
-                    Preguntas frecuentes
+                    <p style="margin-top: 30px">Preguntas frecuentes</p>
                 </div>
             </div>
             <div class="row">
                 <div id="sugerencia-1" class="menu-contenido">
-                    <section class="portfolio-page ">
+                    <section class="portfolio-page pb-50 pt-50">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <h1 style="font-size:56px;left:80px; position:relative">Pasos para comprar en Maderería El Roble</h1>
+                                    <h1 style="font-size:56px;left:100px; position:relative">Pasos para comprar en Maderería El Roble</h1>
                                 </div>
                             </div>
-                            <div class="row" style="left:140px; position:relative">
+                            <div class="row" style="left:180px; position:relative">
                                 <div class="oc-panel col-lg-2" data-oc-id="panel-1-0">
                                     <span data-bind="element: 'image',id: '120118'" id="wi1400050-image-120118">
                                         <div class="cc-image" data-bind="style: {'text-align': config.horizontalAlignment.horizontalAlignment}" style="text-align: left;">
@@ -243,8 +214,81 @@
                                 </div>
                                 <div class="oc-panel col-lg-10" data-oc-id="panel-1-1">
                                     <span data-bind="element: 'rich-text',id: '120123'" id="wi1400050-rich-text-120123">
-                                        <div class="cc-rich-text" data-bind="style: {paddingTop: config.padding.paddingTop + 'px', paddingBottom: config.padding.paddingBottom + 'px', paddingLeft: config.padding.paddingLeft + 'px', paddingRight: config.padding.paddingRight + 'px'}, html: config.richText.content" style="padding: 10px 0px;"><h3 style="line-height:120%;margin: 5px 0px;">Regístrate</h3>
-                                            <p>Registrate en nuestra página web, a través del formulario de clientes o inicia sesión.</p>
+                                        <div class="cc-rich-text" data-bind="style: {paddingTop: config.padding.paddingTop + 'px', paddingBottom: config.padding.paddingBottom + 'px', paddingLeft: config.padding.paddingLeft + 'px', paddingRight: config.padding.paddingRight + 'px'}, html: config.richText.content" style="padding: 10px 0px;"><h3 style="line-height:120%;margin: 5px 0px;font-weight:bold;font-size:30px">Regístrate</h3>
+                                            <p style="font-size:20px;">Registrate en nuestra página web, a través del formulario de clientes o inicia sesión.</p>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row" style="left:180px; position:relative">
+                                <div class="oc-panel col-lg-2" data-oc-id="panel-1-0">
+                                    <span data-bind="element: 'image',id: '120118'" id="wi1400050-image-120118">
+                                        <div class="cc-image" data-bind="style: {'text-align': config.horizontalAlignment.horizontalAlignment}" style="text-align: left;">
+                                            <img data-bind="attr: {src: config.image.src, alt: config.image.altText, title: config.image.titleText}, style: {borderWidth: config.border.borderWidth + 'px', borderColor: config.border.borderColor, borderStyle: 'solid', paddingTop: config.padding.paddingTop + 'px', paddingBottom: config.padding.paddingBottom + 'px', paddingLeft: config.padding.paddingLeft + 'px', paddingRight: config.padding.paddingRight + 'px'}" src="/images/servicio-al-cliente/Paso2.jpg" alt="Paso 2 - Como Comprar en SINSA" title="Paso 1 - Como Comprar" style="border-width: 0px; border-color: rgb(0, 0, 0); border-style: solid; padding: 10px 0px;">
+                                        </div>
+                                    </span>
+                                </div>
+                                <div class="oc-panel col-lg-10" data-oc-id="panel-1-1">
+                                    <span data-bind="element: 'rich-text',id: '120123'" id="wi1400050-rich-text-120123">
+                                        <div class="cc-rich-text" data-bind="style: {paddingTop: config.padding.paddingTop + 'px', paddingBottom: config.padding.paddingBottom + 'px', paddingLeft: config.padding.paddingLeft + 'px', paddingRight: config.padding.paddingRight + 'px'}, html: config.richText.content" style="padding: 10px 0px;"><h3 style="line-height:120%;margin: 5px 0px;font-weight:bold;font-size:30px">Buscá tu producto</h3>
+                                            <p style="font-size:20px;">Navega por la web o busca el producto en la barra de busqueda</p>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row" style="left:180px; position:relative">
+                                <div class="oc-panel col-lg-2" data-oc-id="panel-1-0">
+                                    <span data-bind="element: 'image',id: '120118'" id="wi1400050-image-120118">
+                                        <div class="cc-image" data-bind="style: {'text-align': config.horizontalAlignment.horizontalAlignment}" style="text-align: left;">
+                                            <img data-bind="attr: {src: config.image.src, alt: config.image.altText, title: config.image.titleText}, style: {borderWidth: config.border.borderWidth + 'px', borderColor: config.border.borderColor, borderStyle: 'solid', paddingTop: config.padding.paddingTop + 'px', paddingBottom: config.padding.paddingBottom + 'px', paddingLeft: config.padding.paddingLeft + 'px', paddingRight: config.padding.paddingRight + 'px'}" src="/images/servicio-al-cliente/Paso3.jpg" alt="Paso 3 - Como Comprar en SINSA" title="Paso 1 - Como Comprar" style="border-width: 0px; border-color: rgb(0, 0, 0); border-style: solid; padding: 10px 0px;">
+                                        </div>
+                                    </span>
+                                </div>
+                                <div class="oc-panel col-lg-10" data-oc-id="panel-1-1">
+                                    <span data-bind="element: 'rich-text',id: '120123'" id="wi1400050-rich-text-120123">
+                                        <div class="cc-rich-text" data-bind="style: {paddingTop: config.padding.paddingTop + 'px', paddingBottom: config.padding.paddingBottom + 'px', paddingLeft: config.padding.paddingLeft + 'px', paddingRight: config.padding.paddingRight + 'px'}, html: config.richText.content" style="padding: 10px 0px;"><h3 style="line-height:120%;margin: 5px 0px;font-weight:bold;font-size:30px">Agrega a tu carrito</h3>
+                                            <p style="font-size:20px;">Selecciona tu producto y haz click en "Agregar al carro".</p>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row" style="left:180px; position:relative">
+                                <div class="oc-panel col-lg-2" data-oc-id="panel-1-0">
+                                    <span data-bind="element: 'image',id: '120118'" id="wi1400050-image-120118">
+                                        <div class="cc-image" data-bind="style: {'text-align': config.horizontalAlignment.horizontalAlignment}" style="text-align: left;">
+                                            <img data-bind="attr: {src: config.image.src, alt: config.image.altText, title: config.image.titleText}, style: {borderWidth: config.border.borderWidth + 'px', borderColor: config.border.borderColor, borderStyle: 'solid', paddingTop: config.padding.paddingTop + 'px', paddingBottom: config.padding.paddingBottom + 'px', paddingLeft: config.padding.paddingLeft + 'px', paddingRight: config.padding.paddingRight + 'px'}" src="/images/servicio-al-cliente/Paso4.jpg" alt="Paso 4 - Como Comprar en SINSA" title="Paso 1 - Como Comprar" style="border-width: 0px; border-color: rgb(0, 0, 0); border-style: solid; padding: 10px 0px;">
+                                        </div>
+                                    </span>
+                                </div>
+                                <div class="oc-panel col-lg-10" data-oc-id="panel-1-1">
+                                    <span data-bind="element: 'rich-text',id: '120123'" id="wi1400050-rich-text-120123">
+                                        <div class="cc-rich-text" data-bind="style: {paddingTop: config.padding.paddingTop + 'px', paddingBottom: config.padding.paddingBottom + 'px', paddingLeft: config.padding.paddingLeft + 'px', paddingRight: config.padding.paddingRight + 'px'}, html: config.richText.content" style="padding: 10px 0px;"><h3 style="line-height:120%;margin: 5px 0px;font-weight:bold;font-size:30px">Verifica tu compra</h3>
+                                            <p style="font-size:20px;">El precio de tu producto, valor de envío. Luego haz click en "Pagar mi orden".</p>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row" style="left:180px; position:relative">
+                                <div class="oc-panel col-lg-2" data-oc-id="panel-1-0">
+                                    <span data-bind="element: 'image',id: '120118'" id="wi1400050-image-120118">
+                                        <div class="cc-image" data-bind="style: {'text-align': config.horizontalAlignment.horizontalAlignment}" style="text-align: left;">
+                                            <img data-bind="attr: {src: config.image.src, alt: config.image.altText, title: config.image.titleText}, style: {borderWidth: config.border.borderWidth + 'px', borderColor: config.border.borderColor, borderStyle: 'solid', paddingTop: config.padding.paddingTop + 'px', paddingBottom: config.padding.paddingBottom + 'px', paddingLeft: config.padding.paddingLeft + 'px', paddingRight: config.padding.paddingRight + 'px'}" src="/images/servicio-al-cliente/Pas5.jpg" alt="Paso 5 - Como Comprar en SINSA" title="Paso 1 - Como Comprar" style="border-width: 0px; border-color: rgb(0, 0, 0); border-style: solid; padding: 10px 0px;">
+                                        </div>
+                                    </span>
+                                </div>
+                                <div class="oc-panel col-lg-10" data-oc-id="panel-1-1">
+                                    <span data-bind="element: 'rich-text',id: '120123'" id="wi1400050-rich-text-120123">
+                                        <div class="cc-rich-text" data-bind="style: {paddingTop: config.padding.paddingTop + 'px', paddingBottom: config.padding.paddingBottom + 'px', paddingLeft: config.padding.paddingLeft + 'px', paddingRight: config.padding.paddingRight + 'px'}, html: config.richText.content" style="padding: 10px 0px;"><h3 style="line-height:120%;margin: 5px 0px;font-weight:bold;font-size:30px">Pagar</h3>
+                                            <p style="font-size:20px;">Pagar</p>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row" style="left:-200px; position:relative">
+                                <div class="oc-panel col-lg-12" data-oc-id="panel-1-0">
+                                    <span data-bind="element: 'image',id: '120118'" id="wi1400050-image-120118">
+                                        <div class="cc-image" data-bind="style: {'text-align': config.horizontalAlignment.horizontalAlignment}" style="text-align: left;">
+                                            <img data-bind="attr: {src: config.image.src, alt: config.image.altText, title: config.image.titleText}, style: {borderWidth: config.border.borderWidth + 'px', borderColor: config.border.borderColor, borderStyle: 'solid', paddingTop: config.padding.paddingTop + 'px', paddingBottom: config.padding.paddingBottom + 'px', paddingLeft: config.padding.paddingLeft + 'px', paddingRight: config.padding.paddingRight + 'px'}" src="/images/servicio-al-cliente/Metodos_Pago_BannerSecundario.jpg" alt="Paso 5 - Como Comprar en SINSA" title="Paso 1 - Como Comprar" style="border-width: 0px; border-color: rgb(0, 0, 0); border-style: solid; padding: 10px 0px;">
                                         </div>
                                     </span>
                                 </div>
@@ -253,8 +297,89 @@
                     </section>
                 </div>
                 <div id="sugerencia-2" class="menu-contenido">
-                    <section class="portfolio-page ">
+                    <section class="portfolio-page pb-50 pt-20" style="width: 1500px;">
                         <div class="container">
+                            <form id="frm-gestion">
+                                <div class="row" style="left:80px;position:relative">
+                                    <div class="col-md-12">
+                                        <div class="section-title1 text-center">
+                                            <h1 class="title" style="font-size: 50px;">Sugerencias y Reclamos</h1>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="section-title1 text-center">
+                                                <p style="text-align: center;font-size:22px">Queremos conocer tu experiencia, compártenos tus datos y con mucho gusto te atenderemos.<br> Tu opinión es muy importante para nosotros. ¡Mejoramos cada día para vos!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="left:40px;position:relative">
+                                    <div class="col-md-6 col-sm-6">
+                                        <label class="label-inputs" for="nombre"><span>*</span>Nombre completo</label>
+                                        <input type="text" class="inputs validar" name="nombre" id="nombre" style="border: 1px solid rgb(227, 6, 19);">
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <label class="label-inputs" for="cedula">Cédula de identidad</label>
+                                        <input type="text" class="inputs" name="cedula" id="cedula">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <label class="label-inputs" for="correo"><span>*</span>Correo electrónico</label>
+                                        <input type="text" class="inputs validar" name="correo" id="correo" style="border: 1px solid rgb(227, 6, 19);">
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <label class="label-inputs" for="telefono"><span>*</span>Celular/ Teléfono</label>
+                                        <input type="number" class="inputs validar" name="telefono" id="telefono" style="border: 1px solid rgb(227, 6, 19);">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <label class="label-inputs" for="tienda">¿Dónde fue atendido?</label>
+                                        <select class="inputs" name="tienda" id="tienda">
+                                            <option value="Tienda N/D"></option>
+                                            <option value="Tienda en línea">Tienda en línea</option>
+                                            <option value="WhatsApp">WhatsApp</option>
+                                            <option value="Tienda León">Tienda León</option>
+                                            <option value="Tienda Managua">Tienda Managua</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <label class="label-inputs" for="solicitud">Tipo de gestión</label>
+                                        <select class="inputs" name="solicitud" id="solicitud">
+                                            <option value="Solicitud N/D"></option>
+                                            <option value="Consulta">Consulta</option>
+                                            <option value="Sugerencia">Sugerencia</option>
+                                            <option value="Reclamo">Reclamo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label class="label-inputs" for="comentario"><span>*</span>Sus comentarios</label>
+                                        <textarea class="inputs textareas validar" name="comentario" id="comentario" style="border: 1px solid rgb(227, 6, 19);"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label class="label-inputs"><span>*Los campos indicados con asterisco son campos obligatorios.</span></label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 text-right">
+                                        <button id="btn-enviar-gestion">Enviar</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p id="msg-respuesta" style="display: block;">Por favor verifica la información y los campos ingresados.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p id="msg-formulario">Valoramos tu retroalimentación, te estaremos contactando lo antes posible.</p>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </section>
                 </div>

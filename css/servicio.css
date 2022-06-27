@@ -1,0 +1,136 @@
+.menu-sugerencia {
+    background-color: #ffd200;
+    color: black;
+    font-size: 2.3rem;
+    vertical-align: middle;
+    cursor: pointer;
+    text-align: center
+}
+
+.menu-sugerencia.activo {
+    background-color: #010f5c;
+    color: white;
+    cursor: auto;
+}
+
+.menu-contenido {
+    display: none;
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#frm-gestion {
+    position: relative;
+    display: table;
+    width: 95%;
+    max-width: 1024px;
+    margin: 30px auto 80px;
+}
+
+#frm-gestion .row .label-inputs {
+    position: relative;
+    display: table;
+    width: 100%;
+    padding: 5px 0 2px;
+    box-sizing: border-box;
+    color: #878787;
+    text-align: left;
+    font-size: 24px;
+    line-height: 20px;
+    font-family: 'proxima_novabold'
+}
+
+#frm-gestion .row .label-inputs span {
+    color: #E30613;
+    margin-right: 5px;
+    font-family: 'miriadpro';
+    font-size: 24px
+}
+
+#frm-gestion .row .inputs {
+    position: relative;
+    display: table;
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    color: #878787;
+    text-align: left;
+    font-size: 24px;
+    line-height: 20px;
+    font-family: 'proxima_novabold';
+    border: 1px solid #B2B2B2;
+    margin-bottom: 10px;
+    outline: none;
+    text-decoration: none;
+    background-color: #fff
+}
+
+#frm-gestion .row .inputs:focus {
+    border: 1px solid #F18A00
+}
+
+#frm-gestion .row .textareas {
+    display: block;
+    resize: none;
+    height: 180px;
+    overflow-y: auto
+}
+
+#frm-gestion .row #btn-enviar-gestion {
+    position: relative;
+    display: inline-block;
+    background: #3DAE2B;
+    color: #fff;
+    font-size: 16px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-family: 'proxima_novabold';
+    outline: none
+}
+
+#frm-gestion .row #btn-enviar-gestion.btn-disabled {
+    cursor: progress
+}
+
+#frm-gestion .row #msg-respuesta {
+    position: relative;
+    display: none;
+    width: 100%;
+    padding: 5px 0 2px;
+    box-sizing: border-box;
+    color: #878787;
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'proxima_novaregular'
+}
+
+#frm-gestion .row #msg-respuesta.error {
+    color: #E30613
+}
+
+#frm-gestion .row #msg-formulario {
+    position: relative;
+    display: table;
+    width: 100%;
+    padding: 5px 0 2px;
+    box-sizing: border-box;
+    color: #878787;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'proxima_novaregular';
+    margin-top: 25px
+}

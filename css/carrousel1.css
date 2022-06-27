@@ -1,133 +1,116 @@
-@mixin transition($transition) {
-    -moz-transition: $transition;
-    -o-transition: $transition;
-    -webkit-transition: $transition;
-    transition: $transition;
-}
-
-#carrousel {
-    margin: 10px;
-    @media (max-width: 768px) {
-        margin: 70px 0px 0px 0px;
-    }
-    @media (max-width: 425px) {
-        margin: 50px 0px 0px 0px;
-    }
-}
-
-.owl-carousel {}
-
-.owl-carousel img {
-    max-height: 100%;
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: 300px;
-    object-fit: cover;
-    @include transition(all 0.2s ease);
-    -webkit-box-shadow: 12px 12px 10px -10px rgba(0, 0, 0, .25);
-    -moz-box-shadow: 12px 12px 10px -10px rgba(0, 0, 0, .25);
-    box-shadow: 12px 12px 10px -10px rgba(0, 0, 0, .25);
-}
-
-.owl-carousel owl-item {
-    height: 300px;
+.container2 {
+    margin: 0 auto;
+    width: 150px;
+    height: 100px;
     position: relative;
-    transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    transition: all .2s;
-    -webkit-transform: all .2s;
-    z-index: 1;
-    @media (max-width: 768px) {
-        height: 270px;
-    }
-    @media (max-width: 380px) {
-        height: 200px;
-    }
+    perspective: 1000px;
 }
 
-.owl-stage-outer {
-    padding-bottom: 10px;
-}
-
-.owl-item big {
-    transform: scale(1);
-    -ms-transform: scale(1);
-    z-index: 3;
-}
-
-.owl-item medium {
-    transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    z-index: 2;
-}
-
-.owl-item mdright {
-    /*border: solid 1px red;*/
-    position: relative;
-    left: -30px;
-    @media (min-width: 768px) {
-        left: 0px;
-    }
-}
-
-.owl-item mdleft {
-    /*border: solid 1px blue;*/
-    position: relative;
-    right: -30px;
-    @media (min-width: 768px) {
-        right: 0px;
-    }
-}
-
-.owl-item smallRight active {
-    transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    position: relative;
-    left: -30px;
-}
-
-.owl-item smallLeft active {
-    transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    position: relative;
-    right: -30px;
-}
-
-.owl-nav {
-    position: absolute;
-    top: 30%;
+.carousel {
+    height: 100%;
     width: 100%;
-}
-
-.owl-prev {
+    margin-top: 20px;
     position: absolute;
-    left: 0px;
-    top: 10px;
-    background: transparent !important;
-    color: #000 !important;
-    font-size: 40px !important;
+    transform-style: preserve-3d;
+    transition: transform 1s;
 }
 
-owl-prev:hover {
-    color: #adadad !important;
+.carousel div {
+    transform-style: preserve-3d;
 }
 
-.owl-next {
+.item {
+    display: block;
     position: absolute;
-    right: 0px;
-    top: 10px;
-    background: transparent !important;
-    color: #000 !important;
-    font-size: 40px !important;
+    background: #000;
+    width: 150px;
+    height: 80px;
+    line-height: 200px;
+    font-size: 5em;
+    text-align: center;
+    color: #FFF;
+    opacity: 0.95;
+    border-radius: 10px;
+    transition: transform 1s;
 }
 
-owl-next:hover {
-    color: #adadad !important;
+.a {
+    transform: rotateY(0deg) translateZ(250px);
+}
+
+.a .item {
+    background: #ed1c24;
+}
+
+.b {
+    transform: rotateY(60deg) translateZ(250px) rotateY(-60deg);
+}
+
+.b .item {
+    background: #0072bc;
+}
+
+.c {
+    transform: rotateY(120deg) translateZ(250px) rotateY(-120deg);
+}
+
+.c .item {
+    background: #39b54a;
+}
+
+.d {
+    transform: rotateY(180deg) translateZ(250px) rotateY(-180deg);
+}
+
+.d .item {
+    background: #f26522;
+}
+
+.e {
+    transform: rotateY(240deg) translateZ(250px) rotateY(-240deg);
+}
+
+.e .item {
+    background: #630460;
+}
+
+.f {
+    transform: rotateY(300deg) translateZ(250px) rotateY(-300deg);
+}
+
+.f .item {
+    background: #8c6239;
+}
+
+.next,
+.prev {
+    color: #444;
+    position: absolute;
+    top: 100px;
+    padding: 1em 2em;
+    cursor: pointer;
+    background: #CCC;
+    border-radius: 5px;
+    border-top: 1px solid #FFF;
+    box-shadow: 0 5px 0 #999;
+    transition: box-shadow 0.1s, top 0.1s;
+}
+
+.next:hover,
+.prev:hover {
+    color: #000;
+}
+
+.next:active,
+.prev:active {
+    top: 104px;
+    box-shadow: 0 1px 0 #999;
+}
+
+.next {
+    right: 5em;
+}
+
+.prev {
+    left: 5em;
 }

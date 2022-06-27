@@ -39,7 +39,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="css/search.css" rel="stylesheet" type="text/css">
-
+    <link href="css/serviciocliente.css" rel="stylesheet" type="text/css">
     <style>
         .btn-whatsapp {
             display: block;
@@ -182,6 +182,91 @@
     <main>
         <section class="inner-intro bg bg-fixed " style="background:white; height:60px">
         </section>
+
+        <style>
+            .menu-sugerencia {
+                background-color: #ffd200;
+                color: black;
+                font-size: 2rem;
+                vertical-align: middle;
+                cursor: pointer;
+            }
+            
+            .menu-sugerencia.activo {
+                background-color: #001489;
+                color: white;
+                cursor: auto;
+            }
+            
+            .menu-contenido {
+                display: none;
+                animation: fadeEffect 1s;
+            }
+            
+            @keyframes fadeEffect {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+        </style>
+        <div class="container-fluid">
+            <div class="row ">
+                <div id="tab-default-open" class="col menu-sugerencia" onclick="openSugerencia(event,'sugerencia-1')">
+                    ¿Como comprar en Madereria el Roble?
+                </div>
+                <div class="col menu-sugerencia" onclick="openSugerencia(event,'sugerencia-2')">
+                    Sugerencias y reclamos
+                </div>
+                <div class="col menu-sugerencia" onclick="openSugerencia(event,'sugerencia-3')">
+                    Preguntas frecuentes
+                </div>
+            </div>
+            <div class="row">
+                <div id="sugerencia-1" class="menu-contenido">
+                    <section class="portfolio-page ">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h1 style="font-size:56px;left:80px; position:relative">Pasos para comprar en Maderería El Roble</h1>
+                                </div>
+                            </div>
+                            <div class="row" style="left:140px; position:relative">
+                                <div class="oc-panel col-lg-2" data-oc-id="panel-1-0">
+                                    <span data-bind="element: 'image',id: '120118'" id="wi1400050-image-120118">
+                                        <div class="cc-image" data-bind="style: {'text-align': config.horizontalAlignment.horizontalAlignment}" style="text-align: left;">
+                                            <img data-bind="attr: {src: config.image.src, alt: config.image.altText, title: config.image.titleText}, style: {borderWidth: config.border.borderWidth + 'px', borderColor: config.border.borderColor, borderStyle: 'solid', paddingTop: config.padding.paddingTop + 'px', paddingBottom: config.padding.paddingBottom + 'px', paddingLeft: config.padding.paddingLeft + 'px', paddingRight: config.padding.paddingRight + 'px'}" src="/images/servicio-al-cliente/Paso1.jpg" alt="Paso 1 - Como Comprar en SINSA" title="Paso 1 - Como Comprar" style="border-width: 0px; border-color: rgb(0, 0, 0); border-style: solid; padding: 10px 0px;">
+                                        </div>
+                                    </span>
+                                </div>
+                                <div class="oc-panel col-lg-10" data-oc-id="panel-1-1">
+                                    <span data-bind="element: 'rich-text',id: '120123'" id="wi1400050-rich-text-120123">
+                                        <div class="cc-rich-text" data-bind="style: {paddingTop: config.padding.paddingTop + 'px', paddingBottom: config.padding.paddingBottom + 'px', paddingLeft: config.padding.paddingLeft + 'px', paddingRight: config.padding.paddingRight + 'px'}, html: config.richText.content" style="padding: 10px 0px;"><h3 style="line-height:120%;margin: 5px 0px;">Regístrate</h3>
+                                            <p>Registrate en nuestra página web, a través del formulario de clientes o inicia sesión.</p>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div id="sugerencia-2" class="menu-contenido">
+                    <section class="portfolio-page ">
+                        <div class="container">
+                        </div>
+                    </section>
+                </div>
+                <div id="sugerencia-3" class="menu-contenido">
+                    <section class="portfolio-page ">
+                        <div class="container">
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <!--footer------------------------------------------------------------------------------------------------------------------------------->
@@ -273,6 +358,8 @@
         </div>
 
     </footer>
+
+    <script src="js/menu-sugerencia.js"></script>
 </body>
 
 </html>

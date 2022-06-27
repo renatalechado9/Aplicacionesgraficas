@@ -1,7 +1,7 @@
 .container2 {
     margin: 0 auto;
-    width: 150px;
-    height: 100px;
+    width: 250px;
+    height: 200px;
     position: relative;
     perspective: 1000px;
 }
@@ -9,7 +9,7 @@
 .carousel {
     height: 100%;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
     position: absolute;
     transform-style: preserve-3d;
     transition: transform 1s;
@@ -23,8 +23,8 @@
     display: block;
     position: absolute;
     background: #000;
-    width: 150px;
-    height: 80px;
+    width: 250px;
+    height: 200px;
     line-height: 200px;
     font-size: 5em;
     text-align: center;
@@ -40,6 +40,8 @@
 
 .a .item {
     background: #ed1c24;
+    width: 250px;
+    height: 200px;
 }
 
 .b {
@@ -48,6 +50,8 @@
 
 .b .item {
     background: #0072bc;
+    width: 250px;
+    height: 200px;
 }
 
 .c {
@@ -56,6 +60,8 @@
 
 .c .item {
     background: #39b54a;
+    width: 250px;
+    height: 200px;
 }
 
 .d {
@@ -64,6 +70,8 @@
 
 .d .item {
     background: #f26522;
+    width: 250px;
+    height: 200px;
 }
 
 .e {
@@ -72,6 +80,8 @@
 
 .e .item {
     background: #630460;
+    width: 250px;
+    height: 200px;
 }
 
 .f {
@@ -80,6 +90,8 @@
 
 .f .item {
     background: #8c6239;
+    width: 250px;
+    height: 200px;
 }
 
 .next,

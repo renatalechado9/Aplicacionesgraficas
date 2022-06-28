@@ -56,10 +56,10 @@
         }
     </style>
     <style>
-        .btn-camara {
+        .btn-camera {
             display: block;
             width: 250px;
-            height: 180px;
+            height: 200px;
             color: #fff;
             position: fixed;
             left: 250px;
@@ -68,6 +68,7 @@
             line-height: 50px;
             text-align: center;
             z-index: 999;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -78,8 +79,23 @@
             <img src="images/whats_icon.svg" alt="">
         </a>
     </div>
-    <div class="btn-camara" id="llamada">
-        <img src="images" alt="">
+    <div id="showCamera" class="btn-camera" data-bs-toggle="modal" data-bs-target="#cameraModal">
+        <a>
+            <img src="images/Sin título.png" alt="">
+        </a>
+    </div>
+    <div class="modal fade" id="cameraModal" tab-index="-1" aria-hidden="true" aria-labelledby="modalCameraTitle">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="modalCameraTitle">Camara </h6>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <video autoplay id="CameraContent" width="426px" height="240px"></video>
+                </div>
+            </div>
+        </div>
     </div>
     <header id="header" class="clean">
         <div class="topbar dark">
@@ -253,19 +269,17 @@
                 </div>
             </div>
         </section>
-        <section class="our-sercive ">
+        <section class="our-sercive">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 mb-30">
-                        <video class="img-responsive" autoplay muted loop src="Screen_Recording_20220626-170216_PowerPoint.mp4" height="300px" width="400px"></video>
+                    <div class="col-md-6">
+                        <video class="img-responsive" autoplay muted loop src="Screen_Recording_20220626-170216_PowerPoint.mp4" height="500px" width="500px"></video>
                     </div>
                     <div class="col-md-6">
-                        <div class="content-block pl-10">
-
-                            <div class="section-title">
-                                <h2 class="title">Bienvenidos</h2>
+                        <div class="content-block">
+                            <div class="section-title15" style="margin-left: 160px;">
+                                <h1 class="title" style="font-size: 56px;">Bienvenidos</h2>
                             </div>
-
                             <p style="text-align: justify">¡Hola! Hemos “realizado” nuestra página web para que encuentres rápida y fácilmente todos los servicios y productos que tenemos para ti.<br><br> Desde las maderas más finas hasta las más comerciales… Desde materiales para construcción
                                 hasta útiles servicios… Desde los accesorios más sofisticados hasta herramientas de uso diario… Desde grandes promociones hasta los precios más competitivos del mercado…
                                 <br><br> <strong> ¡Bienvenido a Maderería El Roble OnLine! </strong>
@@ -383,7 +397,7 @@
         </div>
 
     </footer>
-    <script src="js/llamada.js"></script>
+    <script src="js/camara.js"></script>
 </body>
 
 </html>

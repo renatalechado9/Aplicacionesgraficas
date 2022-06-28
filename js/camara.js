@@ -1,32 +1,25 @@
-function videollamada() {
-    var llamada = document.getElementById('llamada');
-    /webcam/
-    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
-    navigator.getUserMedia({ video: true, audio: true }, function(stream) {
-        llamada.srcObject = stream;
-        llamada.play();
-    }, function(error) {
-        console.log(error);
-    });
+document.getElementById("cameraModal").addEventListener("shown.bs.modal", (evt) => {
+    assignVideoSourceCamera(document.querySelector("#CameraContent"),document.querySelector("#modalCameraTitle"));
+})
+
+document.getElementById("cameraModal").addEventListener("hide.bs.modal", (evt) => {
+    dismissVideoSourceCamera(document.querySelector("#CameraContent"),document.querySelector("#modalCameraTitle"));
+})
+function assignVideoSourceCamera(videoCamera,ModalTitle) {
+    if (navigator.mediaDevices.getUserMedia) {
+        navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+            .then(function (stream) {
+                videoCamera.srcObject = stream;
+            })
+            .catch(function (err0r) {
+                ModalTitle.textContent += err0r;
+            });
+    }
 }
 
-function terminarllamada() {
-    var llamada = document.getElementById('llamada');
-    llamada.srcObject.getTracks().forEach(function(track) {
+function dismissVideoSourceCamera(videoCamera, ModalTitle) {
+    videoCamera.srcObject?.getTracks().forEach(track => {
         track.stop();
     });
+    ModalTitle.textContent = "Camara ";
 }
-
-const openllamada = document.getElementById('openllamada');
-const modal_containerllamada = document.getElementById('modal_container_llamada');
-const closellamada = document.getElementById('closellamada');
-
-openllamada.addEventListener('click', () => {
-    modal_containerllamada.classList.add('show');
-
-});
-
-closellamada.addEventListener('click', () => {
-    modal_containerllamada.classList.remove('show');
-
-});

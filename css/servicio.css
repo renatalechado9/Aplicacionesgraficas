@@ -87,11 +87,11 @@
 #frm-gestion .row #btn-enviar-gestion {
     position: relative;
     display: inline-block;
-    background: #3DAE2B;
+    background: #fffb01;
     color: #fff;
     font-size: 16px;
     width: 100px;
-    height: 40px;
+    height: 80px;
     line-height: 40px;
     text-align: center;
     border: none;
@@ -129,7 +129,7 @@
     box-sizing: border-box;
     color: #878787;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 20px;
     font-family: 'proxima_novaregular';
     margin-top: 25px

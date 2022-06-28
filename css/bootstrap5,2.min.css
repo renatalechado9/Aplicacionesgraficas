@@ -4697,7 +4697,7 @@ fieldset:disabled .btn {
     --bs-accordion-bg: #fff;
     --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
     --bs-accordion-border-color: var(--bs-border-color);
-    --bs-accordion-border-width: 1px;
+    --bs-accordion-border-width: 3px;
     --bs-accordion-border-radius: 0.375rem;
     --bs-accordion-inner-border-radius: calc(0.375rem - 1px);
     --bs-accordion-btn-padding-x: 1.25rem;
@@ -4723,7 +4723,7 @@ fieldset:disabled .btn {
     align-items: center;
     width: 100%;
     padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
-    font-size: 1rem;
+    font-size:2rem;
     color: var(--bs-accordion-btn-color);
     text-align: left;
     background-color: var(--bs-accordion-btn-bg);
@@ -4819,7 +4819,8 @@ fieldset:disabled .btn {
 }
 
 .accordion-body {
-    padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x)
+    padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
+    font-size: 1.6rem;
 }
 
 .accordion-flush .accordion-collapse {

@@ -15,6 +15,7 @@ function openSugerencia(evt, idContentSugerencia) {
     // Muestra el tab que dice el idContentSugerencia y le pone la clase activo al tab que se clickeo
     document.getElementById(idContentSugerencia).style.display = "block";
     evt.currentTarget.className += " activo";
+
 }
 
 // Para el menu-sugerencia que tiene el id "tab-default-open", lo activa de inmediato.

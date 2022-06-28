@@ -1,0 +1,268 @@
+
+.tienda {
+  position: inherit;
+  width: 160px;
+  height: 40px;
+  border-radius: 15px;
+  border-color: #001489;
+  border-style: dashed;
+  background-color: #fff;
+  left: 400px;
+  top: 200px;
+}
+
+.tienda:hover {
+  background-color: #03258c;
+}
+.content-block .box2 {
+  position: inherit;
+  height: 25px;
+  width: 100px;
+  right: 120px;
+  top: 90px;
+  background-color: none;
+  border-radius: 20px;
+  border: #fff;
+  display: flex;
+  flex-direction: row;
+  row-gap: 0.2rem;
+}
+.tienda .img:hover {
+  background: url("https://api.iconify.design/akar-icons/shipping-box-v2.svg?color=white&width=512")
+    no-repeat center center / contain;
+}
+.tienda .img {
+  width: 40px;
+  height: 100%;
+  background: url("https://api.iconify.design/akar-icons/shipping-box-v2.svg?color=%23001489&width=512")
+    no-repeat center center / contain;
+}
+
+.tienda h1 {
+  position: inherit;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  color: #03258c;
+  left: 80px;
+  top: 0px;
+}
+
+/*---------------*/
+
+.delivery {
+  position: inherit;
+  width: 160px;
+  height: 40px;
+  border-radius: 15px;
+  border-color: #001489;
+  border-style: dashed;
+  background-color: #fff;
+  left: 220px;
+  top: 200px;
+}
+
+.delivery:hover {
+  background-color: #03258c;
+}
+
+.delivery .img:hover {
+  background: url("https://api.iconify.design/tabler/truck-delivery.svg?color=white&width=512")
+    no-repeat center center / contain;
+}
+.delivery .img {
+  width: 40px;
+  height: 100%;
+  background: url("https://api.iconify.design/tabler/truck-delivery.svg?color=%2303258c&width=512")
+    no-repeat center center / contain;
+}
+
+.delivery h1 {
+  position: inherit;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  color: #03258c;
+  left: 80px;
+  top: 0px;
+}
+
+.container .product {
+  position: inherit;
+  width: 100%;
+  height: 500px;
+  background-color: #fff;
+  top: 270px;
+  box-shadow: rgba(0, 0, 0, 0.8);
+  border-radius: 14px;
+}
+
+.product .details {
+  position: inherit;
+  width: 600px;
+  min-width: 200px;
+  height: 100%;
+  background-color: #fff;
+  left: 100px;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 1, 0.2);
+  border-color: #03258c;
+  border-width: 2px 2px 2px 2px;
+  border-style: double;
+}
+.details h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  color: #001489;
+  font-style: italic;
+  text-align: center;
+}
+
+.details hr {
+  color: #001489;
+}
+
+.details img {
+  position: inherit;
+  width: 150px;
+  height: 150px;
+  left: 50px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.8);
+  top: 80px;
+}
+
+.details h2 {
+  position: inherit;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  color: #001489;
+  left: 230px;
+  top: 70px;
+}
+.details h3 {
+  position: inherit;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  color: #001489;
+  left: 230px;
+  top: 100px;
+  width: 350px;
+}
+
+.details h4 {
+  position: inherit;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: #001489;
+  left: 230px;
+  top: 200px;
+  width: 350px;
+}
+
+.details h5 {
+  position: inherit;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  color: #03258c;
+  left: 230px;
+  top: 240px;
+  width: 350px;
+}
+
+.details #num {
+  position: inherit;
+  width: 60px;
+  height: 15px;
+  background-color: #fff;
+  color: #03258c;
+  left: 330px;
+  top: 225px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.details h6 {
+  position: inherit;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: green;
+  left: 490px;
+  top: 210px;
+  width: 350px;
+}
+
+.details p {
+  position: inherit;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: #03258c;
+  left: 510px;
+  top: 270px;
+  width: 350px;
+}
+
+.product .fact {
+  position: absolute;
+  width: 400px;
+  height: 100%;
+  background-color: #fafafa;
+  right: 200px;
+  border-radius: 20px;
+}
+
+.fact h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #001489;
+    text-align: center;
+}
+
+.fact ul li{
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    gap: 2rem;
+    color: #001489;
+    width: 50%;
+    
+    
+}
+
+.fact ul li{
+    padding-top: 40px;
+}
+
+.fact .prices li{
+    position: relative;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    gap: 2rem;
+    color: #001489;
+    width: 50%;
+    left: 170px;   
+    top: -200px; 
+    text-align: end;
+    
+}
+.fact h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #001489;
+    text-align: center;
+    top: 270px;
+    left: 40px;
+}
+
+.fact #pago{
+    position: relative;
+    width: 120px;
+    height: 45px;
+    background-color: #001489;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    border-radius: 20px;
+    top: -150px;
+    left: 150px;
+
+}

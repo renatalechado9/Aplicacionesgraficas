@@ -39,6 +39,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="css/search.css" rel="stylesheet" type="text/css">
+    <link href="css/cart.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         .btn-whatsapp {
@@ -216,6 +217,98 @@
     <main>
         <section class="inner-intro bg bg-fixed " style="background:white; height:60px">
         </section>
+        <section class="our-sercive">
+            <nav>
+                <div class="seccion1">
+                  <div class="img"></div>
+                  <h1>contacto@madereriahuerta.com</h1>
+                </div>
+            
+                <div class="seccion2">
+                  <div class="img"></div>
+                  <h1>Lun Vie 8:30-6:30 Sáb 8:30-2:00</h1>
+                </div>
+                <div class="seccion3">
+                  <div class="img"></div>
+                  <h1>Tel. 23873433 Cel. 8456-3212</h1>
+                </div>
+              </nav>
+              <div class="nav2">
+                <input type="search" name="Search" id="Search" />
+                <div class="img"></div>
+                <div class="content">
+                  <a href="#">
+                    <div class="user"></div>
+                    <!--Al usuario-->
+                  </a>
+                  <a href="#">
+                    <div class="cart"></div>
+                    <!--Al Carro-->
+                  </a>
+                </div>
+              </div>
+              <div class="container">
+                <h2>Mi Carrito de Compras</h2>
+                <h3>Seleccionar Moneda:</h3>
+                <div class="box">
+                  <div class="usd">
+                    <h1>$</h1>
+                  </div>
+                  <div class="nio">
+                    <h1>C$</h1>
+                  </div>
+                </div>
+            
+                <h4>Escoge:</h4>
+                <button class="tienda" enable>
+                  <div class="img"></div>
+                  <h1 id="tipo">Domicilio</h1>
+                </button>
+            
+                <button class="delivery" enable>
+                  <div class="img"></div>
+                  <h1 id="tipo">Delivery</h1>
+                </button>
+            
+                <div class="product">
+                  <div class="details">
+                    <h1>Sucursal Managua</h1>
+                    <hr>
+                    <img src="./Product.jpeg">
+                    <h2>SKU: 45002</h2>
+                    <h3>Madera de enchapado de Encino Premium 2022</h3>
+                    <h4>Precio</h4>
+                    <h5>$250</h5>
+                    <h6>$250.00</h6>
+                    <p>Subtotal</p>
+            
+                    <input type="number" name="num" id="num" min="0" max="10" placeholder="1">
+                  </div>
+                  <div class="fact">
+                    <h1>Resumen de Orden</h1>
+                    <hr>
+                    <ul>
+                      <li>Subtotal</li>
+                      <li>Ahorro</li>
+                      <li>IVA</li>
+                      <hr>
+            
+                    </ul>
+                    <ul class="prices">
+                      <li>$250</li>
+                      <li>$50</li>
+                      <li>$0</li>
+                      <li><strong>$200</strong></li>
+                    </ul>
+                    <h2>TOTAL:</h2>
+                    <a href="http://">
+                      <button id="pago">PAGAR</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+        </section>
+        
     </main>
 
     <!--footer------------------------------------------------------------------------------------------------------------------------------->

@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
-    <link rel="shorcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/iconmod/style.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <!-- Bootstrap CSS -->
@@ -62,38 +61,43 @@
                             </div>
                             <span class="d-block text-center my-4 text-muted" style="font-family:'Poppins'; position:relative;bottom:80px">&mdash; O Continuar con&mdash;</span>
                             <div class="wrap-input100 validate-input rounded-pill" data-validate="Nombre is required" style="position:relative;bottom:96px; height:60px">
-                                <input class="input100 rounded-pill" type="text" name="nombre">
+                                <input class="input100 rounded-pill" type="text" id="nombre" required>
                                 <span class="focus-input100 rounded-pill"></span>
                                 <span class="label-input100">Nombre Completo</span>
+                              
                             </div>
                             <div class="wrap-input100 validate-input rounded-pill" data-validate="Valid email is required: ex@abc.xyz" style="position:relative;bottom:96px; height:60px">
-                                <input class="input100 rounded-pill" type="text" name="email">
+                                <input class="input100 rounded-pill" type="text" required id="email" required>
                                 <span class="focus-input100 rounded-pill"></span>
-                                <span class="label-input100">Email</span>
+                                <span class="label-input100">Correo</span>
                             </div>
                             <div class="wrap-input100 validate-input rounded-pill" data-validate="Telefono is required: ex@abc.xyz" style="position:relative;bottom:96px; height:60px">
-                                <input class="input100 rounded-pill" type="text" name="telefono">
+                                <input class="input100 rounded-pill" type="text" id="telefono" required>
                                 <span class="focus-input100 rounded-pill"></span>
-                                <span class="label-input100">Telefono</span>
+                                <span class="label-input100">Teléfono</span>
                             </div>
                             <div class="wrap-input100 validate-input rounded-pill" data-validate="Password is required" style="position:relative;bottom:96px;height:60px">
-                                <input class="input100 rounded-pill" type="password" name="pass">
+                                <input class="input100 rounded-pill" type="password" id="pass" required>
                                 <span class="focus-input100 rounded-pill"></span>
-                                <span class="label-input100">Password</span>
+                                <span class="label-input100">Contraseña</span>
                             </div>
                             <div class="wrap-input100 validate-input rounded-pill" data-validate="Password is required" style="position:relative;bottom:96px;height:60px">
-                                <input class="input100 rounded-pill" type="password" name="pass2">
+                                <input class="input100 rounded-pill" type="password" id="pass2" required>
                                 <span class="focus-input100 rounded-pill"></span>
-                                <span class="label-input100">Confirm Password</span>
+                                <span class="label-input100">Confirmar Contraseña</span>
                             </div>
+                            
                             <div class="container-login100-form-btn" style="position:relative;top:-80px;font-family: 'Poppins';">
-                                <button class="login100-form-btn ">
-                                    <a href="inicio.html" class="txt1" style="font-size:24px;text-decoration:none;color:rgb(255, 254, 254);font-family: 'Poppins';">
-                                        Crear Cuenta
-                                    </a>
-                                </button>
+                                <a href="inicio.html">
+                                    <input type="submit" class="login100-form-btn" onclick="enviarFormulario()" value="Registrarse" style="font-size:18px ;font-family: 'Poppins';">
+                                </a>
+                                
                             </div>
+                            
                         </form>
+                        <div id = "error"></div>
+                            
+                        
                     </div>
                 </div>
             </div>
@@ -107,8 +111,7 @@
     <script src="js/moment.min.js"></script>
     <script src="js/animsition.min.js"></script>
     <script src="js/select2.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/sesion.js"></script>
 </body>
 
 </html>

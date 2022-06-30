@@ -510,6 +510,7 @@
   }
   .mega-menu2 .drop-down-multilevel * {
     color: #323232;
+    font-size: 16px;
   }
   
   @media screen and (min-width: 993px) {

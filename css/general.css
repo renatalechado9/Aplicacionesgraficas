@@ -1944,7 +1944,7 @@ section.text-center:hover .section-title2 .title:before {
 .section-title3 h6.title:after {
     content: "";
     position: absolute;
-    left: 290;
+    left: 210;
     bottom: 0;
     width: 700px;
     height: 3px;
@@ -2194,7 +2194,7 @@ section.text-center:hover .section-title5 .title:before {
 .section-title6 h6.title:after {
     content: "";
     position: absolute;
-    left: 450;
+    left: 360;
     bottom: 0;
     width: 390px;
     height: 3px;
@@ -2537,7 +2537,7 @@ section.text-center:hover .section-title9 .title:before {
 .section-title10 h6.title:after {
     content: "";
     position: absolute;
-    left: 390;
+    left: 310;
     bottom: 0;
     width: 510px;
     height: 3px;
@@ -2725,7 +2725,7 @@ section.text-center:hover .section-title11 .title:before {
 .section-title12 h6.title:after {
     content: "";
     position: absolute;
-    left: 350;
+    left: 260;
     bottom: 0;
     width: 610px;
     height: 3px;
@@ -2807,7 +2807,7 @@ section.text-center:hover .section-title12 .title:before {
 .section-title13 h6.title:after {
     content: "";
     position: absolute;
-    left: 490;
+    left: 400;
     bottom: 0;
     width: 310px;
     height: 3px;

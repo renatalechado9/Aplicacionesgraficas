@@ -12,7 +12,7 @@
   /*  max-width: 1280px;
     width: 100%;*/
     font-size: 36px;
-    min-height: 30px;
+    min-height: 45px;
     width: 100%;
     clear: both;
     box-sizing: border-box;
@@ -583,14 +583,14 @@
   .mega-menu2 .drop-down-multilevel a {
     margin: 0;
     padding: 8px 5px;
-    font-size: 0.9000em;
+    font-size: 20px;
     text-transform: capitalize;
     display: inline-block;  
     width: 100%;
     color: #ffffff;
     -webkit-transition: color 200ms ease;
             transition: color 200ms ease;
-    min-height:40px;
+    min-height:30px;
   }
   @media screen and (max-width: 992px) {
     .mega-menu2 .drop-down-multilevel a {

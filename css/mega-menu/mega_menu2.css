@@ -12,7 +12,7 @@
   /*  max-width: 1280px;
     width: 100%;*/
     font-size: 36px;
-    min-height: 40px;
+    min-height: 30px;
     width: 100%;
     clear: both;
     box-sizing: border-box;
@@ -174,7 +174,7 @@
     float: left;
     -webkit-transition: background-color 200ms ease;
             transition: background-color 200ms ease;
-    font-size: 1em;
+    font-size: 0.7em;
   }
   @media screen and (max-width: 992px) {
     .mega-menu2 .menu-links > li {
@@ -212,7 +212,7 @@
     width: 100%;
     color: #ffffff;
     font-size: 0.933em;
-    line-height: 64px;
+    line-height: 44px;
     position: relative;
     text-transform: capitalize;
   }

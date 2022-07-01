@@ -140,7 +140,7 @@ input[type="radio"]:checked~label {
     color: orange;
 }
 
-.detalles {
+a detalles {
     color: black;
     text-align: center;
     border-radius: 10px;
@@ -2026,7 +2026,7 @@ section.text-center:hover .section-title3 .title:before {
 .section-title4 h6.title:after {
     content: "";
     position: absolute;
-    left: 540;
+    left: 450;
     bottom: 0;
     width: 200px;
     height: 3px;

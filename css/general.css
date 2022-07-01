@@ -2276,7 +2276,7 @@ section.text-center:hover .section-title6 .title:before {
 .section-title7 h6.title:after {
     content: "";
     position: absolute;
-    left: 370;
+    left: 280;
     bottom: 0;
     width: 550px;
     height: 3px;
@@ -2455,7 +2455,7 @@ section.text-center:hover .section-title8 .title:before {
 .section-title9 h6.title:after {
     content: "";
     position: absolute;
-    left: 420;
+    left: 330;
     bottom: 0;
     width: 450px;
     height: 3px;

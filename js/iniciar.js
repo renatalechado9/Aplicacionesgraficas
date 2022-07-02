@@ -7,7 +7,7 @@ document.getElementById("login-form").addEventListener("submit", (e) => {
 
     console.log(email, pass);
 
-    if (email === "admin" && pass === "admin")
+    if (email === "admin@gmail.com" && pass === "admin")
         return window.location.href = "admin.html";
     
     else 

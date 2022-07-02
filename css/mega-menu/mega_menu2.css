@@ -60,6 +60,7 @@
     padding: 0;
     display: block;
     float: left;
+    height: fit-content;
     width: 100%;
     background-color: transparent;
   }
@@ -494,10 +495,10 @@
   }
   .mega-menu2 .drop-down-multilevel {
     /*-------------------------------------------------- DROP DOWN MULTILEVEL */
-    display: none;
-    visibility: visible;
-    opacity: 0;
-    position: fixed;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
     top: auto;
     left: auto;
     right: auto;
@@ -534,7 +535,7 @@
     }
   }
   .mega-menu2 .drop-down-multilevel li {
-    margin: 0;
+    margin-left: 15px;
     padding: 0;
     display: block;
     float: left;

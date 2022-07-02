@@ -106,7 +106,7 @@
                         <div class="topbar-left text-left">
                             <div class="row links">
                                 <div class="col-4" style="position: relative; right:4.5rem">
-                                    <i class="gmail"></i> contacto@madererialahuerta.com
+                                    <i class="gmail"></i> contacto@madereriaelroble.com
                                 </div>
                                 <div class="col-4" style="position: relative; right:4.5rem">
                                     <i class="foto"></i> Lun-Vie 8:30-6:30-Sáb 8:30-2:00
@@ -150,7 +150,7 @@
                                     <li class="hoverTrigger" style="position:relative;left:6rem;">
                                         <a href="Micuenta.html"><img id="US" src="images/usuario_2.png" height="100px"></a>
                                         <ul class="drop-down-multilevel left-menu effect-fade"
-                                            style="transition: all 400ms ease 0s;position:absolute;display:block; visibility:visible;">
+                                            style="transition: all 400ms ease 0s;position:absolute;display:none;">
                                             <li><a href="Micuenta.html">Mi cuenta</a></li>
                                             <li><a href="historialordenes.html">Historial de Ordenes</a></li>
                                             <li><a href="Iniciarsesion.html">Cambiar cuenta</a></li>
@@ -184,7 +184,7 @@
                                                 style="margin-top:0.2em;height:30px">Categorias<i class=""></i>
                                         </a>
                                         <ul class="drop-down-multilevel left-menu effect-fade"
-                                            style="transition: all 400ms ease 0s;">
+                                            style="transition: all 400ms ease 0s;display:none">
                                             <li><a href="cocinas.html">Cocinas</a></li>
                                             <li><a href="construccion.html">Construccion</a></li>
                                             <li><a href="cubiertas.html">Cubiertas</a></li>
@@ -272,7 +272,7 @@
 
         <div class="defoult-form">
   
-        <div id="formmessage" style="display:none">Llena todos los campos</div>
+        <div id="formmessage" style="display:none;">Llena todos los campos</div>
   
            <form id="contactform" role="form" method="post" action="php/contact-form.php">
   
@@ -287,7 +287,7 @@
                 <div class="form-group half-group">
                     <label>Email</label>
                     <div class="input-group">
-                         <input type="email" placeholder="" class="form-control" id required="email">
+                         <input type="email" placeholder="" class="form-control" id="email" name="email" required="email">
                     </div>
   
                 </div>
@@ -296,7 +296,7 @@
                     <label>Teléfono</label>
   
                     <div class="input-group">
-                          <input type="text" placeholder="" class="form-control" id required="phone">
+                          <input type="text" placeholder="" class="form-control" id="phone" name="phone" required="phone">
                     </div>
                 </div>
   
@@ -325,13 +325,11 @@
   
                   <div class="form-group">
   
-                      <input type="hidden" name="action" value="sendEmail"/>
-  
                       <button id="submit" name="submit" type="submit" value="Send" class="button border animated middle-fill"><span>Enviar</span></button>
-  
+                      <button id="submit" name="submit" type="submit" class="button border animated middle-fill"><span>Borrar</span></button>
                   </div>
+                  
               </form>
-  
               </div>
       </div>
   
@@ -434,6 +432,7 @@
 
     </footer>
     
+    <script src="js/clean form/formularioContacto.js"></script>
     <script src="js/camara.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>

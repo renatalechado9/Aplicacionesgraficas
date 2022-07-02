@@ -41,7 +41,7 @@
             <div class="container-login100">
                 <div class="wrap-login100 align-items-center justify-content-center" style="height:530px">
                     <div class="col-md-7">
-                        <form class="login100-form validate-form flex-sb flex-w" method="post" style="position:relative;left:-85px">
+                        <form class="login100-form validate-form flex-sb flex-w" id="login-form" style="position:relative;left:-85px">
                             <div class="mb-8">
                                 <ul class="list-inline" style="position: relative;top:-15px;left:190px">
                                     <li style="color: black;font-size:20px;font-family: 'Poppins';">
@@ -63,12 +63,12 @@
                             </div>
                             <span class="d-block text-center my-4 text-muted" style="font-family:'Poppins'; position:relative;bottom:60px">&mdash; O Continuar con&mdash;</span>
                             <div class="wrap-input100 validate-input rounded-pill" data-validate="Valid email is required: ex@abc.xyz" style="position:relative;bottom:76px">
-                                <input class="input100 rounded-pill" type="text" name="email">
+                                <input class="input100 rounded-pill" type="text" name="email" id="email" required>
                                 <span class="focus-input100 rounded-pill"></span>
                                 <span class="label-input100">Email</span>
                             </div>
                             <div class="wrap-input100 validate-input rounded-pill" data-validate="Password is required" style="position:relative;bottom:76px">
-                                <input class="input100 rounded-pill" type="password" name="pass">
+                                <input class="input100 rounded-pill" type="password" name="pass" id="pass" required>
                                 <span class="focus-input100 rounded-pill"></span>
                                 <span class="label-input100">Password</span>
 
@@ -88,10 +88,11 @@
                             </div>
 
                             <div class="container-login100-form-btn" style="position:relative;top:-80px;font-family: 'Poppins';">
-                                <button class="login100-form-btn ">
-                                    <a href="inicio.html" class="txt1" style="font-size:24px;text-decoration:none;color:rgb(255, 254, 254);font-family: 'Poppins';">
-                                        Iniciar sesión
-                                    </a>
+                                <button class="login100-form-btn " id="login-btn">
+                                    Iniciar sesión
+                                    <!-- <a href="inicio.html" class="txt1" id="login" style="font-size:24px;text-decoration:none;color:rgb(255, 254, 254);font-family: 'Poppins';">
+                                        
+                                    </a> -->
                                 </button>
                             </div>
                         </form>
@@ -100,14 +101,9 @@
             </div>
         </div>
     </div>
-    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/countdowntime.js"></script>
-    <script src="js/daterangepicker.js"></script>
-    <script src="js/moment.min.js"></script>
-    <script src="js/animsition.min.js"></script>
-    <script src="js/select2.min.js"></script>
+    <script src="js/iniciar.js"></script>
 </body>
 
 </html>

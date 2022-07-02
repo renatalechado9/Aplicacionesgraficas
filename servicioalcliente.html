@@ -151,7 +151,7 @@
                                     <li class="hoverTrigger" style="position:relative;left:6rem;">
                                         <a href="Micuenta.html"><img id="US" src="images/usuario_2.png" height="100px"></a>
                                         <ul class="drop-down-multilevel left-menu effect-fade"
-                                            style="transition: all 400ms ease 0s;position:absolute;display:block; visibility:visible;">
+                                            style="transition: all 400ms ease 0s;position:absolute;display:none;">
                                             <li><a href="Micuenta.html">Mi cuenta</a></li>
                                             <li><a href="historialordenes.html">Historial de Ordenes</a></li>
                                             <li><a href="Iniciarsesion.html">Cambiar cuenta</a></li>
@@ -342,7 +342,7 @@
                                 <div class="row" style="left:-90px;position:relative">
                                     <div class="col-md-6 col-sm-6">
                                         <label class="label-inputs" for="nombre"><span>*</span>Nombre completo</label>
-                                        <input type="text" class="inputs validar" name="nombre" id="nombre" style="border: 1px solid rgb(227, 6, 19);">
+                                        <input type="text" class="inputs validar" name="nombre" id="nombre" style="border: 1px solid rgb(227, 6, 19);" required>
                                     </div>
                                     <div class="col-md-6 col-sm-6">
                                         <label class="label-inputs" for="cedula">Cédula de identidad</label>
@@ -352,11 +352,11 @@
                                 <div class="row" style="left:-90px;position:relative">
                                     <div class="col-md-6 col-sm-6">
                                         <label class="label-inputs" for="correo"><span>*</span>Correo electrónico</label>
-                                        <input type="text" class="inputs validar" name="correo" id="correo" style="border: 1px solid rgb(227, 6, 19);">
+                                        <input type="text" class="inputs validar" name="correo" id="correo" style="border: 1px solid rgb(227, 6, 19);" required>
                                     </div>
                                     <div class="col-md-6 col-sm-6">
                                         <label class="label-inputs" for="telefono"><span>*</span>Celular/ Teléfono</label>
-                                        <input type="number" class="inputs validar" name="telefono" id="telefono" style="border: 1px solid rgb(227, 6, 19);">
+                                        <input type="tel" class="inputs validar" name="telefono" id="telefono" style="border: 1px solid rgb(227, 6, 19);" required>
                                     </div>
                                 </div>
                                 <div class="row" style="left:-90px;position:relative">
@@ -371,19 +371,19 @@
                                         </select>
                                     </div>
                                     <div class="col-md-6 col-sm-6">
-                                        <label class="label-inputs " for="solicitud ">Tipo de gestión</label>
-                                        <select class="inputs " name="solicitud " id="solicitud ">
-                                            <option value="Solicitud N/D "></option>
-                                            <option value="Consulta ">Consulta</option>
-                                            <option value="Sugerencia ">Sugerencia</option>
-                                            <option value="Reclamo ">Reclamo</option>
+                                        <label class="label-inputs" for="solicitud">Tipo de gestión</label>
+                                        <select class="inputs" name="solicitud" id="solicitud">
+                                            <option value="Solicitud N/D"></option>
+                                            <option value="Consulta">Consulta</option>
+                                            <option value="Sugerencia">Sugerencia</option>
+                                            <option value="Reclamo">Reclamo</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="row ">
                                     <div class="col-md-12 " style="left:-90px;position:relative ">
-                                        <label class="label-inputs " for="comentario "><span>*</span>Sus comentarios</label>
-                                        <textarea class="inputs textareas validar " name="comentario " id="comentario " style="border: 1px solid rgb(227, 6, 19); "></textarea>
+                                        <label class="label-inputs " for="comentario"><span>*</span>Sus comentarios</label>
+                                        <textarea class="inputs textareas validar " name="comentario" id="comentario" style="border: 1px solid rgb(227, 6, 19); " required></textarea>
                                     </div>
                                 </div>
                                 <div class="row " style="left:-90px;position:relative ">
@@ -393,7 +393,7 @@
                                 </div>
                                 <div class="row " style="left:350px;position:relative ">
                                     <div class="col-md-12 text-right ">
-                                        <button id="btn-enviar-gestion " style="height:50px;font-size: 28px;color:black;background:#ffd200;border-color:lightgrey;margin-top:20px;padding-left:10px;padding-right:10px ">Enviar</button>
+                                        <input type="submit" id="btn-enviar-gestion" style="height:50px;font-size: 28px;color:black;background:#ffd200;border-color:lightgrey;margin-top:20px;padding-left:10px;padding-right:10px "></input>
                                     </div>
                                 </div>
                                 <div class="row " style="display: none; ">
@@ -582,6 +582,7 @@
 
     </footer>
 
+    <script src="js/clean form/formularioServicioCliente.js"></script>
     <script src="js/camara.js"></script>
     <script src="js/menu-sugerencia.js "></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

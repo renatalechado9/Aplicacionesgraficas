@@ -28,16 +28,18 @@ var carrito = [
             `<td class="price"><span>${precio}</span></td>`+
             `<td class="qty">`+
             `<div class="quantity">`+
-                    `<span class="qty-minus" onclick="changeQty(event, -1, '${nombre}')"><i class="bi bi-caret-left-fill" aria-hidden="true"></i></span>`+
+                    `<span class="qty-minus" onclick="changeQty(-1, '${nombre}')"><i class="bi bi-caret-left-fill" aria-hidden="true"></i></span>`+
                     `<input type="number" class="qty-text" step="1" min="1" max="99" name="quantity" value="${cantidad}">`+
-                    `<span class="qty-plus"  onclick="changeQty(event, 1, '${nombre}')"><i class="bi bi-caret-right-fill" aria-hidden="true"></i></span>`+
+                    `<span class="qty-plus"  onclick="changeQty(1, '${nombre}')"><i class="bi bi-caret-right-fill" aria-hidden="true"></i></span>`+
                 `</div>`+
             `</td>`+
-            `<td class="total_price"><span>${getRound2(precio*cantidad)}</span></td>`;
+            `<td class="total_price"><span>${getRound2(precio*cantidad)}</span></td>`+
+            `<td> <button style="color: white;" type="button" class="btn btn-danger" onclick="deleteRow('${nombre}')">Eliminar</button> </td>`;
     }
     
-    function clearTable() {
-        for (let row in tabla.rows) {
+    async function clearTable() {
+        let length = tabla.rows.length
+        for (let i = 1; i < length; i++) {
             tabla.deleteRow(-1);
         }
     }
@@ -46,7 +48,7 @@ var carrito = [
         let sum = 0;
         clearTable();
         carrito.forEach(producto =>{
-            let row = tabla.insertRow();
+            let row = tabla.getElementsByTagName("tbody")[0].insertRow();
             row.innerHTML = getRowHTML(producto);
             sum += producto.cantidad*producto.precio;
         });
@@ -64,9 +66,15 @@ var carrito = [
         updateTable();
     }
     
-    function changeQty(evt, count, nombre){
+    function changeQty(count, nombre){
+        carrito.findIndex(producto => producto.nombre === nombre)
         carrito[carrito.findIndex(producto => producto.nombre === nombre)].cantidad += count;
-        updateTable()
+        updateTable();
+    }
+    
+    function deleteRow(nombre){
+        carrito.splice(carrito.findIndex(producto => producto.nombre === nombre),1);
+        updateTable();
     }
     
     

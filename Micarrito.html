@@ -73,7 +73,6 @@
             z-index: 999;
             cursor: pointer;
         }
-
 .cart-table .table {
     position: relative;
     z-index: 9;
@@ -83,20 +82,16 @@
     border: none;
     font-size: 30px;
 }
-
 .cart_area table tbody tr td {
     width: 10% !important;
 }
-
 .cart_area table tbody tr td:first-child {
     width: 70% !important;
 }
-
 .cart_product_img > a {
     width: 120px;
     margin-right: 20px;
 }
-
 .cart-table .table td,
 .cart-table .table th {
     padding: 12px;
@@ -105,15 +100,14 @@
     text-align: left;
     vertical-align: middle;
     border: none;
-    font-size: 13px;
+    font-size: 18px;
 }
-
 .cart-table .cart_product_img h6 {
     font-size: 22px;
     margin: 0;
+    margin-left: 30px;
     font-weight: 400;
 }
-
 .cart-table .qty-minus,
 .cart-table .qty-plus {
     background-color: #f6f6f6;
@@ -122,13 +116,12 @@
     height: 30px;
     width: 30px;
 }
-
 .cart-table .qty-minus i,
 .cart-table .qty-plus i {
     line-height: 30px;
-    font-size: 10px;
+    margin-top: 15px;
+    font-size: 22px;
 }
-
 .cart-table .qty-text {
     background-color: #f6f6f6;
     border: medium none;
@@ -141,14 +134,11 @@
     font-size: 12px;
     width: 50px;
 }
-
-
 .cart-table .qty-text::-webkit-inner-spin-button,
 .cart-table .qty-text::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-
 .cart-table .quantity {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -158,62 +148,51 @@
     display: inline-flex;
     text-align: center;
 }
-
 .cart-table .price span,
 .cart-table .total_price > span,
 .cart-table .action > a {
-    font-size: 14px;
+    font-size: 16px;
 }
-
 .cart_area .update-checkout p,
 .cart_area .back-to-shop a {
     background-color: transparent;
     border-radius: 0;
-    display: inline-block;
-    height: 55px;
+    color:white;
+    font-style: normal;
+    height: 68px;
     line-height: 51px;
     min-width: 120px;
     padding: 0 30px;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
-    border: 2px solid #3a3a3a;
     text-transform: uppercase;
 }
-
 .cart_area .update-checkout p:first-child {
-    color: #7a7a7a;
-    border-color: #f4f2f8;
+    color: white;background-color: transparent;height: 68px;
 }
-
-
 .cart_area .update-checkout p:last-child {
-    background-color: #f4f2f8;
-    color: #7a7a7a;
-    border-color: #f4f2f8;
+    background-color: transparent;
+    color: white;height: 68px;
 }
-
 .cart_area .update-checkout p:hover {
     cursor: pointer;
-    background-color: #3a3a3a;
     color: white;
 }
-
 .cart-page-heading {
     margin-bottom: 50px;
 }
-
 .cart-page-heading h5 {
     text-transform: uppercase;
-    font-size: 18px;
-}
+    font-size: 25px;
+    color:black;
 
+}
 .cart-page-heading p {
-    color: #7a7a7a;
-    font-size: 14px;
+    color: black;
+    font-size: 16px;
     margin-bottom: 0;
 }
-
 .coupon-code-area form {
     position: relative;
     z-index: 1;
@@ -225,7 +204,7 @@
     border: none;
     background-color: #f4f2f8;
     padding: 0 30px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .coupon-code-area form > button {
@@ -233,22 +212,27 @@
     height: 52px;
     border: none;
     text-transform: uppercase;
-    background-color: #ff084e;
-    padding: 0 30px;
-    font-size: 14px;
+    background-color: #ffd200;
+    padding: 0 17px;
+    font-size: 18px;
     position: absolute;
     top: 0;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-weight: 700;
     right: 0;
 }
 
 .shipping-method-area .custom-control-label span {
-    font-size: 14px;
+    font-size: 18px;
 }
-
+.custom-control-input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
 .cart-total-chart {
     background-color: #f4f2f8;
+    color:black;
     padding: 30px;
 }
 
@@ -271,9 +255,10 @@
 .karl-checkout-btn {
     width: 100%;
     height: 60px;
-    background-color: #ff084e;
+    font-size: 18px;
+    background-color: #ffd200;
     border-radius: 0;
-    color: #fff;
+    color: black;
     text-transform: uppercase;
     font-weight: 700;
     line-height: 60px;
@@ -491,13 +476,13 @@
                                 <tbody>
                                     <tr>
                                         <td class="cart_product_img d-flex align-items-center">
-                                            <a href="#"><img src="images/Tableros/Aglomerado.jpg" alt="Product" height="100px" width="150px" ></a>
-                                            <h6>Aglomerado</h6>
+                                            <a href="./tableros.html"><img src="images/Tableros/Aglomerado.jpg" alt="Product" height="100px" width="150px" ></a>
+                                            <h6 style="position: relative;left:50px">Aglomerado</h6>
                                         </td>
                                         <td class="price"><span>$49.88</span></td>
                                         <td class="qty">
                                             <div class="quantity">
-                                                <span class="qty-minus" ><i class="bi bi-caret-left-fill" aria-hidden="true"></i></span>
+                                                <span class="qty-minus" ><i class="bi bi-caret-left-fill" aria-hidden="true" ></i></span>
                                                 <input type="number" class="qty-text" id="qty" step="1" min="1" max="99" name="quantity" value="1">
                                                 <span class="qty-plus" ><i class="bi bi-caret-right-fill" aria-hidden="true"></i></span>
                                             </div>
@@ -506,7 +491,7 @@
                                     </tr>
                                     <tr>
                                         <td class="cart_product_img d-flex align-items-center">
-                                            <a href="#"><img src="images/maderas/Alder.png" alt="Product"height="100px" width="150px"></a>
+                                            <a href="./maderas.html"><img src="images/maderas/Alder.png" alt="Product"height="100px" width="150px"></a>
                                             <h6>Maderas Finas Alder</h6>
                                         </td>
                                         <td class="price"><span>$49.88</span></td>
@@ -522,69 +507,65 @@
                                 </tbody>
                             </table>
                         </div>
-
                         <div class="cart-footer d-flex mt-30">
                             <div class="back-to-shop w-50">
-                                <a href="shop-grid-left-sidebar.html">Continue shooping</a>
+                                <button type="button" class="btn btn-primary btn-lg"><a href="./maderas.html">Continuar comprando</a></button>
+                                
                             </div>
-                            <div class="update-checkout w-50 text-right">
-                                <p onclick="clearAll()">clear cart</a>
-                                <p onclick="updateTable()">Update cart</a>
+                            <div class="update-checkout w-30 text-right" style="margin-left: 80px;">
+                                <button type="button" class="btn btn-primary btn-lg" style="height: 68px; "><p onclick="clearAll()">clear cart</a></button>
+                                <button type="button" class="btn btn-primary btn-lg"style="height: 68px;"><p onclick="updateTable()">Update cart</a></button>
                             </div>
                         </div>
 
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="coupon-code-area mt-70">
                             <div class="cart-page-heading">
-                                <h5>Cupon code</h5>
-                                <p>Enter your cupone code</p>
+                                <h5>Codigo del cupon</h5>
+                                <p>Introduce el codigo del cupon</p>
                             </div>
                             <form action="#">
                                 <input type="search" name="search" placeholder="#569ab15">
-                                <button type="submit">Apply</button>
+                                <button type="submit">Aplicar</button>
                             </form>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <form class="shipping-method-area mt-70">
                             <div class="cart-page-heading">
-                                <h5>Shipping method</h5>
-                                <p>Select the one you want</p>
+                                <h5>Metodo de Envio</h5>
+                                <p>Seleccione el deseado</p>
                             </div>
-
                             <div class="custom-control custom-radio mb-30">
                                 <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="4.99">
-                                <label class="custom-control-label d-flex align-items-center justify-content-between" for="customRadio1" ><span>Next day delivery</span><span>$4.99</span></label>
+                                <label class="custom-control-label d-flex align-items-center justify-content-between" for="customRadio1" ><span>Delivery Inmediato</span><span>$4.99</span></label>
                             </div>
-
                             <div class="custom-control custom-radio mb-30">
                                 <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" value="1.99">
-                                <label class="custom-control-label d-flex align-items-center justify-content-between" for="customRadio2" ><span>Standard delivery</span><span>$1.99</span></label>
+                                <label class="custom-control-label d-flex align-items-center justify-content-between" for="customRadio2" ><span>Delivery Estandar</span><span>$1.99</span></label>
                             </div>
-
-                            <div class="custom-control custom-radio">
+                            <div class="custom-control custom-radio mb-30">
                                 <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" value="0" checked>
-                                <label class="custom-control-label d-flex align-items-center justify-content-between" for="customRadio3" ><span>Personal Pickup</span><span>Free</span></label>
+                                <label class="custom-control-label d-flex align-items-center justify-content-between" for="customRadio3" ><span>Recoger Personalmente</span><span>Free</span></label>
                             </div>
                         </form>
                     </div>
                     <div class="col-12 col-lg-4">
                         <div class="cart-total-area mt-70">
                             <div class="cart-page-heading">
-                                <h5>Cart total</h5>
-                                <p>Final info</p>
+                                <h5>Cuenta Total</h5>
+                                <p>Informacion Final</p>
                             </div>
 
                             <ul class="cart-total-chart">
                                 <li><span>Subtotal</span> <span id="t-subtotal">$59.90</span></li>
-                                <li><span>Shipping</span> <span id="t-shipping">Free</span></li>
+                                <li><span>Envio</span> <span id="t-shipping">Free</span></li>
                                 <li><span><strong>Total</strong></span> <span><strong id="t-total">$59.90</strong></span></li>
                             </ul>
-                            <a href="checkout.html" class="btn karl-checkout-btn">Proceed to checkout</a>
+                            <a href="checkout.html" class="btn karl-checkout-btn">Procede a Pagar</a>
                         </div>
                     </div>
                 </div>

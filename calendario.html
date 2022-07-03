@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,49 +14,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
     <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fullcalendar.css">
+    <link rel="stylesheet" href="assets/css/simplebar.css">
+    <link rel="stylesheet" href="assets/css/feather.css">
+    <link rel="stylesheet" href="assets/css/select2.css">
+    <link rel="stylesheet" href="assets/css/dropzone.css">
+    <link rel="stylesheet" href="assets/css/uppy.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.steps.css">
+    <link rel="stylesheet" href="assets/css/jquery.timepicker.css">
+    <link rel="stylesheet" href="assets/css/quill.snow.css">
+    <link rel="stylesheet" href="assets/css/daterangepicker.css">
     <link href="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/jqvmap@1.5.1/dist/jqvmap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
 
-   <style>
-    #weatherWidget .currentDesc {
-        color: #ffffff!important;
-    }
-        .traffic-chart {
-            min-height: 335px;
-        }
-        #flotPie1  {
-            height: 150px;
-        }
-        #flotPie1 td {
-            padding:3px;
-        }
-        #flotPie1 table {
-            top: 20px!important;
-            right: -10px!important;
-        }
-        .chart-container {
-            display: table;
-            min-width: 270px ;
-            text-align: left;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        #flotLine5  {
-             height: 105px;
-        }
-
-        #flotBarChart {
-            height: 150px;
-        }
-        #cellPaiChart{
-            height: 160px;
-        }
+    <style>
 
     </style>
 </head>
@@ -67,23 +46,25 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav" style="margin-top:20px">
                     <li class=" menu-item-has-children dropdown active">
-                        <a href="admin.html" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                        <a href="admin.html" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
                             <i class="menu-icon fa fa-laptop"></i>Dashboard</a>
-                            <ul class="sub-menu children dropdown-menu">
-                                <li><i class="fa fa-laptop"></i><a href="admin.html">Default</a></li>
-                                <li><i class="fa fa-bar-chart-o"></i><a href="dashboardfinan.html">Financiero</a></li>
-                                <li><i class="fa fa-shopping-cart"></i><a href="sales.html">Ventas</a></li>
-                                <li><i class="fa fa-clipboard"></i><a href="ordenes.html">Ordenes Pendientes</a></li>
-                                <li><i class="fa fa-book"></i><a href="transacciones.html">Transacciones</a></li>
-                            </ul>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-laptop"></i><a href="admin.html">Default</a></li>
+                            <li><i class="fa fa-bar-chart-o"></i><a href="dashboardfinan.html">Financiero</a></li>
+                            <li><i class="fa fa-shopping-cart"></i><a href="sales.html">Ventas</a></li>
+                            <li><i class="fa fa-clipboard"></i><a href="ordenes.html">Ordenes Pendientes</a></li>
+                            <li><i class="fa fa-book"></i><a href="transacciones.html">Transacciones</a></li>
+                        </ul>
                     </li>
                     <li class="menu-title">Elementos</li>
                     <li>
                         <a href="clientes.html"> <i class="menu-icon fa fa-users"></i>Clientes</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon fa fa-user"></i>Usuarios</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="menu-icon fa fa-user"></i>Usuarios</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-users"></i><a href="all-users.html">Todos los usuarios</a></li>
                             <li><i class="fa fa-plus-circle"></i><a href="add-user.html">Nuevo Usuario</a></li>
@@ -96,10 +77,12 @@
                         <a href="salarios.html"> <i class="menu-icon ti-user"></i>Empleados</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon ti-agenda"></i>Contactos</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="menu-icon ti-agenda"></i>Contactos</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-view-list-alt"></i><a href="tablacontactos.html">Tabla de contactos</a></li>
+                            <li><i class="ti-view-list-alt"></i><a href="tablacontactos.html">Tabla de contactos</a>
+                            </li>
                             <li><i class="ti-view-grid"></i><a href="cartascontactos.html">Cartas de contactos</a></li>
                             <li><i class="fa fa-plus-circle"></i><a href="añadircontacto.html">Añadir contacto</a></li>
                         </ul>
@@ -108,16 +91,19 @@
                         <a href="help.html"> <i class="menu-icon ti-help"></i>Ayuda</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon ti-harddrives"></i>Estado de Ordenes</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="menu-icon ti-harddrives"></i>Estado de Ordenes</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-th-list"></i><a href="listaorden.html">Lista de Ordenes</a></li>
-                            <li><i class="fa fa-file-text-o"></i><a href="detallesorden.html">Detalles de la Orden</a></li>
+                            <li><i class="fa fa-file-text-o"></i><a href="detallesorden.html">Detalles de la Orden</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon fa fa-user"></i>Cuenta</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="menu-icon fa fa-user"></i>Cuenta</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="ti-user"></i><a href="mi-cuenta.html">Mi Cuenta</a></li>
                             <li><i class="fa fa-cog"></i><a href="editarcuenta.html">Editar mi Cuenta</a></li>
@@ -153,7 +139,8 @@
                 <div class="header-menu">
                     <div class="header-left">
                         <div class="dropdown for-notification">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="notification"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-bell"></i>
                                 <span class="count bg-danger">3</span>
                             </button>
@@ -174,14 +161,16 @@
                             </div>
                         </div>
                         <div class="dropdown for-message">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="message" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="message"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-envelope"></i>
                                 <span class="count bg-primary">4</span>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="message">
                                 <p class="red">Tu tienes 4 e-mails</p>
                                 <a class="dropdown-item media" href="#">
-                                    <span class="photo media-left"><img alt="avatar" src="images/nosotros/xperson_1.jpg"></span>
+                                    <span class="photo media-left"><img alt="avatar"
+                                            src="images/nosotros/xperson_1.jpg"></span>
                                     <div class="message media-body">
                                         <span class="name float-left">Jonathan Smith</span>
                                         <span class="time float-right">Justo ahora</span>
@@ -189,7 +178,8 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item media" href="#">
-                                    <span class="photo media-left"><img alt="avatar" src="images/nosotros/xperson_2.jpg"></span>
+                                    <span class="photo media-left"><img alt="avatar"
+                                            src="images/nosotros/xperson_2.jpg"></span>
                                     <div class="message media-body">
                                         <span class="name float-left">Jack Sanders</span>
                                         <span class="time float-right">Hace 5 minutos</span>
@@ -197,7 +187,8 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item media" href="#">
-                                    <span class="photo media-left"><img alt="avatar" src="images/nosotros/xperson_3.jpg"></span>
+                                    <span class="photo media-left"><img alt="avatar"
+                                            src="images/nosotros/xperson_3.jpg"></span>
                                     <div class="message media-body">
                                         <span class="name float-left">Cheryl Wheeler</span>
                                         <span class="time float-right">Hace 10 minutos</span>
@@ -205,7 +196,8 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item media" href="#">
-                                    <span class="photo media-left"><img alt="avatar" src="images/nosotros/xperson_4.jpg"></span>
+                                    <span class="photo media-left"><img alt="avatar"
+                                            src="images/nosotros/xperson_4.jpg"></span>
                                     <div class="message media-body">
                                         <span class="name float-left">Rachel Santos</span>
                                         <span class="time float-right">Hace 15 minutos</span>
@@ -216,18 +208,23 @@
                         </div>
                     </div>
                     <div class="user-area dropdown float-right">
-                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="user-avatar rounded-circle" src="images/nosotros/xperson_5.jpg" alt="User Avatar">
+                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <img class="user-avatar rounded-circle" src="images/nosotros/xperson_5.jpg"
+                                alt="User Avatar">
                         </a>
 
                         <div class="user-menu dropdown-menu">
                             <a class="nav-link" href="./mi-cuenta.html"><i class="fa fa-user"></i>Mi cuenta</a>
 
-                            <a class="nav-link" href="./notificaciones.html"><i class="fa fa-asterisk"></i>Notificaciones<span class="count">13</span></a>
+                            <a class="nav-link" href="./notificaciones.html"><i
+                                    class="fa fa-asterisk"></i>Notificaciones<span class="count">13</span></a>
 
-                            <a class="nav-link" href="./configuraciones.html"><i class="fa fa-cog"></i>Configuraciones</a>
+                            <a class="nav-link" href="./configuraciones.html"><i
+                                    class="fa fa-cog"></i>Configuraciones</a>
 
-                            <a class="nav-link" href="./Inicio2.html"><i class="fa fa-power-off"></i>Salir de la sesion</a>
+                            <a class="nav-link" href="./Inicio2.html"><i class="fa fa-power-off"></i>Salir de la
+                                sesion</a>
                         </div>
                     </div>
 
@@ -236,10 +233,534 @@
         </header>
         <!-- /#header -->
         <!-- Content -->
-        <div class="content">
-            
-        </div>
-        
+        <main role="main" class="main-content">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="row align-items-center my-3">
+                            <div class="col">
+                                <h2 class="page-title">Calendar</h2>
+                            </div>
+                            <div class="col-auto">
+                                <button type="button" class="btn" data-toggle="modal" data-target=".modal-calendar"><span class="fa fa-filter fe-16 text-muted"></span></button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eventModal"><span class="fa fa-plus fe-16 mr-3"></span>New
+                                    Event</button>
+                            </div>
+                        </div>
+                        <div id="calendar" class="fc fc-ltr fc-bootstrap fc-unthemed">
+                            <div class="fc-toolbar fc-header-toolbar">
+                                <div class="fc-left"><button type="button" class="fc-today-button btn">today</button>
+                                    <button type="button" class="fc-prev-button btn" aria-label="prev"><span class="fa fa-chevron-left"></span></button>
+                                    <button type="button" class="fc-next-button btn" aria-label="next"><span class="fa fa-chevron-right"></span></button></div>
+                                <div class="fc-center">
+                                    <h2>July 2022</h2>
+                                </div>
+                                <div class="fc-right">
+                                    <div class="btn-group"><button type="button" class="fc-dayGridMonth-button btn active">month</button><button type="button" class="fc-timeGridWeek-button btn">week</button><button type="button" class="fc-timeGridDay-button btn">day</button><button type="button" class="fc-listMonth-button btn">list</button></div>
+                                </div>
+                            </div>
+                            <div class="fc-view-container">
+                                <div class="fc-view fc-dayGridMonth-view fc-dayGrid-view" >
+                                    <table class="table-bordered">
+                                        <thead class="fc-head">
+                                            <tr>
+                                                <td class="fc-head-container ">
+                                                    <div class="fc-row table-bordered">
+                                                        <table class="table-bordered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="fc-week-number " style="width: 18.5px;">
+                                                                        <span>W</span></th>
+                                                                    <th class="fc-day-header  fc-sun"><span>Sun</span>
+                                                                    </th>
+                                                                    <th class="fc-day-header  fc-mon"><span>Mon</span>
+                                                                    </th>
+                                                                    <th class="fc-day-header  fc-tue"><span>Tue</span>
+                                                                    </th>
+                                                                    <th class="fc-day-header  fc-wed"><span>Wed</span>
+                                                                    </th>
+                                                                    <th class="fc-day-header  fc-thu"><span>Thu</span>
+                                                                    </th>
+                                                                    <th class="fc-day-header  fc-fri"><span>Fri</span>
+                                                                    </th>
+                                                                    <th class="fc-day-header  fc-sat"><span>Sat</span>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="fc-body">
+                                            <tr>
+                                                <td class="">
+                                                    <div class="fc-scroller fc-day-grid-container" style="overflow: hidden; height: 713.875px;">
+                                                        <div class="fc-day-grid">
+                                                            <div class="fc-row fc-week table-bordered fc-rigid" style="height: 118px;">
+                                                                <div class="fc-bg">
+                                                                    <table class="table-bordered">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="fc-week-number " style="width: 18.5px;"></td>
+                                                                                <td class="fc-day  fc-sun fc-other-month fc-past" data-date="2022-06-26"></td>
+                                                                                <td class="fc-day  fc-mon fc-other-month fc-past" data-date="2022-06-27"></td>
+                                                                                <td class="fc-day  fc-tue fc-other-month fc-past" data-date="2022-06-28"></td>
+                                                                                <td class="fc-day  fc-wed fc-other-month fc-past" data-date="2022-06-29"></td>
+                                                                                <td class="fc-day  fc-thu fc-other-month fc-past" data-date="2022-06-30"></td>
+                                                                                <td class="fc-day  fc-fri fc-past" data-date="2022-07-01"></td>
+                                                                                <td class="fc-day  fc-sat fc-past" data-date="2022-07-02"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="fc-content-skeleton">
+                                                                    <table>
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <td class="fc-week-number" style="width: 18.5px;">
+                                                                                    <span>26</span></td>
+                                                                                <td class="fc-day-top fc-sun fc-other-month fc-past" data-date="2022-06-26"><span class="fc-day-number">26</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-mon fc-other-month fc-past" data-date="2022-06-27"><span class="fc-day-number">27</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-tue fc-other-month fc-past" data-date="2022-06-28"><span class="fc-day-number">28</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-wed fc-other-month fc-past" data-date="2022-06-29"><span class="fc-day-number">29</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-thu fc-other-month fc-past" data-date="2022-06-30"><span class="fc-day-number">30</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-fri fc-past" data-date="2022-07-01"><span class="fc-day-number">1</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-sat fc-past" data-date="2022-07-02"><span class="fc-day-number">2</span>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="fc-week-number" style="width:18.5px"></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end">
+                                                                                        <div class="fc-content"> <span class="fc-title">All Day
+                                                                                                Event</span></div>
+                                                                                    </a></td>
+                                                                                <td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-not-end">
+                                                                                        <div class="fc-content"> <span class="fc-title">Conference</span>
+                                                                                        </div>
+                                                                                    </a></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fc-row fc-week table-bordered fc-rigid" style="height: 118px;">
+                                                                <div class="fc-bg">
+                                                                    <table class="table-bordered">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="fc-week-number " style="width: 18.5px;"></td>
+                                                                                <td class="fc-day  fc-sun fc-today alert alert-info" data-date="2022-07-03"></td>
+                                                                                <td class="fc-day  fc-mon fc-future" data-date="2022-07-04"></td>
+                                                                                <td class="fc-day  fc-tue fc-future" data-date="2022-07-05"></td>
+                                                                                <td class="fc-day  fc-wed fc-future" data-date="2022-07-06"></td>
+                                                                                <td class="fc-day  fc-thu fc-future" data-date="2022-07-07"></td>
+                                                                                <td class="fc-day  fc-fri fc-future" data-date="2022-07-08"></td>
+                                                                                <td class="fc-day  fc-sat fc-future" data-date="2022-07-09"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="fc-content-skeleton">
+                                                                    <table>
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <td class="fc-week-number" style="width: 18.5px;">
+                                                                                    <span>27</span></td>
+                                                                                <td class="fc-day-top fc-sun fc-today alert alert-info" data-date="2022-07-03"><span class="fc-day-number">3</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-mon fc-future" data-date="2022-07-04"><span class="fc-day-number">4</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-tue fc-future" data-date="2022-07-05"><span class="fc-day-number">5</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-wed fc-future" data-date="2022-07-06"><span class="fc-day-number">6</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-thu fc-future" data-date="2022-07-07"><span class="fc-day-number">7</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-fri fc-future" data-date="2022-07-08"><span class="fc-day-number">8</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-sat fc-future" data-date="2022-07-09"><span class="fc-day-number">9</span>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="fc-week-number" style="width:18.5px"></td>
+                                                                                <td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-not-start fc-end">
+                                                                                        <div class="fc-content"> <span class="fc-title">Conference</span>
+                                                                                        </div>
+                                                                                    </a></td>
+                                                                                <td class="fc-event-container" rowspan="3"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end">
+                                                                                        <div class="fc-content"><span class="fc-time">7a</span>
+                                                                                            <span class="fc-title">Birthday
+                                                                                                Party</span></div>
+                                                                                    </a></td>
+                                                                                <td rowspan="3"></td>
+                                                                                <td rowspan="3"></td>
+                                                                                <td class="fc-event-container" colspan="3"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end">
+                                                                                        <div class="fc-content"> <span class="fc-title">Long
+                                                                                                Event</span></div>
+                                                                                    </a></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="fc-week-number" style="width:18.5px"></td>
+                                                                                <td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end">
+                                                                                        <div class="fc-content"><span class="fc-time">10:30a</span>
+                                                                                            <span class="fc-title">Meeting</span>
+                                                                                        </div>
+                                                                                    </a></td>
+                                                                                <td rowspan="2"></td>
+                                                                                <td rowspan="2"></td>
+                                                                                <td class="fc-event-container" rowspan="2"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end">
+                                                                                        <div class="fc-content"><span class="fc-time">4p</span>
+                                                                                            <span class="fc-title">Repeating
+                                                                                                Event</span></div>
+                                                                                    </a></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="fc-week-number" style="width:18.5px"></td>
+                                                                                <td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end">
+                                                                                        <div class="fc-content"><span class="fc-time">12p</span>
+                                                                                            <span class="fc-title">Lunch</span>
+                                                                                        </div>
+                                                                                    </a></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fc-row fc-week table-bordered fc-rigid" style="height: 118px;">
+                                                                <div class="fc-bg">
+                                                                    <table class="table-bordered">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="fc-week-number " style="width: 18.5px;"></td>
+                                                                                <td class="fc-day  fc-sun fc-future" data-date="2022-07-10"></td>
+                                                                                <td class="fc-day  fc-mon fc-future" data-date="2022-07-11"></td>
+                                                                                <td class="fc-day  fc-tue fc-future" data-date="2022-07-12"></td>
+                                                                                <td class="fc-day  fc-wed fc-future" data-date="2022-07-13"></td>
+                                                                                <td class="fc-day  fc-thu fc-future" data-date="2022-07-14"></td>
+                                                                                <td class="fc-day  fc-fri fc-future" data-date="2022-07-15"></td>
+                                                                                <td class="fc-day  fc-sat fc-future" data-date="2022-07-16"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="fc-content-skeleton">
+                                                                    <table>
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <td class="fc-week-number" style="width: 18.5px;">
+                                                                                    <span>28</span></td>
+                                                                                <td class="fc-day-top fc-sun fc-future" data-date="2022-07-10"><span class="fc-day-number">10</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-mon fc-future" data-date="2022-07-11"><span class="fc-day-number">11</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-tue fc-future" data-date="2022-07-12"><span class="fc-day-number">12</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-wed fc-future" data-date="2022-07-13"><span class="fc-day-number">13</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-thu fc-future" data-date="2022-07-14"><span class="fc-day-number">14</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-fri fc-future" data-date="2022-07-15"><span class="fc-day-number">15</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-sat fc-future" data-date="2022-07-16"><span class="fc-day-number">16</span>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="fc-week-number" style="width:18.5px"></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end">
+                                                                                        <div class="fc-content"><span class="fc-time">4p</span>
+                                                                                            <span class="fc-title">Repeating
+                                                                                                Event</span></div>
+                                                                                    </a></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fc-row fc-week table-bordered fc-rigid" style="height: 118px;">
+                                                                <div class="fc-bg">
+                                                                    <table class="table-bordered">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="fc-week-number " style="width: 18.5px;"></td>
+                                                                                <td class="fc-day  fc-sun fc-future" data-date="2022-07-17"></td>
+                                                                                <td class="fc-day  fc-mon fc-future" data-date="2022-07-18"></td>
+                                                                                <td class="fc-day  fc-tue fc-future" data-date="2022-07-19"></td>
+                                                                                <td class="fc-day  fc-wed fc-future" data-date="2022-07-20"></td>
+                                                                                <td class="fc-day  fc-thu fc-future" data-date="2022-07-21"></td>
+                                                                                <td class="fc-day  fc-fri fc-future" data-date="2022-07-22"></td>
+                                                                                <td class="fc-day  fc-sat fc-future" data-date="2022-07-23"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="fc-content-skeleton">
+                                                                    <table>
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <td class="fc-week-number" style="width: 18.5px;">
+                                                                                    <span>29</span></td>
+                                                                                <td class="fc-day-top fc-sun fc-future" data-date="2022-07-17"><span class="fc-day-number">17</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-mon fc-future" data-date="2022-07-18"><span class="fc-day-number">18</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-tue fc-future" data-date="2022-07-19"><span class="fc-day-number">19</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-wed fc-future" data-date="2022-07-20"><span class="fc-day-number">20</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-thu fc-future" data-date="2022-07-21"><span class="fc-day-number">21</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-fri fc-future" data-date="2022-07-22"><span class="fc-day-number">22</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-sat fc-future" data-date="2022-07-23"><span class="fc-day-number">23</span>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="fc-week-number" style="width:18.5px"></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fc-row fc-week table-bordered fc-rigid" style="height: 118px;">
+                                                                <div class="fc-bg">
+                                                                    <table class="table-bordered">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="fc-week-number " style="width: 18.5px;"></td>
+                                                                                <td class="fc-day  fc-sun fc-future" data-date="2022-07-24"></td>
+                                                                                <td class="fc-day  fc-mon fc-future" data-date="2022-07-25"></td>
+                                                                                <td class="fc-day  fc-tue fc-future" data-date="2022-07-26"></td>
+                                                                                <td class="fc-day  fc-wed fc-future" data-date="2022-07-27"></td>
+                                                                                <td class="fc-day  fc-thu fc-future" data-date="2022-07-28"></td>
+                                                                                <td class="fc-day  fc-fri fc-future" data-date="2022-07-29"></td>
+                                                                                <td class="fc-day  fc-sat fc-future" data-date="2022-07-30"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="fc-content-skeleton">
+                                                                    <table>
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <td class="fc-week-number" style="width: 18.5px;">
+                                                                                    <span>30</span></td>
+                                                                                <td class="fc-day-top fc-sun fc-future" data-date="2022-07-24"><span class="fc-day-number">24</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-mon fc-future" data-date="2022-07-25"><span class="fc-day-number">25</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-tue fc-future" data-date="2022-07-26"><span class="fc-day-number">26</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-wed fc-future" data-date="2022-07-27"><span class="fc-day-number">27</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-thu fc-future" data-date="2022-07-28"><span class="fc-day-number">28</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-fri fc-future" data-date="2022-07-29"><span class="fc-day-number">29</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-sat fc-future" data-date="2022-07-30"><span class="fc-day-number">30</span>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="fc-week-number" style="width:18.5px"></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" href="http://google.com/">
+                                                                                        <div class="fc-content"> <span class="fc-title">Click
+                                                                                                for Google</span></div>
+                                                                                    </a></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div class="fc-row fc-week table-bordered fc-rigid" style="height: 123px;">
+                                                                <div class="fc-bg">
+                                                                    <table class="table-bordered">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="fc-week-number " style="width: 18.5px;"></td>
+                                                                                <td class="fc-day  fc-sun fc-future" data-date="2022-07-31"></td>
+                                                                                <td class="fc-day  fc-mon fc-other-month fc-future" data-date="2022-08-01"></td>
+                                                                                <td class="fc-day  fc-tue fc-other-month fc-future" data-date="2022-08-02"></td>
+                                                                                <td class="fc-day  fc-wed fc-other-month fc-future" data-date="2022-08-03"></td>
+                                                                                <td class="fc-day  fc-thu fc-other-month fc-future" data-date="2022-08-04"></td>
+                                                                                <td class="fc-day  fc-fri fc-other-month fc-future" data-date="2022-08-05"></td>
+                                                                                <td class="fc-day  fc-sat fc-other-month fc-future" data-date="2022-08-06"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="fc-content-skeleton">
+                                                                    <table>
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <td class="fc-week-number" style="width: 18.5px;">
+                                                                                    <span>31</span></td>
+                                                                                <td class="fc-day-top fc-sun fc-future" data-date="2022-07-31"><span class="fc-day-number">31</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-mon fc-other-month fc-future" data-date="2022-08-01"><span class="fc-day-number">1</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-tue fc-other-month fc-future" data-date="2022-08-02"><span class="fc-day-number">2</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-wed fc-other-month fc-future" data-date="2022-08-03"><span class="fc-day-number">3</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-thu fc-other-month fc-future" data-date="2022-08-04"><span class="fc-day-number">4</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-fri fc-other-month fc-future" data-date="2022-08-05"><span class="fc-day-number">5</span>
+                                                                                </td>
+                                                                                <td class="fc-day-top fc-sat fc-other-month fc-future" data-date="2022-08-06"><span class="fc-day-number">6</span>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="fc-week-number" style="width:18.5px"></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- new event modal -->
+                        <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="varyModalLabel">New Event</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body p-4">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="eventTitle" class="col-form-label">Title</label>
+                                                <input type="text" class="form-control" id="eventTitle" placeholder="Add event title">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="eventNote" class="col-form-label">Note</label>
+                                                <textarea class="form-control" id="eventNote" placeholder="Add some note for your event"></textarea>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-8">
+                                                    <label for="eventType">Event type</label>
+                                                    <select id="eventType" class="form-control select2 select2-hidden-accessible" data-select2-id="eventType" tabindex="-1" aria-hidden="true">
+                                                        <option value="work" data-select2-id="2">Work</option>
+                                                        <option value="home">Home</option>
+                                                    </select><span class="select2 select2-container select2-container--bootstrap4" dir="ltr" data-select2-id="1" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-eventType-container"><span class="select2-selection__rendered" id="select2-eventType-container" role="textbox" aria-readonly="true" title="Work">Work</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="date-input1">Start Date</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text" id="button-addon-date"><span class="fa fa-calendar fe-16"></span></div>
+                                                        </div>
+                                                        <input type="text" class="form-control drgpicker" id="drgpicker-start" value="04/24/2020">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="startDate">Start Time</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text" id="button-addon-time"><span class="fa fa-clock-o fe-16"></span></div>
+                                                        </div>
+                                                        <input type="text" class="form-control time-input" id="start-time" placeholder="10:00 AM">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="date-input1">End Date</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text" id="button-addon-date"><span class="fa fa-calendar fe-16"></span></div>
+                                                        </div>
+                                                        <input type="text" class="form-control drgpicker" id="drgpicker-end" value="04/24/2020">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="startDate">End Time</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text" id="button-addon-time"><span class="fa fa-clock-o fe-16"></span></div>
+                                                        </div>
+                                                        <input type="text" class="form-control time-input" id="end-time" placeholder="11:00 AM">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer d-flex justify-content-between">
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="RepeatSwitch" checked="">
+                                            <label class="custom-control-label" for="RepeatSwitch">All day</label>
+                                        </div>
+                                        <button type="button" class="btn mb-2 btn-primary">Save Event</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- new event modal -->
+                    </div> <!-- .col-12 -->
+                </div> <!-- .row -->
+            </div> <!-- .container-fluid -->
+           
+        </main>
+
     </div>
     <!-- /#right-panel -->
 
@@ -254,211 +775,265 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.bundle.min.js"></script>
 
     <!--Chartist Chart-->
-    <script src="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartist-plugin-legend@0.6.2/chartist-plugin-legend.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flot-pie@1.0.0/src/jquery.flot.pie.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flot-spline@0.0.1/js/jquery.flot.spline.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/simpleweather@3.1.0/jquery.simpleWeather.min.js"></script>
-    <script src="assets/js/init/weather-init.js"></script>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.js"></script>
     <script src="assets/js/init/fullcalendar-init.js"></script>
-
-    <!--Local Stuff-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/simplebar.min.js"></script>
+    <script src='js/daterangepicker.js'></script>
+    <script src='js/jquery.stickOnScroll.js'></script>
+    <script src="js/tinycolor-min.js"></script>
+    <script src="js/config.js"></script>
+    <script src='js/fullcalendar.js'></script>
+    <script src='js/fullcalendar.custom.js'></script>
     <script>
-        jQuery(document).ready(function($) {
-            "use strict";
-
-            // Pie chart flotPie1
-            var piedata = [
-                { label: "Desktop visits", data: [[1,32]], color: '#5c6bc0'},
-                { label: "Tab visits", data: [[1,33]], color: '#ef5350'},
-                { label: "Mobile visits", data: [[1,35]], color: '#66bb6a'}
-            ];
-
-            $.plot('#flotPie1', piedata, {
-                series: {
-                    pie: {
-                        show: true,
-                        radius: 1,
-                        innerRadius: 0.65,
-                        label: {
-                            show: true,
-                            radius: 2/3,
-                            threshold: 1
+        /** full calendar */
+        var calendarEl = document.getElementById('calendar2');
+        if (calendarEl) {
+            document.addEventListener('DOMContentLoaded', function () {
+                var calendar = new FullCalendar.Calendar(calendarEl,
+                    {
+                        plugins: ['dayGrid', 'timeGrid', 'list', 'bootstrap'],
+                        timeZone: 'UTC',
+                        themeSystem: 'bootstrap',
+                        header:
+                        {
+                            left: 'today, prev, next',
+                            center: 'title',
+                            right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
                         },
-                        stroke: {
-                            width: 0
-                        }
-                    }
-                },
-                grid: {
-                    hoverable: true,
-                    clickable: true
-                }
+                        buttonIcons:
+                        {
+                            prev: 'fe-arrow-left',
+                            next: 'fe-arrow-right',
+                            prevYear: 'left-double-arrow',
+                            nextYear: 'right-double-arrow'
+                        },
+                        weekNumbers: true,
+                        eventLimit: true, // allow "more" link when too many events
+                        events: 'https://fullcalendar.io/demo-events.json'
+                    });
+                calendar.render();
             });
-            // Pie chart flotPie1  End
-            // cellPaiChart
-            var cellPaiChart = [
-                { label: "Direct Sell", data: [[1,65]], color: '#5b83de'},
-                { label: "Channel Sell", data: [[1,35]], color: '#00bfa5'}
-            ];
-            $.plot('#cellPaiChart', cellPaiChart, {
-                series: {
-                    pie: {
-                        show: true,
-                        stroke: {
-                            width: 0
-                        }
-                    }
-                },
-                legend: {
-                    show: false
-                },grid: {
-                    hoverable: true,
-                    clickable: true
-                }
-
-            });
-            // cellPaiChart End
-            // Line Chart  #flotLine5
-            var newCust = [[0, 3], [1, 5], [2,4], [3, 7], [4, 9], [5, 3], [6, 6], [7, 4], [8, 10]];
-
-            var plot = $.plot($('#flotLine5'),[{
-                data: newCust,
-                label: 'New Data Flow',
-                color: '#fff'
-            }],
+        }
+    </script>
+    <script src='js/jquery.mask.min.js'></script>
+    <script src='js/select2.min.js'></script>
+    <script src='js/jquery.steps.min.js'></script>
+    <script src='js/jquery.validate.min.js'></script>
+    <script src='js/jquery.timepicker.js'></script>
+    <script src='js/dropzone.min.js'></script>
+    <script src='js/uppy.min.js'></script>
+    <script src='js/quill.min.js'></script>
+    <script>
+        $('.select2').select2(
             {
-                series: {
-                    lines: {
-                        show: true,
-                        lineColor: '#fff',
-                        lineWidth: 2
-                    },
-                    points: {
-                        show: true,
-                        fill: true,
-                        fillColor: "#ffffff",
-                        symbol: "circle",
-                        radius: 3
-                    },
-                    shadowSize: 0
-                },
-                points: {
-                    show: true,
-                },
-                legend: {
-                    show: false
-                },
-                grid: {
-                    show: false
+                theme: 'bootstrap4',
+            });
+        $('.select2-multi').select2(
+            {
+                multiple: true,
+                theme: 'bootstrap4',
+            });
+        $('.drgpicker').daterangepicker(
+            {
+                singleDatePicker: true,
+                timePicker: false,
+                showDropdowns: true,
+                locale:
+                {
+                    format: 'MM/DD/YYYY'
                 }
             });
-            // Line Chart  #flotLine5 End
-            // Traffic Chart using chartist
-            if ($('#traffic-chart').length) {
-                var chart = new Chartist.Line('#traffic-chart', {
-                  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-                  series: [
-                  [0, 18000, 35000,  25000,  22000,  0],
-                  [0, 33000, 15000,  20000,  15000,  300],
-                  [0, 15000, 28000,  15000,  30000,  5000]
-                  ]
-              }, {
-                  low: 0,
-                  showArea: true,
-                  showLine: false,
-                  showPoint: false,
-                  fullWidth: true,
-                  axisX: {
-                    showGrid: true
-                }
+        $('.time-input').timepicker(
+            {
+                'scrollDefault': 'now',
+                'zindex': '9999' /* fix modal open */
             });
-
-                chart.on('draw', function(data) {
-                    if(data.type === 'line' || data.type === 'area') {
-                        data.element.animate({
-                            d: {
-                                begin: 2000 * data.index,
-                                dur: 2000,
-                                from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
-                                to: data.path.clone().stringify(),
-                                easing: Chartist.Svg.Easing.easeOutQuint
-                            }
-                        });
+        /** date range picker */
+        if ($('.datetimes').length) {
+            $('.datetimes').daterangepicker(
+                {
+                    timePicker: true,
+                    startDate: moment().startOf('hour'),
+                    endDate: moment().startOf('hour').add(32, 'hour'),
+                    locale:
+                    {
+                        format: 'M/DD hh:mm A'
                     }
                 });
-            }
-            // Traffic Chart using chartist End
-            //Traffic chart chart-js
-            if ($('#TrafficChart').length) {
-                var ctx = document.getElementById( "TrafficChart" );
-                ctx.height = 150;
-                var myChart = new Chart( ctx, {
-                    type: 'line',
-                    data: {
-                        labels: [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul" ],
-                        datasets: [
-                        {
-                            label: "Visit",
-                            borderColor: "rgba(4, 73, 203,.09)",
-                            borderWidth: "1",
-                            backgroundColor: "rgba(4, 73, 203,.5)",
-                            data: [ 0, 2900, 5000, 3300, 6000, 3250, 0 ]
-                        },
-                        {
-                            label: "Bounce",
-                            borderColor: "rgba(245, 23, 66, 0.9)",
-                            borderWidth: "1",
-                            backgroundColor: "rgba(245, 23, 66,.5)",
-                            pointHighlightStroke: "rgba(245, 23, 66,.5)",
-                            data: [ 0, 4200, 4500, 1600, 4200, 1500, 4000 ]
-                        },
-                        {
-                            label: "Targeted",
-                            borderColor: "rgba(40, 169, 46, 0.9)",
-                            borderWidth: "1",
-                            backgroundColor: "rgba(40, 169, 46, .5)",
-                            pointHighlightStroke: "rgba(40, 169, 46,.5)",
-                            data: [1000, 5200, 3600, 2600, 4200, 5300, 0 ]
-                        }
-                        ]
-                    },
-                    options: {
-                        responsive: true,
-                        tooltips: {
-                            mode: 'index',
-                            intersect: false
-                        },
-                        hover: {
-                            mode: 'nearest',
-                            intersect: true
-                        }
+        }
+        var start = moment().subtract(29, 'days');
+        var end = moment();
 
-                    }
-                } );
-            }
-            //Traffic chart chart-js  End
-            // Bar Chart #flotBarChart
-            $.plot("#flotBarChart", [{
-                data: [[0, 18], [2, 8], [4, 5], [6, 13],[8,5], [10,7],[12,4], [14,6],[16,15], [18, 9],[20,17], [22,7],[24,4], [26,9],[28,11]],
-                bars: {
-                    show: true,
-                    lineWidth: 0,
-                    fillColor: '#ffffff8a'
+        function cb(start, end) {
+            $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        }
+        $('#reportrange').daterangepicker(
+            {
+                startDate: start,
+                endDate: end,
+                ranges:
+                {
+                    'Today': [moment(), moment()],
+                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                    'This Month': [moment().startOf('month'), moment().endOf('month')],
+                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
                 }
-            }], {
-                grid: {
-                    show: false
-                }
+            }, cb);
+        cb(start, end);
+        $('.input-placeholder').mask("00/00/0000",
+            {
+                placeholder: "__/__/____"
             });
-            // Bar Chart #flotBarChart End
-        });
+        $('.input-zip').mask('00000-000',
+            {
+                placeholder: "____-___"
+            });
+        $('.input-money').mask("#.##0,00",
+            {
+                reverse: true
+            });
+        $('.input-phoneus').mask('(000) 000-0000');
+        $('.input-mixed').mask('AAA 000-S0S');
+        $('.input-ip').mask('0ZZ.0ZZ.0ZZ.0ZZ',
+            {
+                translation:
+                {
+                    'Z':
+                    {
+                        pattern: /[0-9]/,
+                        optional: true
+                    }
+                },
+                placeholder: "___.___.___.___"
+            });
+        // editor
+        var editor = document.getElementById('editor');
+        if (editor) {
+            var toolbarOptions = [
+                [
+                    {
+                        'font': []
+                    }],
+                [
+                    {
+                        'header': [1, 2, 3, 4, 5, 6, false]
+                    }],
+                ['bold', 'italic', 'underline', 'strike'],
+                ['blockquote', 'code-block'],
+                [
+                    {
+                        'header': 1
+                    },
+                    {
+                        'header': 2
+                    }],
+                [
+                    {
+                        'list': 'ordered'
+                    },
+                    {
+                        'list': 'bullet'
+                    }],
+                [
+                    {
+                        'script': 'sub'
+                    },
+                    {
+                        'script': 'super'
+                    }],
+                [
+                    {
+                        'indent': '-1'
+                    },
+                    {
+                        'indent': '+1'
+                    }], // outdent/indent
+                [
+                    {
+                        'direction': 'rtl'
+                    }], // text direction
+                [
+                    {
+                        'color': []
+                    },
+                    {
+                        'background': []
+                    }], // dropdown with defaults from theme
+                [
+                    {
+                        'align': []
+                    }],
+                ['clean'] // remove formatting button
+            ];
+            var quill = new Quill(editor,
+                {
+                    modules:
+                    {
+                        toolbar: toolbarOptions
+                    },
+                    theme: 'snow'
+                });
+        }
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
     </script>
+    <script>
+        var uptarg = document.getElementById('drag-drop-area');
+        if (uptarg) {
+            var uppy = Uppy.Core().use(Uppy.Dashboard,
+                {
+                    inline: true,
+                    target: uptarg,
+                    proudlyDisplayPoweredByUppy: false,
+                    theme: 'dark',
+                    width: 770,
+                    height: 210,
+                    plugins: ['Webcam']
+                }).use(Uppy.Tus,
+                    {
+                        endpoint: 'https://master.tus.io/files/'
+                    });
+            uppy.on('complete', (result) => {
+                console.log('Upload complete! We’ve uploaded these files:', result.successful)
+            });
+        }
+    </script>
+    <script src="js/apps.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-56159088-1');
+    </script>
+
 </body>
+
 </html>

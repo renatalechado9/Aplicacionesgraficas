@@ -1,0 +1,6 @@
+Para entrar al admin
+login.html
+-Correo:
+admin@gmail.com
+-Password:
+admin

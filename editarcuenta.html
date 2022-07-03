@@ -126,9 +126,6 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="configuraciones.html"> <i class="menu-icon fa fa-cogs"></i>Configuraciones</a>
-                    </li>
-                    <li>
                         <a href="calendario.html"> <i class="menu-icon fa fa-calendar"></i>Calendario</a>
                     </li>
                     <li>
@@ -237,7 +234,115 @@
         <!-- /#header -->
         <!-- Content -->
         <div class="content">
-            
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 col-xl-8">
+                  <h2 class="h3 mb-4 page-title">Configuraciones</h2>
+                  <div class="my-4">
+                    <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Editar Cuenta</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="./seguridad.html" role="tab" aria-controls="profile" aria-selected="false">Seguridad</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="./notificaciones.html" role="tab" aria-controls="contact" aria-selected="false">Notificaciones</a>
+                      </li>
+                    </ul>
+                    <form>
+                      <div class="row mt-5 align-items-center">
+                        <div class="col-md-3 text-center mb-5">
+                          <div class="avatar avatar-xl">
+                            <img src="./images/nosotros/xperson_5.jpg" alt="..." class="avatar-img rounded-circle">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="row align-items-center">
+                            <div class="col-md-7">
+                              <h4 class="mb-1">Renata Lechado</h4>
+                              <p class="small mb-3"><span class="badge badge-dark">Managua, Nicaragua</span></p>
+                            </div>
+                          </div>
+                          <div class="row mb-4">
+                            <div class="col-md-7">
+                              <p class="text-muted">Descripcion de la Cuenta</p>
+                            </div>
+                            <div class="col">
+                              <p class="small mb-0 text-muted">Madereria El Roble</p>
+                              <p class="small mb-0 text-muted">Direccion</p>
+                              <p class="small mb-0 text-muted">(505) 8328-2582</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="my-4">
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="firstname">Nombres</label>
+                          <input type="text" id="firstname" class="form-control" placeholder="Renata">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="lastname">Apellidos</label>
+                          <input type="text" id="lastname" class="form-control" placeholder="Lechado">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail4">Descripcion</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Describase aqui">
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="ren@gmail.com">
+                      </div>
+                      <div class="form-group">
+                        <label for="inputAddress5">Direccion</label>
+                        <input type="text" class="form-control" id="inputAddress5" placeholder="Direccion">
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputCompany5">Compañia</label>
+                          <input type="text" class="form-control" id="inputCompany5" placeholder="Madereria El Roble">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="inputState5">Departamento</label>
+                          <select id="inputState5" class="form-control">
+                            <option selected="">Elija...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                      </div>
+                      <hr class="my-4">
+                      <div class="row mb-4">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="inputPassword4">Antigua contraseña</label>
+                            <input type="password" class="form-control" id="inputPassword5">
+                          </div>
+                          <div class="form-group">
+                            <label for="inputPassword5">Nueva contraseña</label>
+                            <input type="password" class="form-control" id="inputPassword5">
+                          </div>
+                          <div class="form-group">
+                            <label for="inputPassword6">Confirma la contraseña</label>
+                            <input type="password" class="form-control" id="inputPassword6">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <p class="mb-2">Requerimientos de la contraseña</p>
+                          <p class="small text-muted mb-2"> Para crear una nueva contraseña, Tienes que cumplir los siguientes requerimientos: </p>
+                          <ul class="small text-muted pl-4 mb-0">
+                            <li> Minimo 8 caracteres </li>
+                            <li>Al menos 1 caracter especial</li>
+                            <li>Al menos 1 numero</li>
+                            <li>No puede ser igual a la antigua contraseña</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary"><a href="./mi-cuenta.html" style="color:#ffffff">Guardar Cambios</a></button>
+                    </form>
+                  </div> <!-- /.card-body -->
+                </div> <!-- /.col-12 -->
+              </div>
         </div>
     </div>
     <!-- /#right-panel -->

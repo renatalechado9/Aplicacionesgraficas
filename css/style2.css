@@ -71,7 +71,8 @@ body{
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
-.navigation ul li:hover{
+.navigation ul li:hover,
+.navigation ul li.hovered{
     background: var(--bs-white);
 
 }
@@ -88,10 +89,12 @@ body{
     text-decoration: none;
     color:var(--bs-white)
 }
-.navigation ul li a:hover{
+.navigation ul li:hover a,
+.navigation ul li.hovered a{
     color:var(--bs-blue2)
 
 }
+
 .navigation ul li a .icon{
     position: relative;
     display: block;
@@ -114,7 +117,8 @@ body{
 }
 
 /* Curve outside*/
-.navigation ul li:hover a::before{
+.navigation ul li:hover a::before,
+.navigation ul li.hovered a::before{
     content: '';
     position: absolute;
     right: 0;
@@ -127,7 +131,8 @@ body{
     pointer-events: none;
 
 }
-.navigation ul li:hover a::after{
+.navigation ul li:hover a::after,
+.navigation ul li.hovered a::after{
     content: '';
     position: absolute;
     right: 0;

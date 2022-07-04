@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,41 +23,47 @@
     <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
 
-   <style>
-    #weatherWidget .currentDesc {
-        color: #ffffff!important;
-    }
+    <style>
+        #weatherWidget .currentDesc {
+            color: #ffffff!important;
+        }
+        
         .traffic-chart {
             min-height: 335px;
         }
-        #flotPie1  {
+        
+        #flotPie1 {
             height: 150px;
         }
+        
         #flotPie1 td {
-            padding:3px;
+            padding: 3px;
         }
+        
         #flotPie1 table {
             top: 20px!important;
             right: -10px!important;
         }
+        
         .chart-container {
             display: table;
-            min-width: 270px ;
+            min-width: 270px;
             text-align: left;
             padding-top: 10px;
             padding-bottom: 10px;
         }
-        #flotLine5  {
-             height: 105px;
+        
+        #flotLine5 {
+            height: 105px;
         }
-
+        
         #flotBarChart {
             height: 150px;
         }
-        #cellPaiChart{
+        
+        #cellPaiChart {
             height: 160px;
         }
-
     </style>
 </head>
 
@@ -67,23 +74,23 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav" style="margin-top:20px">
                     <li class=" menu-item-has-children dropdown active">
-                        <a href="admin.html" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                        <a href="admin.html" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="menu-icon fa fa-laptop"></i>Dashboard</a>
-                            <ul class="sub-menu children dropdown-menu">
-                                <li><i class="fa fa-laptop"></i><a href="admin.html">Default</a></li>
-                                <li><i class="fa fa-bar-chart-o"></i><a href="dashboardfinan.html">Financiero</a></li>
-                                <li><i class="fa fa-shopping-cart"></i><a href="sales.html">Ventas</a></li>
-                                <li><i class="fa fa-clipboard"></i><a href="ordenes.html">Ordenes Pendientes</a></li>
-                                <li><i class="fa fa-book"></i><a href="transacciones.html">Transacciones</a></li>
-                            </ul>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-laptop"></i><a href="admin.html">Default</a></li>
+                            <li><i class="fa fa-bar-chart-o"></i><a href="dashboardfinan.html">Financiero</a></li>
+                            <li><i class="fa fa-shopping-cart"></i><a href="sales.html">Ventas</a></li>
+                            <li><i class="fa fa-clipboard"></i><a href="ordenes.html">Ordenes Pendientes</a></li>
+                            <li><i class="fa fa-book"></i><a href="transacciones.html">Transacciones</a></li>
+                        </ul>
                     </li>
                     <li class="menu-title">Elementos</li>
                     <li>
                         <a href="clientes.html"> <i class="menu-icon fa fa-users"></i>Clientes</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon fa fa-user"></i>Usuarios</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon fa fa-user"></i>Usuarios</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-users"></i><a href="all-users.html">Todos los usuarios</a></li>
                             <li><i class="fa fa-plus-circle"></i><a href="add-user.html">Nuevo Usuario</a></li>
@@ -96,8 +103,8 @@
                         <a href="salarios.html"> <i class="menu-icon ti-user"></i>Empleados</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon ti-agenda"></i>Contactos</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon ti-agenda"></i>Contactos</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="ti-view-list-alt"></i><a href="tablacontactos.html">Tabla de contactos</a></li>
                             <li><i class="ti-view-grid"></i><a href="cartascontactos.html">Cartas de contactos</a></li>
@@ -108,16 +115,16 @@
                         <a href="help.html"> <i class="menu-icon ti-help"></i>Ayuda</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon ti-harddrives"></i>Estado de Ordenes</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon ti-harddrives"></i>Estado de Ordenes</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-th-list"></i><a href="listaorden.html">Lista de Ordenes</a></li>
                             <li><i class="fa fa-file-text-o"></i><a href="detallesorden.html">Detalles de la Orden</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon fa fa-user"></i>Cuenta</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon fa fa-user"></i>Cuenta</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="ti-user"></i><a href="mi-cuenta.html">Mi Cuenta</a></li>
                             <li><i class="fa fa-cog"></i><a href="editarcuenta.html">Editar mi Cuenta</a></li>
@@ -132,7 +139,8 @@
                         <a href="inicio2.html"> <i class="menu-icon fa fa-sign-out"></i>Salir del modo admin</a>
                     </li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
+            </div>
+            <!-- /.navbar-collapse -->
         </nav>
     </aside>
     <!-- /#left-panel -->
@@ -234,7 +242,232 @@
         <!-- /#header -->
         <!-- Content -->
         <div class="content">
-            
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-12 my-4">
+                            <h2 class="h4 mb-1">Ventas de este mes</h2>
+                            <p class="mb-3">Ventas de este mes</p>
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <!-- table -->
+                                    <table class="table table-hover table-borderless border-v">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th>Factura No</th>
+                                                <th>Fecha de la Factura</th>
+                                                <th># Orden</th>
+                                                <th>Factura a</th>
+                                                <th>Estado</th>
+                                                <th>Total General</th>
+                                                <th>Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="accordion-toggle" id="c-2474" data-toggle="collapse" data-parent="#c-2474" href="#collap-2474" aria-expanded="true">
+                                                <td>3599</td>
+                                                <td>2022-09-12 11:21:03</td>
+                                                <td>3951</td>
+                                                <td>Alexander Ellis</td>
+                                                <td><span class="badge badge-pill badge-success mr-2">S</span><small class="text-muted">Pagado</small></td>
+                                                <td>$37.39</td>
+                                                <td>$80.11</td>
+                                            </tr>
+                                            <tr id="collap-2474" class="in p-3 bg-light collapse show">
+                                                <td colspan="8">
+                                                    <dl class="row mb-0 mt-1">
+                                                        <dt class="col-sm-1">Compañia</dt>
+                                                        <dd class="col-sm-2">Fringilla Ornare Consulting</dd>
+                                                        <dt class="col-sm-1">Direccion</dt>
+                                                        <dd class="col-sm-2">287-8300 Nisl. St.</dd>
+                                                        <dt class="col-sm-1">Telefono</dt>
+                                                        <dd class="col-sm-2">(899) 881-3833</dd>
+                                                        <dt class="col-sm-1 text-truncate">Region</dt>
+                                                        <dd class="col-sm-2">Leon</dd>
+                                                    </dl>
+                                                </td>
+                                            </tr>
+                                            <tr class="accordion-toggle" id="c-3954" data-toggle="collapse" data-parent="#c-3954" href="#collap-3954" aria-expanded="true">
+                                                <td>3954</td>
+                                                <td>2022-10-11 19:09:12</td>
+                                                <td>4038</td>
+                                                <td>Casey Caldwell</td>
+                                                <td><span class="badge badge-pill badge-success mr-2">S</span><small class="text-muted">Pagado</small></td>
+                                                <td>$30.74</td>
+                                                <td>$46.14</td>
+                                            </tr>
+                                            <tr id="collap-3954" class="in p-3 bg-light collapse show">
+                                                <td colspan="8">
+                                                    <dl class="row mb-0 mt-1">
+                                                        <dt class="col-sm-1">Compañia</dt>
+                                                        <dd class="col-sm-2">Tristique Ltd</dd>
+                                                        <dt class="col-sm-1">Direccion</dt>
+                                                        <dd class="col-sm-2">4577 Cras St.</dd>
+                                                        <dt class="col-sm-1">Telefono</dt>
+                                                        <dd class="col-sm-2">(977) 220-6518</dd>
+                                                        <dt class="col-sm-1 text-truncate">Region</dt>
+                                                        <dd class="col-sm-2">Managua</dd>
+                                                    </dl>
+                                                </td>
+                                            </tr>
+                                            <tr class="accordion-toggle" id="c-2429" data-toggle="collapse" data-parent="#c-2429" href="#collap-2429" aria-expanded="true">
+                                                <td>2429</td>
+                                                <td>2022-11-26 02:45:30</td>
+                                                <td>4603</td>
+                                                <td>Jack Adams</td>
+                                                <td><span class="badge badge-pill badge-warning mr-2">W</span><small class="text-muted">Pendiente</small></td>
+                                                <td>$20.84</td>
+                                                <td>$28.51</td>
+                                            </tr>
+                                            <tr id="collap-2429" class="in p-3 bg-light collapse show">
+                                                <td colspan="8">
+                                                    <dl class="row mb-0 mt-1">
+                                                        <dt class="col-sm-1">Compañia</dt>
+                                                        <dd class="col-sm-2">Orci Luctus Et Inc.</dd>
+                                                        <dt class="col-sm-1">Direccion</dt>
+                                                        <dd class="col-sm-2">P.O. Box 228, 7512 Lectus Ave</dd>
+                                                        <dt class="col-sm-1">Telefono</dt>
+                                                        <dd class="col-sm-2">(537) 315-1481</dd>
+                                                        <dt class="col-sm-1 text-truncate">Region</dt>
+                                                        <dd class="col-sm-2">Chinandega</dd>
+                                                    </dl>
+                                                </td>
+                                            </tr>
+                                            <tr class="accordion-toggle collapsed" id="c-3987" data-toggle="collapse" data-parent="#c-3987" href="#collap-3987" aria-expanded="false">
+                                                <td>3987</td>
+                                                <td>2022-02-13 19:29:45</td>
+                                                <td>4261</td>
+                                                <td>Samantha Hansen</td>
+                                                <td><span class="badge badge-pill badge-success mr-2">S</span><small class="text-muted">Pagado</small></td>
+                                                <td>$83.19</td>
+                                                <td>$48.48</td>
+                                            </tr>
+                                            <tr id="collap-3987" class="in p-3 bg-light collapse">
+                                                <td colspan="8">
+                                                    <dl class="row mb-0 mt-1">
+                                                        <dt class="col-sm-1">Compañia</dt>
+                                                        <dd class="col-sm-2">Ap #377-5357 Sed Road</dd>
+                                                        <dt class="col-sm-1">Direccion</dt>
+                                                        <dd class="col-sm-2">P.O. Box 228, 7512 Lectus Ave</dd>
+                                                        <dt class="col-sm-1">Telefono</dt>
+                                                        <dd class="col-sm-2">(238) 386-0247</dd>
+                                                        <dt class="col-sm-1 text-truncate">Region</dt>
+                                                        <dd class="col-sm-2">Rivas</dd>
+                                                    </dl>
+                                                </td>
+                                            </tr>
+                                            <tr class="accordion-toggle collapsed" id="c-3165" data-toggle="collapse" data-parent="#c-3987" href="#collap-3165">
+                                                <td>3165</td>
+                                                <td>2022-05-05 22:33:28</td>
+                                                <td>3308</td>
+                                                <td>Carla Ochoa</td>
+                                                <td><span class="badge badge-pill badge-primary mr-2">P</span><small class="text-muted">Facturado</small></td>
+                                                <td>$99.92</td>
+                                                <td>$38.62</td>
+                                                </td>
+                                            </tr>
+                                            <tr id="collap-3165" class="collapse in p-3 bg-light">
+                                                <td colspan="8">
+                                                    <dl class="row mb-0 mt-1">
+                                                        <dt class="col-sm-1">Compañia</dt>
+                                                        <dd class="col-sm-2">Suspendisse LLC</dd>
+                                                        <dt class="col-sm-1">Direccion</dt>
+                                                        <dd class="col-sm-2">Ap #410-5363 Non, Avenue</dd>
+                                                        <dt class="col-sm-1">Telefono</dt>
+                                                        <dd class="col-sm-2">(587) 675-3258</dd>
+                                                        <dt class="col-sm-1 text-truncate">Region</dt>
+                                                        <dd class="col-sm-2">Jinotega</dd>
+                                                    </dl>
+                                                </td>
+                                            </tr>
+                                            <tr class="accordion-toggle collapsed" id="c-5429" data-toggle="collapse" data-parent="#c-5429" href="#collap-5429">
+                                                <td>5429</td>
+                                                <td>2022-11-26 02:45:30</td>
+                                                <td>4603</td>
+                                                <td>Jack Adams</td>
+                                                <td><span class="badge badge-pill badge-warning mr-2">W</span><small class="text-muted">Pendiente</small></td>
+                                                <td>$20.84</td>
+                                                <td>$28.51</td>
+                                            </tr>
+                                            <tr id="collap-5429" class="collapse in p-3 bg-light">
+                                                <td colspan="8">
+                                                    <dl class="row mb-0 mt-1">
+                                                        <dt class="col-sm-1">Compañia</dt>
+                                                        <dd class="col-sm-2">Dolor Incorporated</dd>
+                                                        <dt class="col-sm-1">Direccion</dt>
+                                                        <dd class="col-sm-2">8250 Molestie St.</dd>
+                                                        <dt class="col-sm-1">Telefono</dt>
+                                                        <dd class="col-sm-2">(934) 582-9495</dd>
+                                                        <dt class="col-sm-1 text-truncate">Region</dt>
+                                                        <dd class="col-sm-2">Rio San Juan</dd>
+                                                    </dl>
+                                                </td>
+                                            </tr>
+                                            <tr class="accordion-toggle collapsed" id="c-3951" data-toggle="collapse" data-parent="#c-3951" href="#collap-3951">
+                                                <td>3951</td>
+                                                <td>2022-10-11 19:09:12</td>
+                                                <td>4038</td>
+                                                <td>Casey Caldwell</td>
+                                                <td><span class="badge badge-pill badge-success mr-2">S</span><small class="text-muted">Pagado</small></td>
+                                                <td>$30.74</td>
+                                                <td>$46.14</td>
+                                            </tr>
+                                            <tr id="collap-3951" class="collapse in p-3 bg-light">
+                                                <td colspan="8">
+                                                    <dl class="row mb-0 mt-1">
+                                                        <dt class="col-sm-1">Compañia</dt>
+                                                        <dd class="col-sm-2">Urna Et PC</dd>
+                                                        <dt class="col-sm-1">Direccion</dt>
+                                                        <dd class="col-sm-2">3132 Mi Av.</dd>
+                                                        <dt class="col-sm-1">Telefono</dt>
+                                                        <dd class="col-sm-2">(459) 982-1284</dd>
+                                                        <dt class="col-sm-1 text-truncate">Region</dt>
+                                                        <dd class="col-sm-2">Managua</dd>
+                                                    </dl>
+                                                </td>
+                                            </tr>
+                                            <tr class="accordion-toggle collapsed" id="c-3599" data-toggle="collapse" data-parent="#c-3599" href="#collap-3599">
+                                                <td>3599</td>
+                                                <td>2020-09-12 11:21:03</td>
+                                                <td>3951</td>
+                                                <td>Alexander Ellis</td>
+                                                <td><span class="badge badge-pill badge-primary mr-2">P</span><small class="text-muted">Facturado</small></td>
+                                                <td>$37.39</td>
+                                                <td>$80.11</td>
+                                            </tr>
+                                            <tr id="collap-3599" class="collapse in p-3 bg-light">
+                                                <td colspan="8">
+                                                    <dl class="row mb-0 mt-1">
+                                                        <dt class="col-sm-1">Compañia</dt>
+                                                        <dd class="col-sm-2">Mi Consulting</dd>
+                                                        <dt class="col-sm-1">Direccion</dt>
+                                                        <dd class="col-sm-2">921-6311 Nam Av.</dd>
+                                                        <dt class="col-sm-1">Telefono</dt>
+                                                        <dd class="col-sm-2">(759) 501-2397</dd>
+                                                        <dt class="col-sm-1 text-truncate">Region</dt>
+                                                        <dd class="col-sm-2">Leon</dd>
+                                                    </dl>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <nav aria-label="Table Paging" class="mb-0 text-muted">
+                                <ul class="pagination justify-content-end mb-0">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- end section -->
+                </div>
+                <!-- .col-12 -->
+            </div>
         </div>
     </div>
     <!-- /#right-panel -->
@@ -270,11 +503,25 @@
             "use strict";
 
             // Pie chart flotPie1
-            var piedata = [
-                { label: "Desktop visits", data: [[1,32]], color: '#5c6bc0'},
-                { label: "Tab visits", data: [[1,33]], color: '#ef5350'},
-                { label: "Mobile visits", data: [[1,35]], color: '#66bb6a'}
-            ];
+            var piedata = [{
+                label: "Desktop visits",
+                data: [
+                    [1, 32]
+                ],
+                color: '#5c6bc0'
+            }, {
+                label: "Tab visits",
+                data: [
+                    [1, 33]
+                ],
+                color: '#ef5350'
+            }, {
+                label: "Mobile visits",
+                data: [
+                    [1, 35]
+                ],
+                color: '#66bb6a'
+            }];
 
             $.plot('#flotPie1', piedata, {
                 series: {
@@ -284,7 +531,7 @@
                         innerRadius: 0.65,
                         label: {
                             show: true,
-                            radius: 2/3,
+                            radius: 2 / 3,
                             threshold: 1
                         },
                         stroke: {
@@ -299,10 +546,19 @@
             });
             // Pie chart flotPie1  End
             // cellPaiChart
-            var cellPaiChart = [
-                { label: "Direct Sell", data: [[1,65]], color: '#5b83de'},
-                { label: "Channel Sell", data: [[1,35]], color: '#00bfa5'}
-            ];
+            var cellPaiChart = [{
+                label: "Direct Sell",
+                data: [
+                    [1, 65]
+                ],
+                color: '#5b83de'
+            }, {
+                label: "Channel Sell",
+                data: [
+                    [1, 35]
+                ],
+                color: '#00bfa5'
+            }];
             $.plot('#cellPaiChart', cellPaiChart, {
                 series: {
                     pie: {
@@ -314,7 +570,8 @@
                 },
                 legend: {
                     show: false
-                },grid: {
+                },
+                grid: {
                     hoverable: true,
                     clickable: true
                 }
@@ -322,14 +579,23 @@
             });
             // cellPaiChart End
             // Line Chart  #flotLine5
-            var newCust = [[0, 3], [1, 5], [2,4], [3, 7], [4, 9], [5, 3], [6, 6], [7, 4], [8, 10]];
+            var newCust = [
+                [0, 3],
+                [1, 5],
+                [2, 4],
+                [3, 7],
+                [4, 9],
+                [5, 3],
+                [6, 6],
+                [7, 4],
+                [8, 10]
+            ];
 
-            var plot = $.plot($('#flotLine5'),[{
+            var plot = $.plot($('#flotLine5'), [{
                 data: newCust,
                 label: 'New Data Flow',
                 color: '#fff'
-            }],
-            {
+            }], {
                 series: {
                     lines: {
                         show: true,
@@ -359,25 +625,25 @@
             // Traffic Chart using chartist
             if ($('#traffic-chart').length) {
                 var chart = new Chartist.Line('#traffic-chart', {
-                  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-                  series: [
-                  [0, 18000, 35000,  25000,  22000,  0],
-                  [0, 33000, 15000,  20000,  15000,  300],
-                  [0, 15000, 28000,  15000,  30000,  5000]
-                  ]
-              }, {
-                  low: 0,
-                  showArea: true,
-                  showLine: false,
-                  showPoint: false,
-                  fullWidth: true,
-                  axisX: {
-                    showGrid: true
-                }
-            });
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                    series: [
+                        [0, 18000, 35000, 25000, 22000, 0],
+                        [0, 33000, 15000, 20000, 15000, 300],
+                        [0, 15000, 28000, 15000, 30000, 5000]
+                    ]
+                }, {
+                    low: 0,
+                    showArea: true,
+                    showLine: false,
+                    showPoint: false,
+                    fullWidth: true,
+                    axisX: {
+                        showGrid: true
+                    }
+                });
 
                 chart.on('draw', function(data) {
-                    if(data.type === 'line' || data.type === 'area') {
+                    if (data.type === 'line' || data.type === 'area') {
                         data.element.animate({
                             d: {
                                 begin: 2000 * data.index,
@@ -393,37 +659,33 @@
             // Traffic Chart using chartist End
             //Traffic chart chart-js
             if ($('#TrafficChart').length) {
-                var ctx = document.getElementById( "TrafficChart" );
+                var ctx = document.getElementById("TrafficChart");
                 ctx.height = 150;
-                var myChart = new Chart( ctx, {
+                var myChart = new Chart(ctx, {
                     type: 'line',
                     data: {
-                        labels: [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul" ],
-                        datasets: [
-                        {
+                        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+                        datasets: [{
                             label: "Visit",
                             borderColor: "rgba(4, 73, 203,.09)",
                             borderWidth: "1",
                             backgroundColor: "rgba(4, 73, 203,.5)",
-                            data: [ 0, 2900, 5000, 3300, 6000, 3250, 0 ]
-                        },
-                        {
+                            data: [0, 2900, 5000, 3300, 6000, 3250, 0]
+                        }, {
                             label: "Bounce",
                             borderColor: "rgba(245, 23, 66, 0.9)",
                             borderWidth: "1",
                             backgroundColor: "rgba(245, 23, 66,.5)",
                             pointHighlightStroke: "rgba(245, 23, 66,.5)",
-                            data: [ 0, 4200, 4500, 1600, 4200, 1500, 4000 ]
-                        },
-                        {
+                            data: [0, 4200, 4500, 1600, 4200, 1500, 4000]
+                        }, {
                             label: "Targeted",
                             borderColor: "rgba(40, 169, 46, 0.9)",
                             borderWidth: "1",
                             backgroundColor: "rgba(40, 169, 46, .5)",
                             pointHighlightStroke: "rgba(40, 169, 46,.5)",
-                            data: [1000, 5200, 3600, 2600, 4200, 5300, 0 ]
-                        }
-                        ]
+                            data: [1000, 5200, 3600, 2600, 4200, 5300, 0]
+                        }]
                     },
                     options: {
                         responsive: true,
@@ -437,12 +699,28 @@
                         }
 
                     }
-                } );
+                });
             }
             //Traffic chart chart-js  End
             // Bar Chart #flotBarChart
             $.plot("#flotBarChart", [{
-                data: [[0, 18], [2, 8], [4, 5], [6, 13],[8,5], [10,7],[12,4], [14,6],[16,15], [18, 9],[20,17], [22,7],[24,4], [26,9],[28,11]],
+                data: [
+                    [0, 18],
+                    [2, 8],
+                    [4, 5],
+                    [6, 13],
+                    [8, 5],
+                    [10, 7],
+                    [12, 4],
+                    [14, 6],
+                    [16, 15],
+                    [18, 9],
+                    [20, 17],
+                    [22, 7],
+                    [24, 4],
+                    [26, 9],
+                    [28, 11]
+                ],
                 bars: {
                     show: true,
                     lineWidth: 0,
@@ -457,4 +735,5 @@
         });
     </script>
 </body>
+
 </html>

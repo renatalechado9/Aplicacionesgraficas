@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,41 +23,47 @@
     <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
 
-   <style>
-    #weatherWidget .currentDesc {
-        color: #ffffff!important;
-    }
+    <style>
+        #weatherWidget .currentDesc {
+            color: #ffffff!important;
+        }
+        
         .traffic-chart {
             min-height: 335px;
         }
-        #flotPie1  {
+        
+        #flotPie1 {
             height: 150px;
         }
+        
         #flotPie1 td {
-            padding:3px;
+            padding: 3px;
         }
+        
         #flotPie1 table {
             top: 20px!important;
             right: -10px!important;
         }
+        
         .chart-container {
             display: table;
-            min-width: 270px ;
+            min-width: 270px;
             text-align: left;
             padding-top: 10px;
             padding-bottom: 10px;
         }
-        #flotLine5  {
-             height: 105px;
+        
+        #flotLine5 {
+            height: 105px;
         }
-
+        
         #flotBarChart {
             height: 150px;
         }
-        #cellPaiChart{
+        
+        #cellPaiChart {
             height: 160px;
         }
-
     </style>
 </head>
 
@@ -67,23 +74,23 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav" style="margin-top:20px">
                     <li class=" menu-item-has-children dropdown active">
-                        <a href="admin.html" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                        <a href="admin.html" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="menu-icon fa fa-laptop"></i>Dashboard</a>
-                            <ul class="sub-menu children dropdown-menu">
-                                <li><i class="fa fa-laptop"></i><a href="admin.html">Default</a></li>
-                                <li><i class="fa fa-bar-chart-o"></i><a href="dashboardfinan.html">Financiero</a></li>
-                                <li><i class="fa fa-shopping-cart"></i><a href="sales.html">Ventas</a></li>
-                                <li><i class="fa fa-clipboard"></i><a href="ordenes.html">Ordenes Pendientes</a></li>
-                                <li><i class="fa fa-book"></i><a href="transacciones.html">Transacciones</a></li>
-                            </ul>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-laptop"></i><a href="admin.html">Default</a></li>
+                            <li><i class="fa fa-bar-chart-o"></i><a href="dashboardfinan.html">Financiero</a></li>
+                            <li><i class="fa fa-shopping-cart"></i><a href="sales.html">Ventas</a></li>
+                            <li><i class="fa fa-clipboard"></i><a href="ordenes.html">Ordenes Pendientes</a></li>
+                            <li><i class="fa fa-book"></i><a href="transacciones.html">Transacciones</a></li>
+                        </ul>
                     </li>
                     <li class="menu-title">Elementos</li>
                     <li>
                         <a href="clientes.html"> <i class="menu-icon fa fa-users"></i>Clientes</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon fa fa-user"></i>Usuarios</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon fa fa-user"></i>Usuarios</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-users"></i><a href="all-users.html">Todos los usuarios</a></li>
                             <li><i class="fa fa-plus-circle"></i><a href="add-user.html">Nuevo Usuario</a></li>
@@ -96,8 +103,8 @@
                         <a href="salarios.html"> <i class="menu-icon ti-user"></i>Empleados</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon ti-agenda"></i>Contactos</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon ti-agenda"></i>Contactos</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="ti-view-list-alt"></i><a href="tablacontactos.html">Tabla de contactos</a></li>
                             <li><i class="ti-view-grid"></i><a href="cartascontactos.html">Cartas de contactos</a></li>
@@ -108,16 +115,16 @@
                         <a href="help.html"> <i class="menu-icon ti-help"></i>Ayuda</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon ti-harddrives"></i>Estado de Ordenes</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon ti-harddrives"></i>Estado de Ordenes</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-th-list"></i><a href="listaorden.html">Lista de Ordenes</a></li>
                             <li><i class="fa fa-file-text-o"></i><a href="detallesorden.html">Detalles de la Orden</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon fa fa-user"></i>Cuenta</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon fa fa-user"></i>Cuenta</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="ti-user"></i><a href="mi-cuenta.html">Mi Cuenta</a></li>
                             <li><i class="fa fa-cog"></i><a href="editarcuenta.html">Editar mi Cuenta</a></li>
@@ -132,7 +139,8 @@
                         <a href="inicio2.html"> <i class="menu-icon fa fa-sign-out"></i>Salir del modo admin</a>
                     </li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
+            </div>
+            <!-- /.navbar-collapse -->
         </nav>
     </aside>
     <!-- /#left-panel -->
@@ -234,9 +242,278 @@
         <!-- /#header -->
         <!-- Content -->
         <div class="content">
-            
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="row">
+                        <!-- Striped rows -->
+                        <div class="col-md-12 my-4">
+                            <h2 class="h4 mb-1">Grouped header &amp; rows</h2>
+                            <p class="mb-4">Customized table based on Bootstrap with additional elements and more functions</p>
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <div class="toolbar row mb-3">
+                                        <div class="col">
+                                            <form class="form-inline">
+                                                <div class="form-row">
+                                                    <div class="form-group col-auto">
+                                                        <label for="search" class="sr-only">Search</label>
+                                                        <input type="text" class="form-control" id="search" value="" placeholder="Search">
+                                                    </div>
+                                                    <div class="form-group col-auto ml-3">
+                                                        <label class="my-1 mr-2 sr-only" for="inlineFormCustomSelectPref">Status</label>
+                                                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                      <option selected="">Choose...</option>
+                                      <option value="1">Processing</option>
+                                      <option value="2">Success</option>
+                                      <option value="3">Pending</option>
+                                      <option value="3">Hold</option>
+                                    </select>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col ml-auto">
+                                            <div class="dropdown float-right">
+                                                <button class="btn btn-primary float-right ml-3" type="button">Add more +</button>
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" id="actionMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Action </button>
+                                                <div class="dropdown-menu" aria-labelledby="actionMenuButton" style="">
+                                                    <a class="dropdown-item" href="#">Export</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- table -->
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr role="row">
+                                                <th colspan="3">Orders</th>
+                                                <th colspan="4">Billing</th>
+                                                <th colspan="3">State</th>
+                                            </tr>
+                                            <tr role="row">
+                                                <th>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="all">
+                                                        <label class="custom-control-label" for="all"></label>
+                                                    </div>
+                                                </th>
+                                                <th>ID</th>
+                                                <th>Purchase Date</th>
+                                                <th>Name</th>
+                                                <th>Phone</th>
+                                                <th>Address</th>
+                                                <th>Total</th>
+                                                <th>Status</th>
+                                                <th>Tracking #</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="4574">
+                                                        <label class="custom-control-label" for="4574"></label>
+                                                    </div>
+                                                </td>
+                                                <td>4574</td>
+                                                <td>2019-09-11 10:22:04</td>
+                                                <td>Kitra Knapp</td>
+                                                <td>(132) 339-7423</td>
+                                                <td>P.O. Box 944, 4739 Suspendisse Road</td>
+                                                <td>$68.79</td>
+                                                <td><span class="badge badge-warning">Pending</span></td>
+                                                <td></td>
+                                                <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="text-muted sr-only">Action</span>
+                                  </button>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Remove</a>
+                                                        <a class="dropdown-item" href="#">Assign</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="2132">
+                                                        <label class="custom-control-label" for="2132"></label>
+                                                    </div>
+                                                </td>
+                                                <td>2132</td>
+                                                <td>2019-08-23 12:28:40</td>
+                                                <td>Blake Orr</td>
+                                                <td>(257) 565-4706</td>
+                                                <td>P.O. Box 939, 9156 Sollicitudin St.</td>
+                                                <td>$84.24</td>
+                                                <td><span class="badge badge-warning">Pending</span></td>
+                                                <td></td>
+                                                <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="text-muted sr-only">Action</span>
+                                  </button>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Remove</a>
+                                                        <a class="dropdown-item" href="#">Assign</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr role="group" class="bg-light">
+                                                <td colspan="10"><strong>Shipped</strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="2576">
+                                                        <label class="custom-control-label" for="2576"></label>
+                                                    </div>
+                                                </td>
+                                                <td>2576</td>
+                                                <td>2020-07-14 17:18:27</td>
+                                                <td>Amber Rice</td>
+                                                <td>(791) 898-8806</td>
+                                                <td>P.O. Box 724, 3385 Vel Ave</td>
+                                                <td>$37.00</td>
+                                                <td><span class="badge badge-success">Success</span></td>
+                                                <td>487385-5144</td>
+                                                <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="text-muted sr-only">Action</span>
+                                  </button>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Remove</a>
+                                                        <a class="dropdown-item" href="#">Assign</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="2397">
+                                                        <label class="custom-control-label" for="2397"></label>
+                                                    </div>
+                                                </td>
+                                                <td>2397</td>
+                                                <td>2020-12-25 13:35:39</td>
+                                                <td>Fletcher Petty</td>
+                                                <td>(115) 625-5813</td>
+                                                <td>8907 Orci St.</td>
+                                                <td>$75.69</td>
+                                                <td><span class="badge badge-success">Success</span></td>
+                                                <td>039606-5955</td>
+                                                <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="text-muted sr-only">Action</span>
+                                  </button>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Remove</a>
+                                                        <a class="dropdown-item" href="#">Assign</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr role="group" class="bg-light">
+                                                <td colspan="10"><strong>Return</strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="4028">
+                                                        <label class="custom-control-label" for="4028"></label>
+                                                    </div>
+                                                </td>
+                                                <td>4028</td>
+                                                <td>2021-04-11 22:33:47</td>
+                                                <td>Kasimir Carr</td>
+                                                <td>(266) 991-0479</td>
+                                                <td>489-624 Quis St.</td>
+                                                <td>$86.89</td>
+                                                <td><span class="badge badge-danger">Hold</span></td>
+                                                <td></td>
+                                                <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="text-muted sr-only">Action</span>
+                                  </button>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Remove</a>
+                                                        <a class="dropdown-item" href="#">Assign</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="3782">
+                                                        <label class="custom-control-label" for="3782"></label>
+                                                    </div>
+                                                </td>
+                                                <td>3782</td>
+                                                <td>2020-03-01 10:44:03</td>
+                                                <td>Daria Frank</td>
+                                                <td>(599) 361-7999</td>
+                                                <td>Ap #875-5778 Massa. Av.</td>
+                                                <td>$38.04</td>
+                                                <td><span class="badge badge-primary">Processing</span></td>
+                                                <td>072140-0703</td>
+                                                <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="text-muted sr-only">Action</span>
+                                  </button>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Remove</a>
+                                                        <a class="dropdown-item" href="#">Assign</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="3881">
+                                                        <label class="custom-control-label" for="3881"></label>
+                                                    </div>
+                                                </td>
+                                                <td>3881</td>
+                                                <td>2019-12-17 00:40:24</td>
+                                                <td>Herrod Byrd</td>
+                                                <td>(878) 901-7269</td>
+                                                <td>P.O. Box 107, 3720 Vitae, Ave</td>
+                                                <td>$73.38</td>
+                                                <td><span class="badge badge-primary">Processing</span></td>
+                                                <td>047336-4370</td>
+                                                <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="text-muted sr-only">Action</span>
+                                  </button>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Remove</a>
+                                                        <a class="dropdown-item" href="#">Assign</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <nav aria-label="Table Paging" class="mb-0 text-muted">
+                                        <ul class="pagination justify-content-end mb-0">
+                                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- simple table -->
+                    </div>
+
+                </div>
+                <!-- .col-12 -->
+            </div>
         </div>
-        
+
     </div>
     <!-- /#right-panel -->
 
@@ -271,11 +548,25 @@
             "use strict";
 
             // Pie chart flotPie1
-            var piedata = [
-                { label: "Desktop visits", data: [[1,32]], color: '#5c6bc0'},
-                { label: "Tab visits", data: [[1,33]], color: '#ef5350'},
-                { label: "Mobile visits", data: [[1,35]], color: '#66bb6a'}
-            ];
+            var piedata = [{
+                label: "Desktop visits",
+                data: [
+                    [1, 32]
+                ],
+                color: '#5c6bc0'
+            }, {
+                label: "Tab visits",
+                data: [
+                    [1, 33]
+                ],
+                color: '#ef5350'
+            }, {
+                label: "Mobile visits",
+                data: [
+                    [1, 35]
+                ],
+                color: '#66bb6a'
+            }];
 
             $.plot('#flotPie1', piedata, {
                 series: {
@@ -285,7 +576,7 @@
                         innerRadius: 0.65,
                         label: {
                             show: true,
-                            radius: 2/3,
+                            radius: 2 / 3,
                             threshold: 1
                         },
                         stroke: {
@@ -300,10 +591,19 @@
             });
             // Pie chart flotPie1  End
             // cellPaiChart
-            var cellPaiChart = [
-                { label: "Direct Sell", data: [[1,65]], color: '#5b83de'},
-                { label: "Channel Sell", data: [[1,35]], color: '#00bfa5'}
-            ];
+            var cellPaiChart = [{
+                label: "Direct Sell",
+                data: [
+                    [1, 65]
+                ],
+                color: '#5b83de'
+            }, {
+                label: "Channel Sell",
+                data: [
+                    [1, 35]
+                ],
+                color: '#00bfa5'
+            }];
             $.plot('#cellPaiChart', cellPaiChart, {
                 series: {
                     pie: {
@@ -315,7 +615,8 @@
                 },
                 legend: {
                     show: false
-                },grid: {
+                },
+                grid: {
                     hoverable: true,
                     clickable: true
                 }
@@ -323,14 +624,23 @@
             });
             // cellPaiChart End
             // Line Chart  #flotLine5
-            var newCust = [[0, 3], [1, 5], [2,4], [3, 7], [4, 9], [5, 3], [6, 6], [7, 4], [8, 10]];
+            var newCust = [
+                [0, 3],
+                [1, 5],
+                [2, 4],
+                [3, 7],
+                [4, 9],
+                [5, 3],
+                [6, 6],
+                [7, 4],
+                [8, 10]
+            ];
 
-            var plot = $.plot($('#flotLine5'),[{
+            var plot = $.plot($('#flotLine5'), [{
                 data: newCust,
                 label: 'New Data Flow',
                 color: '#fff'
-            }],
-            {
+            }], {
                 series: {
                     lines: {
                         show: true,
@@ -360,25 +670,25 @@
             // Traffic Chart using chartist
             if ($('#traffic-chart').length) {
                 var chart = new Chartist.Line('#traffic-chart', {
-                  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-                  series: [
-                  [0, 18000, 35000,  25000,  22000,  0],
-                  [0, 33000, 15000,  20000,  15000,  300],
-                  [0, 15000, 28000,  15000,  30000,  5000]
-                  ]
-              }, {
-                  low: 0,
-                  showArea: true,
-                  showLine: false,
-                  showPoint: false,
-                  fullWidth: true,
-                  axisX: {
-                    showGrid: true
-                }
-            });
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                    series: [
+                        [0, 18000, 35000, 25000, 22000, 0],
+                        [0, 33000, 15000, 20000, 15000, 300],
+                        [0, 15000, 28000, 15000, 30000, 5000]
+                    ]
+                }, {
+                    low: 0,
+                    showArea: true,
+                    showLine: false,
+                    showPoint: false,
+                    fullWidth: true,
+                    axisX: {
+                        showGrid: true
+                    }
+                });
 
                 chart.on('draw', function(data) {
-                    if(data.type === 'line' || data.type === 'area') {
+                    if (data.type === 'line' || data.type === 'area') {
                         data.element.animate({
                             d: {
                                 begin: 2000 * data.index,
@@ -394,37 +704,33 @@
             // Traffic Chart using chartist End
             //Traffic chart chart-js
             if ($('#TrafficChart').length) {
-                var ctx = document.getElementById( "TrafficChart" );
+                var ctx = document.getElementById("TrafficChart");
                 ctx.height = 150;
-                var myChart = new Chart( ctx, {
+                var myChart = new Chart(ctx, {
                     type: 'line',
                     data: {
-                        labels: [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul" ],
-                        datasets: [
-                        {
+                        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+                        datasets: [{
                             label: "Visit",
                             borderColor: "rgba(4, 73, 203,.09)",
                             borderWidth: "1",
                             backgroundColor: "rgba(4, 73, 203,.5)",
-                            data: [ 0, 2900, 5000, 3300, 6000, 3250, 0 ]
-                        },
-                        {
+                            data: [0, 2900, 5000, 3300, 6000, 3250, 0]
+                        }, {
                             label: "Bounce",
                             borderColor: "rgba(245, 23, 66, 0.9)",
                             borderWidth: "1",
                             backgroundColor: "rgba(245, 23, 66,.5)",
                             pointHighlightStroke: "rgba(245, 23, 66,.5)",
-                            data: [ 0, 4200, 4500, 1600, 4200, 1500, 4000 ]
-                        },
-                        {
+                            data: [0, 4200, 4500, 1600, 4200, 1500, 4000]
+                        }, {
                             label: "Targeted",
                             borderColor: "rgba(40, 169, 46, 0.9)",
                             borderWidth: "1",
                             backgroundColor: "rgba(40, 169, 46, .5)",
                             pointHighlightStroke: "rgba(40, 169, 46,.5)",
-                            data: [1000, 5200, 3600, 2600, 4200, 5300, 0 ]
-                        }
-                        ]
+                            data: [1000, 5200, 3600, 2600, 4200, 5300, 0]
+                        }]
                     },
                     options: {
                         responsive: true,
@@ -438,12 +744,28 @@
                         }
 
                     }
-                } );
+                });
             }
             //Traffic chart chart-js  End
             // Bar Chart #flotBarChart
             $.plot("#flotBarChart", [{
-                data: [[0, 18], [2, 8], [4, 5], [6, 13],[8,5], [10,7],[12,4], [14,6],[16,15], [18, 9],[20,17], [22,7],[24,4], [26,9],[28,11]],
+                data: [
+                    [0, 18],
+                    [2, 8],
+                    [4, 5],
+                    [6, 13],
+                    [8, 5],
+                    [10, 7],
+                    [12, 4],
+                    [14, 6],
+                    [16, 15],
+                    [18, 9],
+                    [20, 17],
+                    [22, 7],
+                    [24, 4],
+                    [26, 9],
+                    [28, 11]
+                ],
                 bars: {
                     show: true,
                     lineWidth: 0,
@@ -458,4 +780,5 @@
         });
     </script>
 </body>
+
 </html>

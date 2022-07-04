@@ -1,10 +1,11 @@
 <!doctype html>
 <html class="no-js" lang="">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ela Admin - HTML5 Admin Template</title>
-    <meta name="description" content="Ela Admin - HTML5 Admin Template">
+    <title>El Admin</title>
+    <meta name="description" content="El Admin">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shorcut icon" href="images/favicon.ico">
@@ -22,60 +23,70 @@
     <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
 
-   <style>
-    .custom-switch {
-        padding-left: 2.25rem;
-    }
-    .custom-control {
-        position: relative;
-        display: block;
-        min-height: 1.3125rem;
-        padding-left: 1.5rem;
-    }
-    input[type="radio"], input[type="checkbox"] {
-        box-sizing: border-box;
-        padding: 0;
-    }.custom-switch .custom-control-label::after {
-        top: calc(0.15625rem + 2px);
-        left: calc(-2.25rem + 2px);
-        width: calc(1rem - 4px);
-        height: calc(1rem - 4px);
-        background-color: #ced4da;
-        border-radius: 0.5rem;
-        transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    }
-    .custom-switch .custom-control-label::before {
-        left: -2.25rem;
-        width: 1.75rem;
-        pointer-events: all;
-        border-radius: 0.5rem;
-    }
-    .custom-control-input:checked ~ .custom-control-label::before {
-        color: #ffffff;
-        border-color: #1b68ff;
-        background-color: #1b68ff;
-    }
-    .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
-        background-color: #ffffff;
-        transform: translateX(0.75rem);
-    }
-    .custom-control-label {
-        position: relative;
-        margin-bottom: 0;
-        vertical-align: top;
-    }
-    .custom-control-input {
-        position: absolute;
-        left: 0;
-        z-index: -1;
-        margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-        width: 1rem;
-        height: 1.15625rem;
-        opacity: 0;
-    }
+    <style>
+        .custom-switch {
+            padding-left: 2.25rem;
+        }
+        
+        .custom-control {
+            position: relative;
+            display: block;
+            min-height: 1.3125rem;
+            padding-left: 1.5rem;
+        }
+        
+        input[type="radio"],
+        input[type="checkbox"] {
+            box-sizing: border-box;
+            padding: 0;
+        }
+        
+        .custom-switch .custom-control-label::after {
+            top: calc(0.15625rem + 2px);
+            left: calc(-2.25rem + 2px);
+            width: calc(1rem - 4px);
+            height: calc(1rem - 4px);
+            background-color: #ced4da;
+            border-radius: 0.5rem;
+            transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+        
+        .custom-switch .custom-control-label::before {
+            left: -2.25rem;
+            width: 1.75rem;
+            pointer-events: all;
+            border-radius: 0.5rem;
+        }
+        
+        .custom-control-input:checked~.custom-control-label::before {
+            color: #ffffff;
+            border-color: #1b68ff;
+            background-color: #1b68ff;
+        }
+        
+        .custom-switch .custom-control-input:checked~.custom-control-label::after {
+            background-color: #ffffff;
+            transform: translateX(0.75rem);
+        }
+        
+        .custom-control-label {
+            position: relative;
+            margin-bottom: 0;
+            vertical-align: top;
+        }
+        
+        .custom-control-input {
+            position: absolute;
+            left: 0;
+            z-index: -1;
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            width: 1rem;
+            height: 1.15625rem;
+            opacity: 0;
+        }
     </style>
 </head>
 
@@ -86,23 +97,23 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav" style="margin-top:20px">
                     <li class=" menu-item-has-children dropdown active">
-                        <a href="admin.html" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                        <a href="admin.html" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="menu-icon fa fa-laptop"></i>Dashboard</a>
-                            <ul class="sub-menu children dropdown-menu">
-                                <li><i class="fa fa-laptop"></i><a href="admin.html">Default</a></li>
-                                <li><i class="fa fa-bar-chart-o"></i><a href="dashboardfinan.html">Financiero</a></li>
-                                <li><i class="fa fa-shopping-cart"></i><a href="sales.html">Ventas</a></li>
-                                <li><i class="fa fa-clipboard"></i><a href="ordenes.html">Ordenes Pendientes</a></li>
-                                <li><i class="fa fa-book"></i><a href="transacciones.html">Transacciones</a></li>
-                            </ul>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-laptop"></i><a href="admin.html">Default</a></li>
+                            <li><i class="fa fa-bar-chart-o"></i><a href="dashboardfinan.html">Financiero</a></li>
+                            <li><i class="fa fa-shopping-cart"></i><a href="sales.html">Ventas</a></li>
+                            <li><i class="fa fa-clipboard"></i><a href="ordenes.html">Ordenes Pendientes</a></li>
+                            <li><i class="fa fa-book"></i><a href="transacciones.html">Transacciones</a></li>
+                        </ul>
                     </li>
                     <li class="menu-title">Elementos</li>
                     <li>
                         <a href="clientes.html"> <i class="menu-icon fa fa-users"></i>Clientes</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon fa fa-user"></i>Usuarios</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon fa fa-user"></i>Usuarios</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-users"></i><a href="all-users.html">Todos los usuarios</a></li>
                             <li><i class="fa fa-plus-circle"></i><a href="add-user.html">Nuevo Usuario</a></li>
@@ -115,8 +126,8 @@
                         <a href="salarios.html"> <i class="menu-icon ti-user"></i>Empleados</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon ti-agenda"></i>Contactos</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon ti-agenda"></i>Contactos</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="ti-view-list-alt"></i><a href="tablacontactos.html">Tabla de contactos</a></li>
                             <li><i class="ti-view-grid"></i><a href="cartascontactos.html">Cartas de contactos</a></li>
@@ -127,16 +138,16 @@
                         <a href="help.html"> <i class="menu-icon ti-help"></i>Ayuda</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon ti-harddrives"></i>Estado de Ordenes</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon ti-harddrives"></i>Estado de Ordenes</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-th-list"></i><a href="listaorden.html">Lista de Ordenes</a></li>
                             <li><i class="fa fa-file-text-o"></i><a href="detallesorden.html">Detalles de la Orden</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon fa fa-user"></i>Cuenta</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon fa fa-user"></i>Cuenta</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="ti-user"></i><a href="mi-cuenta.html">Mi Cuenta</a></li>
                             <li><i class="fa fa-cog"></i><a href="editarcuenta.html">Editar mi Cuenta</a></li>
@@ -151,7 +162,8 @@
                         <a href="inicio2.html"> <i class="menu-icon fa fa-sign-out"></i>Salir del modo admin</a>
                     </li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
+            </div>
+            <!-- /.navbar-collapse -->
         </nav>
     </aside>
     <!-- /#left-panel -->
@@ -255,102 +267,117 @@
         <div class="content">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10 col-xl-8">
-                  <h2 class="h3 mb-4 page-title">Configuraciones</h2>
-                  <div class="my-4">
-                    <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
-                        <li class="nav-item">
-                          <a class="nav-link " id="home-tab" data-toggle="tab" href="./editarcuenta.html" role="tab" aria-controls="home" aria-selected="true">Editar Cuenta</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#" role="tab" aria-controls="profile" aria-selected="false">Seguridad</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="contact-tab" data-toggle="tab" href="./notificaciones.html" role="tab" aria-controls="contact" aria-selected="false">Notificaciones</a>
-                        </li>
-                    </ul>
-                    <h5 class="mb-0 mt-5">Configuraciones de Seguridad</h5>
-                    <p>Estos ajustes le ayudan a mantener su cuenta segura.</p>
-                    <div class="list-group mb-5 shadow">
-                      <div class="list-group-item">
-                        <div class="row align-items-center">
-                          <div class="col">
-                            <strong class="mb-2">Activar los registros de actividad</strong>
-                            <p class="text-muted mb-0">Descripcion</p>
-                          </div> <!-- .col -->
-                          <div class="col-auto">
-                            <div class="custom-control custom-switch">
-                              <input type="checkbox" class="custom-control-input" id="activityLog" checked >
-                              <span class="custom-control-label"></span>
+                    <h2 class="h3 mb-4 page-title">Configuraciones</h2>
+                    <div class="my-4">
+                        <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link " id="home-tab" data-toggle="tab" href="./editarcuenta.html" role="tab" aria-controls="home" aria-selected="true">Editar Cuenta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#" role="tab" aria-controls="profile" aria-selected="false">Seguridad</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="./notificaciones.html" role="tab" aria-controls="contact" aria-selected="false">Notificaciones</a>
+                            </li>
+                        </ul>
+                        <h5 class="mb-0 mt-5">Configuraciones de Seguridad</h5>
+                        <p>Estos ajustes le ayudan a mantener su cuenta segura.</p>
+                        <div class="list-group mb-5 shadow">
+                            <div class="list-group-item">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <strong class="mb-2">Activar los registros de actividad</strong>
+                                        <p class="text-muted mb-0">Descripcion</p>
+                                    </div>
+                                    <!-- .col -->
+                                    <div class="col-auto">
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="activityLog" checked>
+                                            <span class="custom-control-label"></span>
+                                        </div>
+                                    </div>
+                                    <!-- .col -->
+                                </div>
+                                <!-- .row -->
                             </div>
-                          </div> <!-- .col -->
-                        </div> <!-- .row -->
-                      </div> <!-- .list-group-item -->
-                      <div class="list-group-item">
-                        <div class="row align-items-center">
-                          <div class="col">
-                            <strong class="mb-2">2FA Autenticacion</strong>
-                            <span class="badge badge-pill badge-success">Enabled</span>
-                            <p class="text-muted mb-0">description</p>
-                          </div> <!-- .col -->
-                          <div class="col-auto">
-                            <button class="btn btn-primary btn-sm">Disable</button>
-                          </div> <!-- .col -->
-                        </div> <!-- .row -->
-                      </div> <!-- .list-group-item -->
-                      <div class="list-group-item">
-                        <div class="row align-items-center">
-                          <div class="col">
-                            <strong class="mb-2">Activar Pin Code</strong>
-                            <p class="text-muted mb-0">Descripcion</p>
-                          </div> <!-- .col -->
-                          <div class="col-auto">
-                            <div class="custom-control custom-switch">
-                              <input type="checkbox" class="custom-control-input" id="pinCode" >
-                              <span class="custom-control-label"></span>
+                            <!-- .list-group-item -->
+                            <div class="list-group-item">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <strong class="mb-2">2FA Autenticacion</strong>
+                                        <span class="badge badge-pill badge-success">Enabled</span>
+                                        <p class="text-muted mb-0">description</p>
+                                    </div>
+                                    <!-- .col -->
+                                    <div class="col-auto">
+                                        <button class="btn btn-primary btn-sm">Disable</button>
+                                    </div>
+                                    <!-- .col -->
+                                </div>
+                                <!-- .row -->
                             </div>
-                          </div> <!-- .col -->
-                        </div> <!-- .row -->
-                      </div> <!-- .list-group-item -->
-                    </div> <!-- .list-group -->
-                    <h5 class="mb-0">Actividad Reciente</h5>
-                    <p>Últimas actividades con su cuenta.</p>
-                    <table class="table border bg-white">
-                      <thead>
-                        <tr>
-                          <th>Dispositivo</th>
-                          <th>Lugar</th>
-                          <th>IP</th>
-                          <th>Tiempo</th>
-                          <th></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="col"><i class="fe fe-globe fe-12 text-muted mr-2"></i>Chrome - Windows 10</th>
-                          <td>Managua, Nicaragua</td>
-                          <td>192.168.1.10</td>
-                          <td>Apr 24, 2022</td>
-                          <td><a hreff="#" class="text-muted"><i class="fa fa-times"></i></a></td>
-                        </tr>
-                        <tr>
-                          <th scope="col"><i class="fe fe-smartphone fe-12 text-muted mr-2"></i>Chrome - Windows 11</th>
-                          <td>Leon, Nicaragua</td>
-                          <td>10.0.0.10</td>
-                          <td>Apr 24, 2022</td>
-                          <td><a hreff="#" class="text-muted"><i class="fa fa-times"></i></a></td>
-                        </tr>
-                        <tr>
-                          <th scope="col"><i class="fe fe-globe fe-12 text-muted mr-2"></i>Chrome - iOS</th>
-                          <td>Managua, Nicaragua</td>
-                          <td>255.255.255.0</td>
-                          <td>Apr 24, 2022</td>
-                          <td><a hreff="#" class="text-muted"><i class="fa fa-times"></i></a></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div> <!-- /.card-body -->
-                </div> <!-- /.col-12 -->
-              </div>
+                            <!-- .list-group-item -->
+                            <div class="list-group-item">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <strong class="mb-2">Activar Pin Code</strong>
+                                        <p class="text-muted mb-0">Descripcion</p>
+                                    </div>
+                                    <!-- .col -->
+                                    <div class="col-auto">
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="pinCode">
+                                            <span class="custom-control-label"></span>
+                                        </div>
+                                    </div>
+                                    <!-- .col -->
+                                </div>
+                                <!-- .row -->
+                            </div>
+                            <!-- .list-group-item -->
+                        </div>
+                        <!-- .list-group -->
+                        <h5 class="mb-0">Actividad Reciente</h5>
+                        <p>Últimas actividades con su cuenta.</p>
+                        <table class="table border bg-white">
+                            <thead>
+                                <tr>
+                                    <th>Dispositivo</th>
+                                    <th>Lugar</th>
+                                    <th>IP</th>
+                                    <th>Tiempo</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="col"><i class="fe fe-globe fe-12 text-muted mr-2"></i>Chrome - Windows 10</th>
+                                    <td>Managua, Nicaragua</td>
+                                    <td>192.168.1.10</td>
+                                    <td>Apr 24, 2022</td>
+                                    <td><a hreff="#" class="text-muted"><i class="fa fa-times"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="col"><i class="fe fe-smartphone fe-12 text-muted mr-2"></i>Chrome - Windows 11</th>
+                                    <td>Leon, Nicaragua</td>
+                                    <td>10.0.0.10</td>
+                                    <td>Apr 24, 2022</td>
+                                    <td><a hreff="#" class="text-muted"><i class="fa fa-times"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="col"><i class="fe fe-globe fe-12 text-muted mr-2"></i>Chrome - iOS</th>
+                                    <td>Managua, Nicaragua</td>
+                                    <td>255.255.255.0</td>
+                                    <td>Apr 24, 2022</td>
+                                    <td><a hreff="#" class="text-muted"><i class="fa fa-times"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.col-12 -->
+            </div>
         </div>
     </div>
     <!-- /#right-panel -->
@@ -381,4 +408,5 @@
     <script src="assets/js/init/fullcalendar-init.js"></script>
 
 </body>
+
 </html>

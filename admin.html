@@ -1,10 +1,11 @@
 <!doctype html>
 <html class="no-js" lang="">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ela Admin - HTML5 Admin Template</title>
-    <meta name="description" content="Ela Admin - HTML5 Admin Template">
+    <title>El Admin</title>
+    <meta name="description" content="El Admin">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shorcut icon" href="images/favicon.ico">
@@ -21,41 +22,47 @@
     <link href="https://cdn.jsdelivr.net/npm/jqvmap@1.5.1/dist/jqvmap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
 
-   <style>
-    #weatherWidget .currentDesc {
-        color: #ffffff!important;
-    }
+    <style>
+        #weatherWidget .currentDesc {
+            color: #ffffff!important;
+        }
+        
         .traffic-chart {
             min-height: 335px;
         }
-        #flotPie1  {
+        
+        #flotPie1 {
             height: 150px;
         }
+        
         #flotPie1 td {
-            padding:3px;
+            padding: 3px;
         }
+        
         #flotPie1 table {
             top: 20px!important;
             right: -10px!important;
         }
+        
         .chart-container {
             display: table;
-            min-width: 270px ;
+            min-width: 270px;
             text-align: left;
             padding-top: 10px;
             padding-bottom: 10px;
         }
-        #flotLine5  {
-             height: 105px;
+        
+        #flotLine5 {
+            height: 105px;
         }
-
+        
         #flotBarChart {
             height: 150px;
         }
-        #cellPaiChart{
+        
+        #cellPaiChart {
             height: 160px;
         }
-
     </style>
 </head>
 
@@ -66,14 +73,14 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav" style="margin-top:20px">
                     <li class="menu-item-has-children dropdown">
-                        <a href="admin.html" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon fa fa-user"></i>Dashboard</a>
+                        <a href="admin.html" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon fa fa-user"></i>Dashboard</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-laptop"></i><a href="admin.html">Default</a></li>
-                                <li><i class="fa fa-bar-chart-o"></i><a href="dashboardfinan.html">Financiero</a></li>
-                                <li><i class="fa fa-shopping-cart"></i><a href="sales.html">Ventas</a></li>
-                                <li><i class="fa fa-clipboard"></i><a href="ordenes.html">Ordenes Pendientes</a></li>
-                                <li><i class="fa fa-book"></i><a href="transacciones.html">Transacciones</a></li>
+                            <li><i class="fa fa-bar-chart-o"></i><a href="dashboardfinan.html">Financiero</a></li>
+                            <li><i class="fa fa-shopping-cart"></i><a href="sales.html">Ventas</a></li>
+                            <li><i class="fa fa-clipboard"></i><a href="ordenes.html">Ordenes Pendientes</a></li>
+                            <li><i class="fa fa-book"></i><a href="transacciones.html">Transacciones</a></li>
                         </ul>
                     </li>
                     <li class="menu-title">Elementos</li>
@@ -81,8 +88,8 @@
                         <a href="clientes.html"> <i class="menu-icon fa fa-users"></i>Clientes</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon fa fa-user"></i>Usuarios</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon fa fa-user"></i>Usuarios</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-users"></i><a href="all-users.html">Todos los usuarios</a></li>
                             <li><i class="fa fa-plus-circle"></i><a href="add-user.html">Nuevo Usuario</a></li>
@@ -95,8 +102,8 @@
                         <a href="salarios.html"> <i class="menu-icon ti-user"></i>Empleados</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon ti-agenda"></i>Contactos</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon ti-agenda"></i>Contactos</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="ti-view-list-alt"></i><a href="tablacontactos.html">Tabla de contactos</a></li>
                             <li><i class="ti-view-grid"></i><a href="cartascontactos.html">Cartas de contactos</a></li>
@@ -107,16 +114,16 @@
                         <a href="help.html"> <i class="menu-icon ti-help"></i>Ayuda</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon ti-harddrives"></i>Estado de Ordenes</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon ti-harddrives"></i>Estado de Ordenes</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-th-list"></i><a href="listaorden.html">Lista de Ordenes</a></li>
                             <li><i class="fa fa-file-text-o"></i><a href="detallesorden.html">Detalles de la Orden</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon fa fa-user"></i>Cuenta</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon fa fa-user"></i>Cuenta</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="ti-user"></i><a href="mi-cuenta.html">Mi Cuenta</a></li>
                             <li><i class="fa fa-cog"></i><a href="editarcuenta.html">Editar mi Cuenta</a></li>
@@ -131,7 +138,8 @@
                         <a href="inicio2.html"> <i class="menu-icon fa fa-sign-out"></i>Salir del modo admin</a>
                     </li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
+            </div>
+            <!-- /.navbar-collapse -->
         </nav>
     </aside>
     <!-- /#left-panel -->
@@ -351,11 +359,13 @@
                                                 <div class="progress-bar bg-flat-color-4" role="progressbar" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
-                                    </div> <!-- /.card-body -->
+                                    </div>
+                                    <!-- /.card-body -->
                                 </div>
                             </div>
                         </div>
-                    </div><!-- /# column -->
+                    </div>
+                    <!-- /# column -->
                 </div>
                 <!--  /Traffic -->
                 <!-- Orders -->
@@ -389,7 +399,7 @@
                                                         </div>
                                                     </td>
                                                     <td> #5469 </td>
-                                                    <td>  <span class="name">Louis Ramirez</span> </td>
+                                                    <td> <span class="name">Louis Ramirez</span> </td>
                                                     <td> <span class="product">Madera Fina Alder</span> </td>
                                                     <td><span class="count">231</span></td>
                                                     <td>
@@ -404,7 +414,7 @@
                                                         </div>
                                                     </td>
                                                     <td> #5468 </td>
-                                                    <td>  <span class="name">Gregorio Fernandez</span> </td>
+                                                    <td> <span class="name">Gregorio Fernandez</span> </td>
                                                     <td> <span class="product">Polin</span> </td>
                                                     <td><span class="count">250</span></td>
                                                     <td>
@@ -419,7 +429,7 @@
                                                         </div>
                                                     </td>
                                                     <td> #5467 </td>
-                                                    <td>  <span class="name">Alexander Dixon</span> </td>
+                                                    <td> <span class="name">Alexander Dixon</span> </td>
                                                     <td> <span class="product">Barrote</span> </td>
                                                     <td><span class="count">450</span></td>
                                                     <td>
@@ -434,7 +444,7 @@
                                                         </div>
                                                     </td>
                                                     <td> #5466 </td>
-                                                    <td>  <span class="name">Johny Martinez</span> </td>
+                                                    <td> <span class="name">Johny Martinez</span> </td>
                                                     <td> <span class="product">Viga para construccion</span> </td>
                                                     <td><span class="count">350</span></td>
                                                     <td>
@@ -449,7 +459,7 @@
                                                         </div>
                                                     </td>
                                                     <td> #5465 </td>
-                                                    <td>  <span class="name">Johnny Stephens</span> </td>
+                                                    <td> <span class="name">Johnny Stephens</span> </td>
                                                     <td> <span class="product">Enchapado Maderas Finas Encino</span> </td>
                                                     <td><span class="count">250</span></td>
                                                     <td>
@@ -458,10 +468,13 @@
                                                 </tr>
                                             </tbody>
                                         </table>
-                                    </div> <!-- /.table-stats -->
+                                    </div>
+                                    <!-- /.table-stats -->
                                 </div>
-                            </div> <!-- /.card -->
-                        </div>  <!-- /.col-lg-8 -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                        <!-- /.col-lg-8 -->
                         <div class="col-xl-4">
                             <div class="row">
                                 <div class="col-lg-6 col-xl-12">
@@ -471,20 +484,22 @@
                                                 <div id="flotPie1" class="float-chart"></div>
                                             </div>
                                         </div>
-                                    </div><!-- /.card -->
+                                    </div>
+                                    <!-- /.card -->
                                 </div>
                                 <div class="col-lg-6 col-xl-12">
                                     <div class="card bg-flat-color-3  ">
                                         <div class="card-body">
                                             <h4 class="card-title m-0  white-color ">Julio 2022</h4>
                                         </div>
-                                         <div class="card-body">
-                                             <div id="flotLine5" class="flot-line"></div>
-                                         </div>
+                                        <div class="card-body">
+                                            <div id="flotLine5" class="flot-line"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div> <!-- /.col-md-4 -->
+                        </div>
+                        <!-- /.col-md-4 -->
                     </div>
                 </div>
                 <!-- /.orders -->
@@ -542,10 +557,13 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                    </div> <!-- /.todo-list -->
+                                    </div>
+                                    <!-- /.todo-list -->
                                 </div>
-                            </div> <!-- /.card-body -->
-                        </div><!-- /.card -->
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
                     </div>
 
                     <div class="col-lg-6">
@@ -558,8 +576,8 @@
                                             <li>
                                                 <div class="msg-received msg-container">
                                                     <div class="avatar">
-                                                       <img src="images/nosotros/xperson_1.jpg" alt="">
-                                                       <div class="send-time">11.11 am</div>
+                                                        <img src="images/nosotros/xperson_1.jpg" alt="">
+                                                        <div class="send-time">11.11 am</div>
                                                     </div>
                                                     <div class="msg-box">
                                                         <div class="inner-box">
@@ -571,13 +589,14 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div><!-- /.msg-received -->
+                                                </div>
+                                                <!-- /.msg-received -->
                                             </li>
                                             <li>
                                                 <div class="msg-sent msg-container">
                                                     <div class="avatar">
-                                                       <img src="images/nosotros/xperson_5.jpg" alt="">
-                                                       <div class="send-time">11.11 am</div>
+                                                        <img src="images/nosotros/xperson_5.jpg" alt="">
+                                                        <div class="send-time">11.11 am</div>
                                                     </div>
                                                     <div class="msg-box">
                                                         <div class="inner-box">
@@ -589,7 +608,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div><!-- /.msg-sent -->
+                                                </div>
+                                                <!-- /.msg-sent -->
                                             </li>
                                         </ul>
                                         <div class="send-mgs">
@@ -600,10 +620,13 @@
                                                 <i class="pe-7s-paper-plane"></i>
                                             </button>
                                         </div>
-                                    </div><!-- /.messenger-box -->
+                                    </div>
+                                    <!-- /.messenger-box -->
                                 </div>
-                            </div> <!-- /.card-body -->
-                        </div><!-- /.card -->
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
                     </div>
                 </div>
                 <!-- /To Do and Live Chat -->
@@ -617,7 +640,8 @@
                                     <div id="calendar"></div>
                                 </div>
                             </div>
-                        </div><!-- /.card -->
+                        </div>
+                        <!-- /.card -->
                     </div>
 
                     <div class="col-lg-4 col-md-6">
@@ -626,7 +650,8 @@
                                 <div id="flotBarChart" class="float-chart ml-4 mr-4"></div>
                             </div>
                             <div id="cellPaiChart" class="float-chart"></div>
-                        </div><!-- /.card -->
+                        </div>
+                        <!-- /.card -->
                     </div>
                 </div>
                 <!-- /Calender Chart Weather -->
@@ -661,7 +686,7 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <label class="control-label">Category Name</label>
-                                            <input class="form-control form-white" placeholder="Enter name" type="text" name="category-name"/>
+                                            <input class="form-control form-white" placeholder="Enter name" type="text" name="category-name" />
                                         </div>
                                         <div class="col-md-6">
                                             <label class="control-label">Choose Category Color</label>
@@ -684,7 +709,7 @@
                         </div>
                     </div>
                 </div>
-            <!-- /#add-category -->
+                <!-- /#add-category -->
             </div>
             <!-- .animated -->
         </div>
@@ -722,11 +747,25 @@
             "use strict";
 
             // Pie chart flotPie1
-            var piedata = [
-                { label: "Desktop visits", data: [[1,32]], color: '#5c6bc0'},
-                { label: "Tab visits", data: [[1,33]], color: '#ef5350'},
-                { label: "Mobile visits", data: [[1,35]], color: '#66bb6a'}
-            ];
+            var piedata = [{
+                label: "Desktop visits",
+                data: [
+                    [1, 32]
+                ],
+                color: '#5c6bc0'
+            }, {
+                label: "Tab visits",
+                data: [
+                    [1, 33]
+                ],
+                color: '#ef5350'
+            }, {
+                label: "Mobile visits",
+                data: [
+                    [1, 35]
+                ],
+                color: '#66bb6a'
+            }];
 
             $.plot('#flotPie1', piedata, {
                 series: {
@@ -736,7 +775,7 @@
                         innerRadius: 0.65,
                         label: {
                             show: true,
-                            radius: 2/3,
+                            radius: 2 / 3,
                             threshold: 1
                         },
                         stroke: {
@@ -751,10 +790,19 @@
             });
             // Pie chart flotPie1  End
             // cellPaiChart
-            var cellPaiChart = [
-                { label: "Direct Sell", data: [[1,65]], color: '#5b83de'},
-                { label: "Channel Sell", data: [[1,35]], color: '#00bfa5'}
-            ];
+            var cellPaiChart = [{
+                label: "Direct Sell",
+                data: [
+                    [1, 65]
+                ],
+                color: '#5b83de'
+            }, {
+                label: "Channel Sell",
+                data: [
+                    [1, 35]
+                ],
+                color: '#00bfa5'
+            }];
             $.plot('#cellPaiChart', cellPaiChart, {
                 series: {
                     pie: {
@@ -766,7 +814,8 @@
                 },
                 legend: {
                     show: false
-                },grid: {
+                },
+                grid: {
                     hoverable: true,
                     clickable: true
                 }
@@ -774,14 +823,23 @@
             });
             // cellPaiChart End
             // Line Chart  #flotLine5
-            var newCust = [[0, 5], [1, 6], [2,5], [3, 4], [4, 9], [5, 5], [6, 7], [7, 7], [8, 10]];
+            var newCust = [
+                [0, 5],
+                [1, 6],
+                [2, 5],
+                [3, 4],
+                [4, 9],
+                [5, 5],
+                [6, 7],
+                [7, 7],
+                [8, 10]
+            ];
 
-            var plot = $.plot($('#flotLine5'),[{
+            var plot = $.plot($('#flotLine5'), [{
                 data: newCust,
                 label: 'New Data Flow',
                 color: '#fff'
-            }],
-            {
+            }], {
                 series: {
                     lines: {
                         show: true,
@@ -811,25 +869,25 @@
             // Traffic Chart using chartist
             if ($('#traffic-chart').length) {
                 var chart = new Chartist.Line('#traffic-chart', {
-                  labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'],
-                  series: [
-                  [400, 1000, 5000,  3000,  2000,  3000],
-                  [300, 3000, 4000,  2000,  1000,  4000],
-                  [200, 5000, 2000,  4500,  3000,  5000]
-                  ]
-              }, {
-                  low: 0,
-                  showArea: true,
-                  showLine: false,
-                  showPoint: false,
-                  fullWidth: true,
-                  axisX: {
-                    showGrid: true
-                }
-            });
+                    labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'],
+                    series: [
+                        [400, 1000, 5000, 3000, 2000, 3000],
+                        [300, 3000, 4000, 2000, 1000, 4000],
+                        [200, 5000, 2000, 4500, 3000, 5000]
+                    ]
+                }, {
+                    low: 0,
+                    showArea: true,
+                    showLine: false,
+                    showPoint: false,
+                    fullWidth: true,
+                    axisX: {
+                        showGrid: true
+                    }
+                });
 
                 chart.on('draw', function(data) {
-                    if(data.type === 'line' || data.type === 'area') {
+                    if (data.type === 'line' || data.type === 'area') {
                         data.element.animate({
                             d: {
                                 begin: 2000 * data.index,
@@ -845,37 +903,33 @@
             // Traffic Chart using chartist End
             //Traffic chart chart-js
             if ($('#TrafficChart').length) {
-                var ctx = document.getElementById( "TrafficChart" );
+                var ctx = document.getElementById("TrafficChart");
                 ctx.height = 150;
-                var myChart = new Chart( ctx, {
+                var myChart = new Chart(ctx, {
                     type: 'line',
                     data: {
-                        labels: [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul" ],
-                        datasets: [
-                        {
+                        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+                        datasets: [{
                             label: "Visit",
                             borderColor: "rgba(4, 73, 203,.09)",
                             borderWidth: "1",
                             backgroundColor: "rgba(4, 73, 203,.5)",
-                            data: [ 0, 2900, 5000, 3300, 6000, 3250, 0 ]
-                        },
-                        {
+                            data: [0, 2900, 5000, 3300, 6000, 3250, 0]
+                        }, {
                             label: "Bounce",
                             borderColor: "rgba(245, 23, 66, 0.9)",
                             borderWidth: "1",
                             backgroundColor: "rgba(245, 23, 66,.5)",
                             pointHighlightStroke: "rgba(245, 23, 66,.5)",
-                            data: [ 0, 4200, 4500, 1600, 4200, 1500, 4000 ]
-                        },
-                        {
+                            data: [0, 4200, 4500, 1600, 4200, 1500, 4000]
+                        }, {
                             label: "Targeted",
                             borderColor: "rgba(40, 169, 46, 0.9)",
                             borderWidth: "1",
                             backgroundColor: "rgba(40, 169, 46, .5)",
                             pointHighlightStroke: "rgba(40, 169, 46,.5)",
-                            data: [1000, 5200, 3600, 2600, 4200, 5300, 0 ]
-                        }
-                        ]
+                            data: [1000, 5200, 3600, 2600, 4200, 5300, 0]
+                        }]
                     },
                     options: {
                         responsive: true,
@@ -889,12 +943,28 @@
                         }
 
                     }
-                } );
+                });
             }
             //Traffic chart chart-js  End
             // Bar Chart #flotBarChart
             $.plot("#flotBarChart", [{
-                data: [[0, 18], [2, 8], [4, 5], [6, 13],[8,5], [10,7],[12,4], [14,6],[16,15], [18, 9],[20,17], [22,7],[24,4], [26,9],[28,11]],
+                data: [
+                    [0, 18],
+                    [2, 8],
+                    [4, 5],
+                    [6, 13],
+                    [8, 5],
+                    [10, 7],
+                    [12, 4],
+                    [14, 6],
+                    [16, 15],
+                    [18, 9],
+                    [20, 17],
+                    [22, 7],
+                    [24, 4],
+                    [26, 9],
+                    [28, 11]
+                ],
                 bars: {
                     show: true,
                     lineWidth: 0,
@@ -909,4 +979,5 @@
         });
     </script>
 </body>
+
 </html>

@@ -23,48 +23,6 @@
     <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
 
-    <style>
-        #weatherWidget .currentDesc {
-            color: #ffffff!important;
-        }
-        
-        .traffic-chart {
-            min-height: 335px;
-        }
-        
-        #flotPie1 {
-            height: 150px;
-        }
-        
-        #flotPie1 td {
-            padding: 3px;
-        }
-        
-        #flotPie1 table {
-            top: 20px!important;
-            right: -10px!important;
-        }
-        
-        .chart-container {
-            display: table;
-            min-width: 270px;
-            text-align: left;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        
-        #flotLine5 {
-            height: 105px;
-        }
-        
-        #flotBarChart {
-            height: 150px;
-        }
-        
-        #cellPaiChart {
-            height: 160px;
-        }
-    </style>
 </head>
 
 <body>
@@ -242,8 +200,387 @@
         <!-- /#header -->
         <!-- Content -->
         <div class="content">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="row align-items-center mb-2">
+                        <div class="col">
+                            <h1 class="h1 page-title">Welcome!</h1>
+                        </div>
+                    </div>
+                    <!-- widgets -->
+                    <div class="row my-4">
+                        <div class="col-md-4">
+                            <div class="card shadow mb-4">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <small class="text-muted mb-1">Page Views</small>
+                                            <h3 class="card-title mb-0">1168</h3>
+                                            <p class="small text-muted mb-0"><span class="fe fe-arrow-down fe-12 text-danger"></span><span>-18.9% Last
+                                                    week</span></p>
+                                        </div>
+                                        <div class="col-4 text-right">
+                                            <span class="sparkline inlineline"><canvas width="72" height="32"
+                                                    style="display: inline-block; width: 72.5px; height: 32px; vertical-align: top;"></canvas></span>
+                                        </div>
+                                    </div>
+                                    <!-- /. row -->
+                                </div>
+                                <!-- /. card-body -->
+                            </div>
+                            <!-- /. card -->
+                        </div>
+                        <!-- /. col -->
+                        <div class="col-md-4">
+                            <div class="card shadow mb-4">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <small class="text-muted mb-1">Conversion</small>
+                                            <h3 class="card-title mb-0">68</h3>
+                                            <p class="small text-muted mb-0"><span class="fe fe-arrow-up fe-12 text-warning"></span><span>+1.9% Last
+                                                    week</span></p>
+                                        </div>
+                                        <div class="col-4 text-right">
+                                            <span class="sparkline inlinepie"><canvas width="32" height="32"
+                                                    style="display: inline-block; width: 32px; height: 32px; vertical-align: top;"></canvas></span>
+                                        </div>
+                                    </div>
+                                    <!-- /. row -->
+                                </div>
+                                <!-- /. card-body -->
+                            </div>
+                            <!-- /. card -->
+                        </div>
+                        <!-- /. col -->
+                        <div class="col-md-4">
+                            <div class="card shadow mb-4">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <small class="text-muted mb-1">Visitors</small>
+                                            <h3 class="card-title mb-0">108</h3>
+                                            <p class="small text-muted mb-0"><span class="fe fe-arrow-up fe-12 text-success"></span><span>37.7% Last
+                                                    week</span></p>
+                                        </div>
+                                        <div class="col-4 text-right">
+                                            <span class="sparkline inlinebar"><canvas width="40" height="32"
+                                                    style="display: inline-block; width: 40px; height: 32px; vertical-align: top;"></canvas></span>
+                                        </div>
+                                    </div>
+                                    <!-- /. row -->
+                                </div>
+                                <!-- /. card-body -->
+                            </div>
+                            <!-- /. card -->
+                        </div>
+                        <!-- /. col -->
+                    </div>
+                    <!-- end section -->
+                    <!-- linechart -->
+                    <div class="my-4" style="position: relative;">
+                        <div id="lineChart" style="min-height: 365px;">
+                        </div>
+                        <div class="resize-triggers">
+                            <div class="expand-trigger">
+                                <div style="width: 1020px; height: 366px;"></div>
+                            </div>
+                            <div class="contract-trigger"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card shadow mb-4">
+                                <div class="card-header">
+                                    <strong>Goal</strong>
+                                </div>
+                                <div class="card-body px-4">
+                                    <div class="row border-bottom">
+                                        <div class="col-4 text-center mb-3">
+                                            <p class="mb-1 small text-muted">Completions</p>
+                                            <span class="h3">26</span><br>
+                                            <span class="small text-muted">+20%</span>
+                                            <span class="fe fe-arrow-up text-success fe-12"></span>
+                                        </div>
+                                        <div class="col-4 text-center mb-3">
+                                            <p class="mb-1 small text-muted">Goal Value</p>
+                                            <span class="h3">$260</span><br>
+                                            <span class="small text-muted">+6%</span>
+                                            <span class="fe fe-arrow-up text-success fe-12"></span>
+                                        </div>
+                                        <div class="col-4 text-center mb-3">
+                                            <p class="mb-1 small text-muted">Conversion</p>
+                                            <span class="h3">6%</span><br>
+                                            <span class="small text-muted">-2%</span>
+                                            <span class="fe fe-arrow-down text-danger fe-12"></span>
+                                        </div>
+                                    </div>
+                                    <table class="table table-borderless mt-3 mb-1 mx-n1 table-sm">
+                                        <thead>
+                                            <tr>
+                                                <th class="w-50">Goal</th>
+                                                <th class="text-right">Conversion</th>
+                                                <th class="text-right">Completions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Checkout</td>
+                                                <td class="text-right">5%</td>
+                                                <td class="text-right">260</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Add to Cart</td>
+                                                <td class="text-right">55%</td>
+                                                <td class="text-right">1260</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Contact</td>
+                                                <td class="text-right">18%</td>
+                                                <td class="text-right">460</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- .card-body -->
+                            </div>
+                            <!-- .card -->
+                        </div>
+                        <!-- .col -->
+                        <div class="col-md-6">
+                            <div class="card shadow mb-4">
+                                <div class="card-header">
+                                    <strong class="card-title">Top Selling</strong>
+                                    <a class="float-right small text-muted" href="#!">View all</a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="list-group list-group-flush my-n3">
+                                        <div class="list-group-item">
+                                            <div class="row align-items-center">
+                                                <div class="col-3 col-md-2">
+                                                    <img src="./assets/products/p1.jpg" alt="..." class="thumbnail-sm">
+                                                </div>
+                                                <div class="col">
+                                                    <strong>Fusion Backpack</strong>
+                                                    <div class="my-0 text-muted small">Gear, Bags</div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <strong>+85%</strong>
+                                                    <div class="progress mt-2" style="height: 4px;">
+                                                        <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <div class="row align-items-center">
+                                                <div class="col-3 col-md-2">
+                                                    <img src="./assets/products/p2.jpg" alt="..." class="thumbnail-sm">
+                                                </div>
+                                                <div class="col">
+                                                    <strong>Luma hoodies</strong>
+                                                    <div class="my-0 text-muted small">Jackets, Men</div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <strong>+75%</strong>
+                                                    <div class="progress mt-2" style="height: 4px;">
+                                                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <div class="row align-items-center">
+                                                <div class="col-3 col-md-2">
+                                                    <img src="./assets/products/p3.jpg" alt="..." class="thumbnail-sm">
+                                                </div>
+                                                <div class="col">
+                                                    <strong>Luma shorts</strong>
+                                                    <div class="my-0 text-muted small">Shorts, Men</div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <strong>+62%</strong>
+                                                    <div class="progress mt-2" style="height: 4px;">
+                                                        <div class="progress-bar" role="progressbar" style="width: 62%" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <div class="row align-items-center">
+                                                <div class="col-3 col-md-2">
+                                                    <img src="./assets/products/p4.jpg" alt="..." class="thumbnail-sm">
+                                                </div>
+                                                <div class="col">
+                                                    <strong>Brown Trousers</strong>
+                                                    <div class="my-0 text-muted small">Trousers, Women</div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <strong>+24%</strong>
+                                                    <div class="progress mt-2" style="height: 4px;">
+                                                        <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- / .list-group -->
+                                </div>
+                                <!-- / .card-body -->
+                            </div>
+                            <!-- .card -->
+                        </div>
+                        <!-- .col -->
+                    </div>
+                    <!-- .row -->
+                    <div class="row">
+                        <!-- .col -->
+                        <div class="col-md-4">
+                            <div class="card shadow eq-card mb-4">
+                                <div class="card-header">
+                                    <strong class="card-title">Traffic</strong>
+                                    <a class="float-right small text-muted" href="#!">View all</a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-box mb-3" style="min-height: 180px; position: relative;">
+                                        <div id="customAngle" style="min-height: 200.7px;">
+                                        </div>
+                                        <div class="resize-triggers">
+                                            <div class="expand-trigger">
+                                                <div style="width: 279px; height: 202px;"></div>
+                                            </div>
+                                            <div class="contract-trigger"></div>
+                                        </div>
+                                    </div>
+                                    <!-- .col -->
+                                    <div class="mx-auto">
+                                        <div class="row align-items-center mb-2">
+                                            <div class="col">
+                                                <p class="mb-0">Direct</p>
+                                                <span class="my-0 text-muted small">+10%</span>
+                                            </div>
+                                            <div class="col-auto text-right">
+                                                <p class="mb-0">218</p>
+                                                <span class="dot dot-md bg-success"></span>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center mb-2">
+                                            <div class="col">
+                                                <p class="mb-0">Organic Search</p>
+                                                <span class="my-0 text-muted small">+0.6%</span>
+                                            </div>
+                                            <div class="col-auto text-right">
+                                                <p class="mb-0">1002</p>
+                                                <span class="dot dot-md bg-warning"></span>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center mb-2">
+                                            <div class="col">
+                                                <p class="mb-0">Referral</p>
+                                                <span class="my-0 text-muted small">+1.6%</span>
+                                            </div>
+                                            <div class="col-auto text-right">
+                                                <p class="mb-0">67</p>
+                                                <span class="dot dot-md bg-primary"></span>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center">
+                                            <div class="col">
+                                                <p class="mb-0">Social</p>
+                                                <span class="my-0 text-muted small">+118%</span>
+                                            </div>
+                                            <div class="col-auto text-right">
+                                                <p class="mb-0">386</p>
+                                                <span class="dot dot-md bg-secondary"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- .card-body -->
+                            </div>
+                            <!-- .card -->
+                        </div>
+                        <!-- .col-md -->
+                        <div class="col-md-4">
+                            <div class="card shadow eq-card mb-4">
+                                <div class="card-header">
+                                    <strong>Browsers</strong>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-box mt-3 mb-5" style="position: relative;">
+                                        <div id="radarChartWidget" style="min-height: 195px;">
 
+                                        </div>
+                                        <div class="resize-triggers">
+                                            <div class="expand-trigger">
+                                                <div style="width: 279px; height: 196px;"></div>
+                                            </div>
+                                            <div class="contract-trigger"></div>
+                                        </div>
+                                    </div>
+                                    <!-- .col -->
+                                    <div class="mx-auto">
+                                        <div class="row align-items-center my-2">
+                                            <div class="col-6 col-xl-3 my-3">
+                                                <span class="mb-0">Safari</span>
+                                                <div class="progress my-2" style="height: 4px;">
+                                                    <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-xl-3 my-3 text-right">
+                                                <span>118</span><br>
+                                                <span class="my-0 text-muted small">+10%</span>
+                                            </div>
+                                            <div class="col-6 col-xl-3 my-3">
+                                                <span class="mb-0">Chrome</span>
+                                                <div class="progress my-2" style="height: 4px;">
+                                                    <div class="progress-bar" role="progressbar" style="width: 36%" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-xl-3 my-3 text-right">
+                                                <span>1008</span><br>
+                                                <span class="my-0 text-muted small">+36%</span>
+                                            </div>
+                                            <div class="col-6 col-xl-3 my-3">
+                                                <span class="mb-0">Opera</span>
+                                                <div class="progress my-2" style="height: 4px;">
+                                                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-xl-3 my-3 text-right">
+                                                <span>67</span><br>
+                                                <span class="my-0 text-muted small">+1.6%</span>
+                                            </div>
+                                            <div class="col-6 col-xl-3 my-3">
+                                                <span class="mb-0">Edge</span>
+                                                <div class="progress my-2" style="height: 4px;">
+                                                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-xl-3 my-3 text-right">
+                                                <span>186</span><br>
+                                                <span class="my-0 text-muted small">+118%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- .card-body -->
+                            </div>
+                            <!-- .card -->
+                        </div>
+                        <!-- .col -->
+                    </div>
+                </div>
+                <!-- /.col -->
+            </div>
         </div>
+        <!-- Footer -->
+
+        <!-- /.site-footer -->
     </div>
     <!-- /#right-panel -->
 
@@ -271,244 +608,51 @@
     <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.js"></script>
     <script src="assets/js/init/fullcalendar-init.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/simplebar.min.js"></script>
+    <script src='assets/js/daterangepicker.js'></script>
+    <script src='assets/js/jquery.stickOnScroll.js'></script>
+    <script src="assets/js/tinycolor-min.js"></script>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/d3.min.js"></script>
+    <script src="assets/js/topojson.min.js"></script>
+    <script src="assets/js/datamaps.all.min.js"></script>
+    <script src="assets/js/datamaps-zoomto.js"></script>
+    <script src="assets/js/datamaps.custom.js"></script>
+    <script src="assets/js/Chart.min.js"></script>
 
-    <!--Local Stuff-->
+
     <script>
-        jQuery(document).ready(function($) {
-            "use strict";
-
-            // Pie chart flotPie1
-            var piedata = [{
-                label: "Desktop visits",
-                data: [
-                    [1, 32]
-                ],
-                color: '#5c6bc0'
-            }, {
-                label: "Tab visits",
-                data: [
-                    [1, 33]
-                ],
-                color: '#ef5350'
-            }, {
-                label: "Mobile visits",
-                data: [
-                    [1, 35]
-                ],
-                color: '#66bb6a'
-            }];
-
-            $.plot('#flotPie1', piedata, {
-                series: {
-                    pie: {
-                        show: true,
-                        radius: 1,
-                        innerRadius: 0.65,
-                        label: {
-                            show: true,
-                            radius: 2 / 3,
-                            threshold: 1
-                        },
-                        stroke: {
-                            width: 0
-                        }
-                    }
-                },
-                grid: {
-                    hoverable: true,
-                    clickable: true
-                }
-            });
-            // Pie chart flotPie1  End
-            // cellPaiChart
-            var cellPaiChart = [{
-                label: "Direct Sell",
-                data: [
-                    [1, 65]
-                ],
-                color: '#5b83de'
-            }, {
-                label: "Channel Sell",
-                data: [
-                    [1, 35]
-                ],
-                color: '#00bfa5'
-            }];
-            $.plot('#cellPaiChart', cellPaiChart, {
-                series: {
-                    pie: {
-                        show: true,
-                        stroke: {
-                            width: 0
-                        }
-                    }
-                },
-                legend: {
-                    show: false
-                },
-                grid: {
-                    hoverable: true,
-                    clickable: true
-                }
-
-            });
-            // cellPaiChart End
-            // Line Chart  #flotLine5
-            var newCust = [
-                [0, 3],
-                [1, 5],
-                [2, 4],
-                [3, 7],
-                [4, 9],
-                [5, 3],
-                [6, 6],
-                [7, 4],
-                [8, 10]
-            ];
-
-            var plot = $.plot($('#flotLine5'), [{
-                data: newCust,
-                label: 'New Data Flow',
-                color: '#fff'
-            }], {
-                series: {
-                    lines: {
-                        show: true,
-                        lineColor: '#fff',
-                        lineWidth: 2
-                    },
-                    points: {
-                        show: true,
-                        fill: true,
-                        fillColor: "#ffffff",
-                        symbol: "circle",
-                        radius: 3
-                    },
-                    shadowSize: 0
-                },
-                points: {
-                    show: true,
-                },
-                legend: {
-                    show: false
-                },
-                grid: {
-                    show: false
-                }
-            });
-            // Line Chart  #flotLine5 End
-            // Traffic Chart using chartist
-            if ($('#traffic-chart').length) {
-                var chart = new Chartist.Line('#traffic-chart', {
-                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-                    series: [
-                        [0, 18000, 35000, 25000, 22000, 0],
-                        [0, 33000, 15000, 20000, 15000, 300],
-                        [0, 15000, 28000, 15000, 30000, 5000]
-                    ]
-                }, {
-                    low: 0,
-                    showArea: true,
-                    showLine: false,
-                    showPoint: false,
-                    fullWidth: true,
-                    axisX: {
-                        showGrid: true
-                    }
-                });
-
-                chart.on('draw', function(data) {
-                    if (data.type === 'line' || data.type === 'area') {
-                        data.element.animate({
-                            d: {
-                                begin: 2000 * data.index,
-                                dur: 2000,
-                                from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
-                                to: data.path.clone().stringify(),
-                                easing: Chartist.Svg.Easing.easeOutQuint
-                            }
-                        });
-                    }
-                });
-            }
-            // Traffic Chart using chartist End
-            //Traffic chart chart-js
-            if ($('#TrafficChart').length) {
-                var ctx = document.getElementById("TrafficChart");
-                ctx.height = 150;
-                var myChart = new Chart(ctx, {
-                    type: 'line',
-                    data: {
-                        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
-                        datasets: [{
-                            label: "Visit",
-                            borderColor: "rgba(4, 73, 203,.09)",
-                            borderWidth: "1",
-                            backgroundColor: "rgba(4, 73, 203,.5)",
-                            data: [0, 2900, 5000, 3300, 6000, 3250, 0]
-                        }, {
-                            label: "Bounce",
-                            borderColor: "rgba(245, 23, 66, 0.9)",
-                            borderWidth: "1",
-                            backgroundColor: "rgba(245, 23, 66,.5)",
-                            pointHighlightStroke: "rgba(245, 23, 66,.5)",
-                            data: [0, 4200, 4500, 1600, 4200, 1500, 4000]
-                        }, {
-                            label: "Targeted",
-                            borderColor: "rgba(40, 169, 46, 0.9)",
-                            borderWidth: "1",
-                            backgroundColor: "rgba(40, 169, 46, .5)",
-                            pointHighlightStroke: "rgba(40, 169, 46,.5)",
-                            data: [1000, 5200, 3600, 2600, 4200, 5300, 0]
-                        }]
-                    },
-                    options: {
-                        responsive: true,
-                        tooltips: {
-                            mode: 'index',
-                            intersect: false
-                        },
-                        hover: {
-                            mode: 'nearest',
-                            intersect: true
-                        }
-
-                    }
-                });
-            }
-            //Traffic chart chart-js  End
-            // Bar Chart #flotBarChart
-            $.plot("#flotBarChart", [{
-                data: [
-                    [0, 18],
-                    [2, 8],
-                    [4, 5],
-                    [6, 13],
-                    [8, 5],
-                    [10, 7],
-                    [12, 4],
-                    [14, 6],
-                    [16, 15],
-                    [18, 9],
-                    [20, 17],
-                    [22, 7],
-                    [24, 4],
-                    [26, 9],
-                    [28, 11]
-                ],
-                bars: {
-                    show: true,
-                    lineWidth: 0,
-                    fillColor: '#ffffff8a'
-                }
-            }], {
-                grid: {
-                    show: false
-                }
-            });
-            // Bar Chart #flotBarChart End
-        });
+        /* defind global options */
+        Chart.defaults.global.defaultFontFamily = base.defaultFontFamily;
+        Chart.defaults.global.defaultFontColor = colors.mutedColor;
     </script>
+    <script src="assets/js/gauge.min.js"></script>
+    <script src="assets/js/jquery.sparkline.min.js"></script>
+    <script src="assets/js/apexcharts.min.js"></script>
+    <script src="assets/js/apexcharts.custom.js"></script>
+    <script src="assets/js/apps.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-56159088-1');
+    </script>
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>

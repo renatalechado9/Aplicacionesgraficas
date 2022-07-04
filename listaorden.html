@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,9 @@
 
     <link rel="shorcut icon" href="images/favicon.ico">
 
+    <link rel="stylesheet" href="assets/css/simplebar.css">
+    <!-- Date Range Picker CSS -->
+    <link rel="stylesheet" href="assets/css/daterangepicker.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
@@ -22,41 +26,38 @@
     <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
 
-   <style>
-    #weatherWidget .currentDesc {
-        color: #ffffff!important;
-    }
-        .traffic-chart {
-            min-height: 335px;
+    <style>
+        .dot-lg {
+            width: 10px;
+            height: 10px;
         }
-        #flotPie1  {
-            height: 150px;
+        
+        .dot {
+            content: "";
+            border-radius: 50%;
+            display: inline-block;
         }
-        #flotPie1 td {
-            padding:3px;
+        
+        .mr-2,
+        .mx-2 {
+            margin-right: 0.5rem !important;
         }
-        #flotPie1 table {
-            top: 20px!important;
-            right: -10px!important;
+        
+        .bg-secondary {
+            background-color: #6c757d !important;
         }
-        .chart-container {
-            display: table;
-            min-width: 270px ;
-            text-align: left;
-            padding-top: 10px;
-            padding-bottom: 10px;
+        
+        .bg-success {
+            background-color: #3ad29f !important;
         }
-        #flotLine5  {
-             height: 105px;
+        
+        .bg-primary {
+            background-color: #1b68ff !important;
         }
-
-        #flotBarChart {
-            height: 150px;
+        
+        .bg-warning {
+            background-color: #eea303 !important;
         }
-        #cellPaiChart{
-            height: 160px;
-        }
-
     </style>
 </head>
 
@@ -67,23 +68,23 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav" style="margin-top:20px">
                     <li class=" menu-item-has-children dropdown active">
-                        <a href="admin.html" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                        <a href="admin.html" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="menu-icon fa fa-laptop"></i>Dashboard</a>
-                            <ul class="sub-menu children dropdown-menu">
-                                <li><i class="fa fa-laptop"></i><a href="admin.html">Default</a></li>
-                                <li><i class="fa fa-bar-chart-o"></i><a href="dashboardfinan.html">Financiero</a></li>
-                                <li><i class="fa fa-shopping-cart"></i><a href="sales.html">Ventas</a></li>
-                                <li><i class="fa fa-clipboard"></i><a href="ordenes.html">Ordenes Pendientes</a></li>
-                                <li><i class="fa fa-book"></i><a href="transacciones.html">Transacciones</a></li>
-                            </ul>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-laptop"></i><a href="admin.html">Default</a></li>
+                            <li><i class="fa fa-bar-chart-o"></i><a href="dashboardfinan.html">Financiero</a></li>
+                            <li><i class="fa fa-shopping-cart"></i><a href="sales.html">Ventas</a></li>
+                            <li><i class="fa fa-clipboard"></i><a href="ordenes.html">Ordenes Pendientes</a></li>
+                            <li><i class="fa fa-book"></i><a href="transacciones.html">Transacciones</a></li>
+                        </ul>
                     </li>
                     <li class="menu-title">Elementos</li>
                     <li>
                         <a href="clientes.html"> <i class="menu-icon fa fa-users"></i>Clientes</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon fa fa-user"></i>Usuarios</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon fa fa-user"></i>Usuarios</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-users"></i><a href="all-users.html">Todos los usuarios</a></li>
                             <li><i class="fa fa-plus-circle"></i><a href="add-user.html">Nuevo Usuario</a></li>
@@ -96,10 +97,11 @@
                         <a href="salarios.html"> <i class="menu-icon ti-user"></i>Empleados</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon ti-agenda"></i>Contactos</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon ti-agenda"></i>Contactos</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="ti-view-list-alt"></i><a href="tablacontactos.html">Tabla de contactos</a></li>
+                            <li><i class="ti-view-list-alt"></i><a href="tablacontactos.html">Tabla de contactos</a>
+                            </li>
                             <li><i class="ti-view-grid"></i><a href="cartascontactos.html">Cartas de contactos</a></li>
                             <li><i class="fa fa-plus-circle"></i><a href="añadircontacto.html">Añadir contacto</a></li>
                         </ul>
@@ -108,16 +110,17 @@
                         <a href="help.html"> <i class="menu-icon ti-help"></i>Ayuda</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon ti-harddrives"></i>Estado de Ordenes</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon ti-harddrives"></i>Estado de Ordenes</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-th-list"></i><a href="listaorden.html">Lista de Ordenes</a></li>
-                            <li><i class="fa fa-file-text-o"></i><a href="detallesorden.html">Detalles de la Orden</a></li>
+                            <li><i class="fa fa-file-text-o"></i><a href="detallesorden.html">Detalles de la Orden</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon fa fa-user"></i>Cuenta</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="menu-icon fa fa-user"></i>Cuenta</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="ti-user"></i><a href="mi-cuenta.html">Mi Cuenta</a></li>
                             <li><i class="fa fa-cog"></i><a href="editarcuenta.html">Editar mi Cuenta</a></li>
@@ -132,7 +135,8 @@
                         <a href="inicio2.html"> <i class="menu-icon fa fa-sign-out"></i>Salir del modo admin</a>
                     </li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
+            </div>
+            <!-- /.navbar-collapse -->
         </nav>
     </aside>
     <!-- /#left-panel -->
@@ -178,7 +182,8 @@
                             <div class="dropdown-menu" aria-labelledby="message">
                                 <p class="red">Tu tienes 4 e-mails</p>
                                 <a class="dropdown-item media" href="#">
-                                    <span class="photo media-left"><img alt="avatar" src="images/nosotros/xperson_1.jpg"></span>
+                                    <span class="photo media-left"><img alt="avatar"
+                                            src="images/nosotros/xperson_1.jpg"></span>
                                     <div class="message media-body">
                                         <span class="name float-left">Jonathan Smith</span>
                                         <span class="time float-right">Justo ahora</span>
@@ -186,7 +191,8 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item media" href="#">
-                                    <span class="photo media-left"><img alt="avatar" src="images/nosotros/xperson_2.jpg"></span>
+                                    <span class="photo media-left"><img alt="avatar"
+                                            src="images/nosotros/xperson_2.jpg"></span>
                                     <div class="message media-body">
                                         <span class="name float-left">Jack Sanders</span>
                                         <span class="time float-right">Hace 5 minutos</span>
@@ -194,7 +200,8 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item media" href="#">
-                                    <span class="photo media-left"><img alt="avatar" src="images/nosotros/xperson_3.jpg"></span>
+                                    <span class="photo media-left"><img alt="avatar"
+                                            src="images/nosotros/xperson_3.jpg"></span>
                                     <div class="message media-body">
                                         <span class="name float-left">Cheryl Wheeler</span>
                                         <span class="time float-right">Hace 10 minutos</span>
@@ -202,7 +209,8 @@
                                     </div>
                                 </a>
                                 <a class="dropdown-item media" href="#">
-                                    <span class="photo media-left"><img alt="avatar" src="images/nosotros/xperson_4.jpg"></span>
+                                    <span class="photo media-left"><img alt="avatar"
+                                            src="images/nosotros/xperson_4.jpg"></span>
                                     <div class="message media-body">
                                         <span class="name float-left">Rachel Santos</span>
                                         <span class="time float-right">Hace 15 minutos</span>
@@ -220,11 +228,13 @@
                         <div class="user-menu dropdown-menu">
                             <a class="nav-link" href="./mi-cuenta.html"><i class="fa fa-user"></i>Mi cuenta</a>
 
-                            <a class="nav-link" href="./notificaciones.html"><i class="fa fa-asterisk"></i>Notificaciones<span class="count">13</span></a>
+                            <a class="nav-link" href="./notificaciones.html"><i
+                                    class="fa fa-asterisk"></i>Notificaciones<span class="count">13</span></a>
 
                             <a class="nav-link" href="./editarcuenta.html"><i class="fa fa-cog"></i>Configuraciones</a>
 
-                            <a class="nav-link" href="./Inicio2.html"><i class="fa fa-power-off"></i>Salir de la sesion</a>
+                            <a class="nav-link" href="./Inicio2.html"><i class="fa fa-power-off"></i>Salir de la
+                                sesion</a>
                         </div>
                     </div>
 
@@ -236,353 +246,280 @@
         <div class="content">
             <div class="row justify-content-center">
                 <div class="col-12">
-                  <h2 class="h3 mb-0 page-title">Tickets</h2>
-                  <div class="row align-items-center my-4">
-                    <div class="col-md-6">
-                      <div id="chart-box" style="position: relative;">
-                        <div id="donutChartWidget" style="min-height: 182.75px;"><div id="apexchartsqfj7gb5" class="apexcharts-canvas apexchartsqfj7gb5 apexcharts-theme-light" style="width: 494px; height: 182.75px;"><svg id="SvgjsSvg1001" width="494" height="182.75" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1003" class="apexcharts-inner apexcharts-graphical" transform="translate(170, 0)"><defs id="SvgjsDefs1002"><clipPath id="gridRectMaskqfj7gb5"><rect id="SvgjsRect1005" width="161" height="179" x="-2.5" y="-0.5" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMaskqfj7gb5"><rect id="SvgjsRect1006" width="160" height="182" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><filter id="SvgjsFilter1015" filterUnits="userSpaceOnUse" width="200%" height="200%" x="-50%" y="-50%"><feFlood id="SvgjsFeFlood1016" flood-color="#000000" flood-opacity="0.45" result="SvgjsFeFlood1016Out" in="SourceGraphic"></feFlood><feComposite id="SvgjsFeComposite1017" in="SvgjsFeFlood1016Out" in2="SourceAlpha" operator="in" result="SvgjsFeComposite1017Out"></feComposite><feOffset id="SvgjsFeOffset1018" dx="1" dy="1" result="SvgjsFeOffset1018Out" in="SvgjsFeComposite1017Out"></feOffset><feGaussianBlur id="SvgjsFeGaussianBlur1019" stdDeviation="1 " result="SvgjsFeGaussianBlur1019Out" in="SvgjsFeOffset1018Out"></feGaussianBlur><feMerge id="SvgjsFeMerge1020" result="SvgjsFeMerge1020Out" in="SourceGraphic"><feMergeNode id="SvgjsFeMergeNode1021" in="SvgjsFeGaussianBlur1019Out"></feMergeNode><feMergeNode id="SvgjsFeMergeNode1022" in="[object Arguments]"></feMergeNode></feMerge><feBlend id="SvgjsFeBlend1023" in="SourceGraphic" in2="SvgjsFeMerge1020Out" mode="normal" result="SvgjsFeBlend1023Out"></feBlend></filter><filter id="SvgjsFilter1028" filterUnits="userSpaceOnUse" width="200%" height="200%" x="-50%" y="-50%"><feFlood id="SvgjsFeFlood1029" flood-color="#000000" flood-opacity="0.45" result="SvgjsFeFlood1029Out" in="SourceGraphic"></feFlood><feComposite id="SvgjsFeComposite1030" in="SvgjsFeFlood1029Out" in2="SourceAlpha" operator="in" result="SvgjsFeComposite1030Out"></feComposite><feOffset id="SvgjsFeOffset1031" dx="1" dy="1" result="SvgjsFeOffset1031Out" in="SvgjsFeComposite1030Out"></feOffset><feGaussianBlur id="SvgjsFeGaussianBlur1032" stdDeviation="1 " result="SvgjsFeGaussianBlur1032Out" in="SvgjsFeOffset1031Out"></feGaussianBlur><feMerge id="SvgjsFeMerge1033" result="SvgjsFeMerge1033Out" in="SourceGraphic"><feMergeNode id="SvgjsFeMergeNode1034" in="SvgjsFeGaussianBlur1032Out"></feMergeNode><feMergeNode id="SvgjsFeMergeNode1035" in="[object Arguments]"></feMergeNode></feMerge><feBlend id="SvgjsFeBlend1036" in="SourceGraphic" in2="SvgjsFeMerge1033Out" mode="normal" result="SvgjsFeBlend1036Out"></feBlend></filter><filter id="SvgjsFilter1041" filterUnits="userSpaceOnUse" width="200%" height="200%" x="-50%" y="-50%"><feFlood id="SvgjsFeFlood1042" flood-color="#000000" flood-opacity="0.45" result="SvgjsFeFlood1042Out" in="SourceGraphic"></feFlood><feComposite id="SvgjsFeComposite1043" in="SvgjsFeFlood1042Out" in2="SourceAlpha" operator="in" result="SvgjsFeComposite1043Out"></feComposite><feOffset id="SvgjsFeOffset1044" dx="1" dy="1" result="SvgjsFeOffset1044Out" in="SvgjsFeComposite1043Out"></feOffset><feGaussianBlur id="SvgjsFeGaussianBlur1045" stdDeviation="1 " result="SvgjsFeGaussianBlur1045Out" in="SvgjsFeOffset1044Out"></feGaussianBlur><feMerge id="SvgjsFeMerge1046" result="SvgjsFeMerge1046Out" in="SourceGraphic"><feMergeNode id="SvgjsFeMergeNode1047" in="SvgjsFeGaussianBlur1045Out"></feMergeNode><feMergeNode id="SvgjsFeMergeNode1048" in="[object Arguments]"></feMergeNode></feMerge><feBlend id="SvgjsFeBlend1049" in="SourceGraphic" in2="SvgjsFeMerge1046Out" mode="normal" result="SvgjsFeBlend1049Out"></feBlend></filter><filter id="SvgjsFilter1054" filterUnits="userSpaceOnUse" width="200%" height="200%" x="-50%" y="-50%"><feFlood id="SvgjsFeFlood1055" flood-color="#000000" flood-opacity="0.45" result="SvgjsFeFlood1055Out" in="SourceGraphic"></feFlood><feComposite id="SvgjsFeComposite1056" in="SvgjsFeFlood1055Out" in2="SourceAlpha" operator="in" result="SvgjsFeComposite1056Out"></feComposite><feOffset id="SvgjsFeOffset1057" dx="1" dy="1" result="SvgjsFeOffset1057Out" in="SvgjsFeComposite1056Out"></feOffset><feGaussianBlur id="SvgjsFeGaussianBlur1058" stdDeviation="1 " result="SvgjsFeGaussianBlur1058Out" in="SvgjsFeOffset1057Out"></feGaussianBlur><feMerge id="SvgjsFeMerge1059" result="SvgjsFeMerge1059Out" in="SourceGraphic"><feMergeNode id="SvgjsFeMergeNode1060" in="SvgjsFeGaussianBlur1058Out"></feMergeNode><feMergeNode id="SvgjsFeMergeNode1061" in="[object Arguments]"></feMergeNode></feMerge><feBlend id="SvgjsFeBlend1062" in="SourceGraphic" in2="SvgjsFeMerge1059Out" mode="normal" result="SvgjsFeBlend1062Out"></feBlend></filter><filter id="SvgjsFilter1067" filterUnits="userSpaceOnUse" width="200%" height="200%" x="-50%" y="-50%"><feFlood id="SvgjsFeFlood1068" flood-color="#000000" flood-opacity="0.45" result="SvgjsFeFlood1068Out" in="SourceGraphic"></feFlood><feComposite id="SvgjsFeComposite1069" in="SvgjsFeFlood1068Out" in2="SourceAlpha" operator="in" result="SvgjsFeComposite1069Out"></feComposite><feOffset id="SvgjsFeOffset1070" dx="1" dy="1" result="SvgjsFeOffset1070Out" in="SvgjsFeComposite1069Out"></feOffset><feGaussianBlur id="SvgjsFeGaussianBlur1071" stdDeviation="1 " result="SvgjsFeGaussianBlur1071Out" in="SvgjsFeOffset1070Out"></feGaussianBlur><feMerge id="SvgjsFeMerge1072" result="SvgjsFeMerge1072Out" in="SourceGraphic"><feMergeNode id="SvgjsFeMergeNode1073" in="SvgjsFeGaussianBlur1071Out"></feMergeNode><feMergeNode id="SvgjsFeMergeNode1074" in="[object Arguments]"></feMergeNode></feMerge><feBlend id="SvgjsFeBlend1075" in="SourceGraphic" in2="SvgjsFeMerge1072Out" mode="normal" result="SvgjsFeBlend1075Out"></feBlend></filter></defs><g id="SvgjsG1007" class="apexcharts-pie"><g id="SvgjsG1008" transform="translate(0, 0) scale(1)"><circle id="SvgjsCircle1009" r="32.73170731707318" cx="78" cy="89" fill="transparent"></circle><g id="SvgjsG1010" class="apexcharts-slices"><g id="SvgjsG1011" class="apexcharts-series apexcharts-pie-series" seriesName="Clothing" rel="1" data:realIndex="0"><path id="SvgjsPath1012" d="M 78 7.17073170731706 A 81.82926829268294 81.82926829268294 0 0 1 159.82604596989114 88.27381114774145 L 110.73041838795646 88.70952445909658 A 32.73170731707318 32.73170731707318 0 0 0 78 56.26829268292682 L 78 7.17073170731706 z" fill="rgba(27,104,255,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-0" index="0" j="0" data:angle="89.49152542372882" data:startAngle="0" data:strokeWidth="0" data:value="44" data:pathOrig="M 78 7.17073170731706 A 81.82926829268294 81.82926829268294 0 0 1 159.82604596989114 88.27381114774145 L 110.73041838795646 88.70952445909658 A 32.73170731707318 32.73170731707318 0 0 0 78 56.26829268292682 L 78 7.17073170731706 z"></path></g><g id="SvgjsG1024" class="apexcharts-series apexcharts-pie-series" seriesName="Shoes" rel="2" data:realIndex="1"><path id="SvgjsPath1025" d="M 159.82604596989114 88.27381114774145 A 81.82926829268294 81.82926829268294 0 0 1 48.20100658601905 165.21055793542916 L 66.08040263440762 119.48422317417166 A 32.73170731707318 32.73170731707318 0 0 0 110.73041838795646 88.70952445909658 L 159.82604596989114 88.27381114774145 z" fill="rgba(58,210,159,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-1" index="0" j="1" data:angle="111.86440677966102" data:startAngle="89.49152542372882" data:strokeWidth="0" data:value="55" data:pathOrig="M 159.82604596989114 88.27381114774145 A 81.82926829268294 81.82926829268294 0 0 1 48.20100658601905 165.21055793542916 L 66.08040263440762 119.48422317417166 A 32.73170731707318 32.73170731707318 0 0 0 110.73041838795646 88.70952445909658 L 159.82604596989114 88.27381114774145 z"></path></g><g id="SvgjsG1037" class="apexcharts-series apexcharts-pie-series" seriesName="Others" rel="3" data:realIndex="2"><path id="SvgjsPath1038" d="M 48.20100658601905 165.21055793542916 A 81.82926829268294 81.82926829268294 0 0 1 5.726328549355173 127.3737614048992 L 49.090531419742064 104.34950456195968 A 32.73170731707318 32.73170731707318 0 0 0 66.08040263440762 119.48422317417166 L 48.20100658601905 165.21055793542916 z" fill="rgba(111,66,193,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-2" index="0" j="2" data:angle="40.67796610169492" data:startAngle="201.35593220338984" data:strokeWidth="0" data:value="20" data:pathOrig="M 48.20100658601905 165.21055793542916 A 81.82926829268294 81.82926829268294 0 0 1 5.726328549355173 127.3737614048992 L 49.090531419742064 104.34950456195968 A 32.73170731707318 32.73170731707318 0 0 0 66.08040263440762 119.48422317417166 L 48.20100658601905 165.21055793542916 z"></path></g><g id="SvgjsG1050" class="apexcharts-series apexcharts-pie-series" seriesName="Electronics" rel="4" data:realIndex="3"><path id="SvgjsPath1051" d="M 5.726328549355173 127.3737614048992 A 81.82926829268294 81.82926829268294 0 0 1 31.56166130251804 21.624115231532315 L 59.424664521007216 62.049646092612925 A 32.73170731707318 32.73170731707318 0 0 0 49.090531419742064 104.34950456195968 L 5.726328549355173 127.3737614048992 z" fill="rgba(180,205,255,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-3" index="0" j="3" data:angle="83.3898305084746" data:startAngle="242.03389830508476" data:strokeWidth="0" data:value="41" data:pathOrig="M 5.726328549355173 127.3737614048992 A 81.82926829268294 81.82926829268294 0 0 1 31.56166130251804 21.624115231532315 L 59.424664521007216 62.049646092612925 A 32.73170731707318 32.73170731707318 0 0 0 49.090531419742064 104.34950456195968 L 5.726328549355173 127.3737614048992 z"></path></g><g id="SvgjsG1063" class="apexcharts-series apexcharts-pie-series" seriesName="Books" rel="5" data:realIndex="4"><path id="SvgjsPath1064" d="M 31.56166130251804 21.624115231532315 A 81.82926829268294 81.82926829268294 0 0 1 77.98571809851045 7.170732953648084 L 77.99428723940417 56.26829318145923 A 32.73170731707318 32.73170731707318 0 0 0 59.424664521007216 62.049646092612925 L 31.56166130251804 21.624115231532315 z" fill="rgba(27,104,255,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-4" index="0" j="4" data:angle="34.57627118644069" data:startAngle="325.42372881355936" data:strokeWidth="0" data:value="17" data:pathOrig="M 31.56166130251804 21.624115231532315 A 81.82926829268294 81.82926829268294 0 0 1 77.98571809851045 7.170732953648084 L 77.99428723940417 56.26829318145923 A 32.73170731707318 32.73170731707318 0 0 0 59.424664521007216 62.049646092612925 L 31.56166130251804 21.624115231532315 z"></path></g><g id="SvgjsG1013" class="apexcharts-datalabels"><text id="SvgjsText1014" font-family="Overpass, sans-serif" x="118.32329827145655" y="48.31725304658086" text-anchor="middle" dominant-baseline="auto" font-size="10px" font-weight="300" fill="#ffffff" class="apexcharts-text apexcharts-pie-label" filter="url(#SvgjsFilter1015)" style="font-family: Overpass, sans-serif;">24.9%</text></g><g id="SvgjsG1026" class="apexcharts-datalabels"><text id="SvgjsText1027" font-family="Overpass, sans-serif" x="110.5068370882374" y="136.16311933792736" text-anchor="middle" dominant-baseline="auto" font-size="10px" font-weight="300" fill="#ffffff" class="apexcharts-text apexcharts-pie-label" filter="url(#SvgjsFilter1028)" style="font-family: Overpass, sans-serif;">31.1%</text></g><g id="SvgjsG1039" class="apexcharts-datalabels"><text id="SvgjsText1040" font-family="Overpass, sans-serif" x="39.8990763849258" y="131.77118075109766" text-anchor="middle" dominant-baseline="auto" font-size="10px" font-weight="300" fill="#ffffff" class="apexcharts-text apexcharts-pie-label" filter="url(#SvgjsFilter1041)" style="font-family: Overpass, sans-serif;">11.3%</text></g><g id="SvgjsG1052" class="apexcharts-datalabels"><text id="SvgjsText1053" font-family="Overpass, sans-serif" x="22.35602184555679" y="75.40581086226062" text-anchor="middle" dominant-baseline="auto" font-size="10px" font-weight="300" fill="#ffffff" class="apexcharts-text apexcharts-pie-label" filter="url(#SvgjsFilter1054)" style="font-family: Overpass, sans-serif;">23.2%</text></g><g id="SvgjsG1065" class="apexcharts-datalabels"><text id="SvgjsText1066" font-family="Overpass, sans-serif" x="60.977547164279926" y="34.307309605208935" text-anchor="middle" dominant-baseline="auto" font-size="10px" font-weight="300" fill="#ffffff" class="apexcharts-text apexcharts-pie-label" filter="url(#SvgjsFilter1067)" style="font-family: Overpass, sans-serif;">9.6%</text></g></g></g></g><line id="SvgjsLine1076" x1="0" y1="0" x2="156" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1077" x1="0" y1="0" x2="156" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line></g><g id="SvgjsG1004" class="apexcharts-annotations"></g></svg><div class="apexcharts-legend"></div><div class="apexcharts-tooltip apexcharts-theme-dark" style="left: 167.953px; top: 58px;"><div class="apexcharts-tooltip-series-group apexcharts-active" style="display: flex; background-color: rgb(255, 69, 96);"><span class="apexcharts-tooltip-marker" style="background-color: rgb(255, 69, 96); display: none;"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label">Electronics: </span><span class="apexcharts-tooltip-text-value">41</span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group" style="display: none; background-color: rgb(255, 69, 96);"><span class="apexcharts-tooltip-marker" style="background-color: rgb(255, 69, 96); display: none;"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label">Electronics: </span><span class="apexcharts-tooltip-text-value">41</span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group" style="display: none; background-color: rgb(255, 69, 96);"><span class="apexcharts-tooltip-marker" style="background-color: rgb(255, 69, 96); display: none;"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label">Electronics: </span><span class="apexcharts-tooltip-text-value">41</span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group" style="display: none; background-color: rgb(255, 69, 96);"><span class="apexcharts-tooltip-marker" style="background-color: rgb(255, 69, 96); display: none;"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label">Electronics: </span><span class="apexcharts-tooltip-text-value">41</span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group" style="display: none; background-color: rgb(255, 69, 96);"><span class="apexcharts-tooltip-marker" style="background-color: rgb(255, 69, 96); display: none;"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label">Electronics: </span><span class="apexcharts-tooltip-text-value">41</span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div></div></div>
-                      <div class="resize-triggers"><div class="expand-trigger"><div style="width: 495px; height: 184px;"></div></div><div class="contract-trigger"></div></div></div>
+                    <h2 class="h3 mb-0 page-title">Lista de Ordenes</h2>
+                    <div class="row align-items-center my-4">
+                        <div class="col-md-6">
+                            <div id="chart-box" style="position: relative;">
+                                <div id="donutChartWidget" style="min-height: 182.75px;">
+                                </div>
+                                <div class="resize-triggers">
+                                    <div class="expand-trigger">
+                                        <div style="width: 495px; height: 184px;"></div>
+                                    </div>
+                                    <div class="contract-trigger"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row align-items-center my-2">
+                                <div class="col">
+                                    <strong>Completadas</strong><br>
+                                    <span class="my-0 text-muted small">+85%</span>
+                                </div>
+                                <div class="col-auto">
+                                    <strong class="my-0">1200</strong>
+                                </div>
+                                <div class="col-3">
+                                    <div class="progress" style="height: 4px;">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center my-2">
+                                <div class="col">
+                                    <strong>En Proceso</strong><br>
+                                    <span class="my-0 text-muted small">+60%</span>
+                                </div>
+                                <div class="col-auto">
+                                    <strong>80</strong>
+                                </div>
+                                <div class="col-3">
+                                    <div class="progress" style="height: 4px;">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center my-2">
+                                <div class="col">
+                                    <strong>Assignadas</strong>
+                                    <div class="my-0 text-muted small">+2%</div>
+                                </div>
+                                <div class="col-auto">
+                                    <strong>262</strong>
+                                </div>
+                                <div class="col-3">
+                                    <div class="progress" style="height: 4px;">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center my-2">
+                                <div class="col">
+                                    <strong>Pendientes</strong>
+                                    <div class="my-0 text-muted small">+6%</div>
+                                </div>
+                                <div class="col-auto">
+                                    <strong>26</strong>
+                                </div>
+                                <div class="col-3">
+                                    <div class="progress" style="height: 4px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 6%" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .col-md-12 -->
                     </div>
-                    <div class="col-md-6">
-                      <div class="row align-items-center my-2">
-                        <div class="col">
-                          <strong>Completed</strong><br>
-                          <span class="my-0 text-muted small">+85%</span>
+                    <!-- .row -->
+                    <div class="row items-align-center my-4  d-none d-lg-flex">
+                        <div class="col-md">
+                            <ul class="nav nav-pills justify-content-start">
+                                <li class="nav-item">
+                                    <a class="nav-link active bg-transparent pr-2 pl-0 text-primary" href="#">Todas<span
+                                            class="badge badge-pill bg-primary text-white ml-2">164</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-muted px-2" href="#">Pendientes<span
+                                            class="badge badge-pill bg-white border text-muted ml-2">64</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-muted px-2" href="#">En Proceso<span
+                                            class="badge badge-pill bg-white border text-muted ml-2">48</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-muted px-2" href="#">Completadas<span
+                                            class="badge badge-pill bg-white border text-muted ml-2">52</span></a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-auto">
-                          <strong class="my-0">1200</strong>
+                        <div class="col-md-auto ml-auto text-right">
+                            <span class="small bg-white border py-1 px-2 rounded mr-2">
+                                <a href="#" class="text-muted"><i class="fe fe-x mx-1"></i></a>
+                                <span class="text-muted">Estado: <strong>Pendientes</strong></span>
+                            </span>
+                            <span class="small bg-white border py-1 px-2 rounded mr-2">
+                                <a href="#" class="text-muted"><i class="fe fe-x mx-1"></i></a>
+                                <span class="text-muted">April 14, 2022 - May 13, 2022</span>
+                            </span>
+                            <button type="button" class="btn" data-toggle="modal" data-target=".modal-slide"><span
+                                    class="fa fa-filter fe-16 text-muted"></span></button>
+                            <button type="button" class="btn"><span
+                                    class="fa fa-refresh fe-16 text-muted"></span></button>
                         </div>
-                        <div class="col-3">
-                          <div class="progress" style="height: 4px;">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row align-items-center my-2">
-                        <div class="col">
-                          <strong>Processing</strong><br>
-                          <span class="my-0 text-muted small">+60%</span>
-                        </div>
-                        <div class="col-auto">
-                          <strong>80</strong>
-                        </div>
-                        <div class="col-3">
-                          <div class="progress" style="height: 4px;">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row align-items-center my-2">
-                        <div class="col">
-                          <strong>Assigned</strong>
-                          <div class="my-0 text-muted small">+2%</div>
-                        </div>
-                        <div class="col-auto">
-                          <strong>262</strong>
-                        </div>
-                        <div class="col-3">
-                          <div class="progress" style="height: 4px;">
-                            <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row align-items-center my-2">
-                        <div class="col">
-                          <strong>Pending</strong>
-                          <div class="my-0 text-muted small">+6%</div>
-                        </div>
-                        <div class="col-auto">
-                          <strong>26</strong>
-                        </div>
-                        <div class="col-3">
-                          <div class="progress" style="height: 4px;">
-                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div> <!-- .col-md-12 -->
-                  </div> <!-- .row -->
-                  <div class="row items-align-center my-4  d-none d-lg-flex">
-                    <div class="col-md">
-                      <ul class="nav nav-pills justify-content-start">
-                        <li class="nav-item">
-                          <a class="nav-link active bg-transparent pr-2 pl-0 text-primary" href="#">All <span class="badge badge-pill bg-primary text-white ml-2">164</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link text-muted px-2" href="#">Pending <span class="badge badge-pill bg-white border text-muted ml-2">64</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link text-muted px-2" href="#">Processing <span class="badge badge-pill bg-white border text-muted ml-2">48</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link text-muted px-2" href="#">Completed <span class="badge badge-pill bg-white border text-muted ml-2">52</span></a>
-                        </li>
-                      </ul>
                     </div>
-                    <div class="col-md-auto ml-auto text-right">
-                      <span class="small bg-white border py-1 px-2 rounded mr-2">
-                        <a href="#" class="text-muted"><i class="fe fe-x mx-1"></i></a>
-                        <span class="text-muted">Status : <strong>Pending</strong></span>
-                      </span>
-                      <span class="small bg-white border py-1 px-2 rounded mr-2">
-                        <a href="#" class="text-muted"><i class="fe fe-x mx-1"></i></a>
-                        <span class="text-muted">April 14, 2020 - May 13, 2020</span>
-                      </span>
-                      <button type="button" class="btn" data-toggle="modal" data-target=".modal-slide"><span class="fe fe-filter fe-16 text-muted"></span></button>
-                      <button type="button" class="btn"><span class="fe fe-refresh-ccw fe-16 text-muted"></span></button>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- table -->
+                            <table class="table table-borderless table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th></th>
+                                        <th>Asunto</th>
+                                        <th>Creada</th>
+                                        <th>Estado</th>
+                                        <th>Actualizada</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-muted small">2007</td>
+                                        <td class="text-center"><span class="dot dot-lg bg-secondary mr-2"></span></td>
+                                        <th scope="col">sed, sapien. Nunc pulvinar arcu et pede. Nunc sed</th>
+                                        <td class="text-muted small">Apr 29, 2022</td>
+                                        <td>
+                                            <span class="small text-muted">Completada</span>
+                                            <div class="progress mt-2" style="height: 3px;">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td class="text-muted small">May 9, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted small">2053</td>
+                                        <td class="text-center"><span class="dot dot-lg bg-success mr-2"></span></td>
+                                        <th scope="col">lorem eu metus. In lorem. Donec elementum, lorem ut</th>
+                                        <td class="text-muted small">May 4, 2022</td>
+                                        <td>
+                                            <span class="small text-muted">Completada</span>
+                                            <div class="progress mt-2" style="height: 3px;">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td class="text-muted small">May 2, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted small">2569</td>
+                                        <td class="text-center"><span class="dot dot-lg bg-secondary mr-2"></span></td>
+                                        <th scope="col">sagittis. Duis gravida. Praesent eu</th>
+                                        <td class="text-muted small">May 7, 2022</td>
+                                        <td>
+                                            <span class="small text-muted">Pendiente</span>
+                                            <div class="progress mt-2" style="height: 3px;">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td class="text-muted small">May 9, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted small">2192</td>
+                                        <td class="text-center"><span class="dot dot-lg bg-primary mr-2"></span></td>
+                                        <th scope="col">mattis semper, dui lectus rutrum urna, nec luctus</th>
+                                        <td class="text-muted small">May 5, 2022</td>
+                                        <td>
+                                            <span class="small text-muted">En Proceso</span>
+                                            <div class="progress mt-2" style="height: 3px;">
+                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td class="text-muted small">Apr 27, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted small">2028</td>
+                                        <td class="text-center"><span class="dot dot-lg bg-warning mr-2"></span></td>
+                                        <th scope="col">at arcu. Vestibulum ante ipsum</th>
+                                        <td class="text-muted small">May 2, 2022</td>
+                                        <td>
+                                            <span class="small text-muted">Asignada</span>
+                                            <div class="progress mt-2" style="height: 3px;">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td class="text-muted small">May 4, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted small">2673</td>
+                                        <td class="text-center"><span class="dot dot-lg bg-primary mr-2"></span></td>
+                                        <th scope="col">dui nec urna suscipit nonummy. Fusce fermentum fermentum</th>
+                                        <td class="text-muted small">May 13, 2022</td>
+                                        <td>
+                                            <span class="small text-muted">En Proceso</span>
+                                            <div class="progress mt-2" style="height: 3px;">
+                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td class="text-muted small">May 3, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted small">2698</td>
+                                        <td class="text-center"><span class="dot dot-lg bg-primary mr-2"></span></td>
+                                        <td>habitant morbi tristique senectus et</td>
+                                        <td class="text-muted small">May 7, 2022</td>
+                                        <td>
+                                            <span class="small text-muted">Completada</span>
+                                            <div class="progress mt-2" style="height: 3px;">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td class="text-muted small">May 8, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted small">2382</td>
+                                        <td class="text-center"><span class="dot dot-lg bg-warning mr-2"></span></td>
+                                        <td>arcu. Vestibulum ut eros non enim</td>
+                                        <td class="text-muted small">May 2, 2022</td>
+                                        <td>
+                                            <span class="small text-muted">Asignada</span>
+                                            <div class="progress mt-2" style="height: 3px;">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td class="text-muted small">Apr 30, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted small">2582</td>
+                                        <td class="text-center"><span class="dot dot-lg bg-success mr-2"></span></td>
+                                        <th scope="col">ipsum sodales purus, in molestie tortor nibh</th>
+                                        <td class="text-muted small">May 2, 2022</td>
+                                        <td>
+                                            <span class="small text-muted">Completada</span>
+                                            <div class="progress mt-2" style="height: 3px;">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td class="text-muted small">May 6, 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted small">2811</td>
+                                        <td class="text-center"><span class="dot dot-lg bg-secondary mr-2"></span></td>
+                                        <th scope="col">non, bibendum sed, est. Nunc laoreet lectus quis</th>
+                                        <td class="text-muted small">Apr 5, 2022</td>
+                                        <td>
+                                            <span class="small text-muted">En Proceso</span>
+                                            <div class="progress mt-2" style="height: 3px;">
+                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                        <td class="text-muted small">May 14, 2022</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <nav aria-label="Table Paging" class="my-3">
+                                <ul class="pagination justify-content-end mb-0">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- .col -->
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <!-- table -->
-                      <table class="table table-borderless table-striped">
-                        <thead>
-                          <tr>
-                            <th>ID</th>
-                            <th></th>
-                            <th>Subject</th>
-                            <th>Create At</th>
-                            <th>Status</th>
-                            <th>Updated At</th>
-                            <th>Action</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="text-muted small">2007</td>
-                            <td class="text-center"><span class="dot dot-lg bg-secondary mr-2"></span></td>
-                            <th scope="col">sed, sapien. Nunc pulvinar arcu et pede. Nunc sed</th>
-                            <td class="text-muted small">Apr 29, 2020</td>
-                            <td>
-                              <span class="small text-muted">Completed</span>
-                              <div class="progress mt-2" style="height: 3px;">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </td>
-                            <td class="text-muted small">May 9, 2020</td>
-                            <td class=""><button class="btn btn-sm dropdown-toggle more-horizontal" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="text-muted sr-only">Action</span>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-right" style="">
-                                <a class="dropdown-item" href="#">Edit</a>
-                                <a class="dropdown-item" href="#">Remove</a>
-                                <a class="dropdown-item" href="#">Assign</a>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-muted small">2053</td>
-                            <td class="text-center"><span class="dot dot-lg bg-success mr-2"></span></td>
-                            <th scope="col">lorem eu metus. In lorem. Donec elementum, lorem ut</th>
-                            <td class="text-muted small">May 4, 2020</td>
-                            <td>
-                              <span class="small text-muted">Completed</span>
-                              <div class="progress mt-2" style="height: 3px;">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </td>
-                            <td class="text-muted small">May 2, 2020</td>
-                            <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="text-muted sr-only">Action</span>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="#">Edit</a>
-                                <a class="dropdown-item" href="#">Remove</a>
-                                <a class="dropdown-item" href="#">Assign</a>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-muted small">2569</td>
-                            <td class="text-center"><span class="dot dot-lg bg-secondary mr-2"></span></td>
-                            <th scope="col">sagittis. Duis gravida. Praesent eu</th>
-                            <td class="text-muted small">May 7, 2020</td>
-                            <td>
-                              <span class="small text-muted">Pending</span>
-                              <div class="progress mt-2" style="height: 3px;">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </td>
-                            <td class="text-muted small">May 9, 2020</td>
-                            <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="text-muted sr-only">Action</span>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="#">Edit</a>
-                                <a class="dropdown-item" href="#">Remove</a>
-                                <a class="dropdown-item" href="#">Assign</a>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-muted small">2192</td>
-                            <td class="text-center"><span class="dot dot-lg bg-primary mr-2"></span></td>
-                            <th scope="col">mattis semper, dui lectus rutrum urna, nec luctus</th>
-                            <td class="text-muted small">May 5, 2020</td>
-                            <td>
-                              <span class="small text-muted">Processing</span>
-                              <div class="progress mt-2" style="height: 3px;">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </td>
-                            <td class="text-muted small">Apr 27, 2020</td>
-                            <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="text-muted sr-only">Action</span>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="#">Edit</a>
-                                <a class="dropdown-item" href="#">Remove</a>
-                                <a class="dropdown-item" href="#">Assign</a>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-muted small">2028</td>
-                            <td class="text-center"><span class="dot dot-lg bg-success mr-2"></span></td>
-                            <th scope="col">at arcu. Vestibulum ante ipsum</th>
-                            <td class="text-muted small">May 2, 2020</td>
-                            <td>
-                              <span class="small text-muted">Assigned</span>
-                              <div class="progress mt-2" style="height: 3px;">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </td>
-                            <td class="text-muted small">May 4, 2020</td>
-                            <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="text-muted sr-only">Action</span>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="#">Edit</a>
-                                <a class="dropdown-item" href="#">Remove</a>
-                                <a class="dropdown-item" href="#">Assign</a>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-muted small">2673</td>
-                            <td class="text-center"><span class="dot dot-lg bg-primary mr-2"></span></td>
-                            <th scope="col">dui nec urna suscipit nonummy. Fusce fermentum fermentum</th>
-                            <td class="text-muted small">May 13, 2020</td>
-                            <td>
-                              <span class="small text-muted">Processing</span>
-                              <div class="progress mt-2" style="height: 3px;">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </td>
-                            <td class="text-muted small">May 3, 2020</td>
-                            <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="text-muted sr-only">Action</span>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="#">Edit</a>
-                                <a class="dropdown-item" href="#">Remove</a>
-                                <a class="dropdown-item" href="#">Assign</a>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-muted small">2698</td>
-                            <td class="text-center"><span class="dot dot-lg bg-primary mr-2"></span></td>
-                            <td>habitant morbi tristique senectus et</td>
-                            <td class="text-muted small">May 7, 2020</td>
-                            <td>
-                              <span class="small text-muted">Completed</span>
-                              <div class="progress mt-2" style="height: 3px;">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </td>
-                            <td class="text-muted small">May 8, 2020</td>
-                            <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="text-muted sr-only">Action</span>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="#">Edit</a>
-                                <a class="dropdown-item" href="#">Remove</a>
-                                <a class="dropdown-item" href="#">Assign</a>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-muted small">2382</td>
-                            <td class="text-center"><span class="dot dot-lg bg-secondary mr-2"></span></td>
-                            <td>arcu. Vestibulum ut eros non enim</td>
-                            <td class="text-muted small">May 2, 2020</td>
-                            <td>
-                              <span class="small text-muted">Assigned</span>
-                              <div class="progress mt-2" style="height: 3px;">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </td>
-                            <td class="text-muted small">Apr 30, 2020</td>
-                            <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="text-muted sr-only">Action</span>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="#">Edit</a>
-                                <a class="dropdown-item" href="#">Remove</a>
-                                <a class="dropdown-item" href="#">Assign</a>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-muted small">2582</td>
-                            <td class="text-center"><span class="dot dot-lg bg-success mr-2"></span></td>
-                            <th scope="col">ipsum sodales purus, in molestie tortor nibh</th>
-                            <td class="text-muted small">May 2, 2020</td>
-                            <td>
-                              <span class="small text-muted">Completed</span>
-                              <div class="progress mt-2" style="height: 3px;">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </td>
-                            <td class="text-muted small">May 6, 2020</td>
-                            <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="text-muted sr-only">Action</span>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="#">Edit</a>
-                                <a class="dropdown-item" href="#">Remove</a>
-                                <a class="dropdown-item" href="#">Assign</a>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-muted small">2811</td>
-                            <td class="text-center"><span class="dot dot-lg bg-secondary mr-2"></span></td>
-                            <th scope="col">non, bibendum sed, est. Nunc laoreet lectus quis</th>
-                            <td class="text-muted small">Apr 5, 2020</td>
-                            <td>
-                              <span class="small text-muted">Processing</span>
-                              <div class="progress mt-2" style="height: 3px;">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </td>
-                            <td class="text-muted small">May 14, 2020</td>
-                            <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="text-muted sr-only">Action</span>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="#">Edit</a>
-                                <a class="dropdown-item" href="#">Remove</a>
-                                <a class="dropdown-item" href="#">Assign</a>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <nav aria-label="Table Paging" class="my-3">
-                        <ul class="pagination justify-content-end mb-0">
-                          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                        </ul>
-                      </nav>
-                    </div> <!-- .col -->
-                  </div> <!-- .row -->
-                </div> <!-- .col-12 -->
-              </div>
+                    <!-- .row -->
+                </div>
+                <!-- .col-12 -->
+            </div>
         </div>
     </div>
     <!-- /#right-panel -->
@@ -605,204 +542,44 @@
     <script src="https://cdn.jsdelivr.net/npm/flot-pie@1.0.0/src/jquery.flot.pie.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flot-spline@0.0.1/js/jquery.flot.spline.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/simpleweather@3.1.0/jquery.simpleWeather.min.js"></script>
-    <script src="assets/js/init/weather-init.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.js"></script>
-    <script src="assets/js/init/fullcalendar-init.js"></script>
-
-    <!--Local Stuff-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/simplebar.min.js"></script>
+    <script src='assets/js/daterangepicker.js'></script>
+    <script src='assets/js/jquery.stickOnScroll.js'></script>
+    <script src="assets/js/tinycolor-min.js"></script>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/d3.min.js"></script>
+    <script src="assets/js/topojson.min.js"></script>
+    <script src="assets/js/datamaps.all.min.js"></script>
+    <script src="assets/js/datamaps-zoomto.js"></script>
+    <script src="assets/js/datamaps.custom.js"></script>
+    <script src="assets/js/Chart.min.js"></script>
     <script>
-        jQuery(document).ready(function($) {
-            "use strict";
+        /* defind global options */
+        Chart.defaults.global.defaultFontFamily = base.defaultFontFamily;
+        Chart.defaults.global.defaultFontColor = colors.mutedColor;
+    </script>
+    <script src="assets/js/gauge.min.js"></script>
+    <script src="assets/js/jquery.sparkline.min.js"></script>
+    <script src="assets/js/apexcharts.min.js"></script>
+    <script src="assets/js/apexcharts.custom.js"></script>
+    <script src="assets/js/apps.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-            // Pie chart flotPie1
-            var piedata = [
-                { label: "Desktop visits", data: [[1,32]], color: '#5c6bc0'},
-                { label: "Tab visits", data: [[1,33]], color: '#ef5350'},
-                { label: "Mobile visits", data: [[1,35]], color: '#66bb6a'}
-            ];
-
-            $.plot('#flotPie1', piedata, {
-                series: {
-                    pie: {
-                        show: true,
-                        radius: 1,
-                        innerRadius: 0.65,
-                        label: {
-                            show: true,
-                            radius: 2/3,
-                            threshold: 1
-                        },
-                        stroke: {
-                            width: 0
-                        }
-                    }
-                },
-                grid: {
-                    hoverable: true,
-                    clickable: true
-                }
-            });
-            // Pie chart flotPie1  End
-            // cellPaiChart
-            var cellPaiChart = [
-                { label: "Direct Sell", data: [[1,65]], color: '#5b83de'},
-                { label: "Channel Sell", data: [[1,35]], color: '#00bfa5'}
-            ];
-            $.plot('#cellPaiChart', cellPaiChart, {
-                series: {
-                    pie: {
-                        show: true,
-                        stroke: {
-                            width: 0
-                        }
-                    }
-                },
-                legend: {
-                    show: false
-                },grid: {
-                    hoverable: true,
-                    clickable: true
-                }
-
-            });
-            // cellPaiChart End
-            // Line Chart  #flotLine5
-            var newCust = [[0, 3], [1, 5], [2,4], [3, 7], [4, 9], [5, 3], [6, 6], [7, 4], [8, 10]];
-
-            var plot = $.plot($('#flotLine5'),[{
-                data: newCust,
-                label: 'New Data Flow',
-                color: '#fff'
-            }],
-            {
-                series: {
-                    lines: {
-                        show: true,
-                        lineColor: '#fff',
-                        lineWidth: 2
-                    },
-                    points: {
-                        show: true,
-                        fill: true,
-                        fillColor: "#ffffff",
-                        symbol: "circle",
-                        radius: 3
-                    },
-                    shadowSize: 0
-                },
-                points: {
-                    show: true,
-                },
-                legend: {
-                    show: false
-                },
-                grid: {
-                    show: false
-                }
-            });
-            // Line Chart  #flotLine5 End
-            // Traffic Chart using chartist
-            if ($('#traffic-chart').length) {
-                var chart = new Chartist.Line('#traffic-chart', {
-                  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-                  series: [
-                  [0, 18000, 35000,  25000,  22000,  0],
-                  [0, 33000, 15000,  20000,  15000,  300],
-                  [0, 15000, 28000,  15000,  30000,  5000]
-                  ]
-              }, {
-                  low: 0,
-                  showArea: true,
-                  showLine: false,
-                  showPoint: false,
-                  fullWidth: true,
-                  axisX: {
-                    showGrid: true
-                }
-            });
-
-                chart.on('draw', function(data) {
-                    if(data.type === 'line' || data.type === 'area') {
-                        data.element.animate({
-                            d: {
-                                begin: 2000 * data.index,
-                                dur: 2000,
-                                from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
-                                to: data.path.clone().stringify(),
-                                easing: Chartist.Svg.Easing.easeOutQuint
-                            }
-                        });
-                    }
-                });
-            }
-            // Traffic Chart using chartist End
-            //Traffic chart chart-js
-            if ($('#TrafficChart').length) {
-                var ctx = document.getElementById( "TrafficChart" );
-                ctx.height = 150;
-                var myChart = new Chart( ctx, {
-                    type: 'line',
-                    data: {
-                        labels: [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul" ],
-                        datasets: [
-                        {
-                            label: "Visit",
-                            borderColor: "rgba(4, 73, 203,.09)",
-                            borderWidth: "1",
-                            backgroundColor: "rgba(4, 73, 203,.5)",
-                            data: [ 0, 2900, 5000, 3300, 6000, 3250, 0 ]
-                        },
-                        {
-                            label: "Bounce",
-                            borderColor: "rgba(245, 23, 66, 0.9)",
-                            borderWidth: "1",
-                            backgroundColor: "rgba(245, 23, 66,.5)",
-                            pointHighlightStroke: "rgba(245, 23, 66,.5)",
-                            data: [ 0, 4200, 4500, 1600, 4200, 1500, 4000 ]
-                        },
-                        {
-                            label: "Targeted",
-                            borderColor: "rgba(40, 169, 46, 0.9)",
-                            borderWidth: "1",
-                            backgroundColor: "rgba(40, 169, 46, .5)",
-                            pointHighlightStroke: "rgba(40, 169, 46,.5)",
-                            data: [1000, 5200, 3600, 2600, 4200, 5300, 0 ]
-                        }
-                        ]
-                    },
-                    options: {
-                        responsive: true,
-                        tooltips: {
-                            mode: 'index',
-                            intersect: false
-                        },
-                        hover: {
-                            mode: 'nearest',
-                            intersect: true
-                        }
-
-                    }
-                } );
-            }
-            //Traffic chart chart-js  End
-            // Bar Chart #flotBarChart
-            $.plot("#flotBarChart", [{
-                data: [[0, 18], [2, 8], [4, 5], [6, 13],[8,5], [10,7],[12,4], [14,6],[16,15], [18, 9],[20,17], [22,7],[24,4], [26,9],[28,11]],
-                bars: {
-                    show: true,
-                    lineWidth: 0,
-                    fillColor: '#ffffff8a'
-                }
-            }], {
-                grid: {
-                    show: false
-                }
-            });
-            // Bar Chart #flotBarChart End
-        });
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-56159088-1');
     </script>
 </body>
+
 </html>
